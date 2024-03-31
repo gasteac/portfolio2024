@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.transition-right {
+  transition: right 0.4s ease;
+}
 #sidebar-active:checked ~ .links-container {
   right: 0;
-}
-.transition-right {
-  transition: right 0.4s ease; 
 }
 #sidebar-active:checked ~ .openButton {
   display: none;
@@ -20,5 +20,4 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
 }

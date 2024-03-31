@@ -1,23 +1,43 @@
 import React, { useEffect, useState } from "react";
-
+import "animate.css";
 export const Navbar = () => {
-  const [show, setShow] = useState(false)
-    useEffect(() => {
-      function handleResize() {
-        if (window.innerWidth >= 640) {
-          setShow(false); 
-        }
+  const [isChecked, setIsChecked] = useState(false);
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
+
+  const handleReset = () => {
+    setIsChecked(false);
+  };
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth >= 640) {
+        handleReset();
       }
-      window.addEventListener("resize", handleResize);
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }, []);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <nav className="bg-white shadow-lg p-4">
       <div className="flex justify-end items-center text-xl h-8 ">
-        <input type="checkbox" id="sidebar-active" className="hidden" />
-        <label htmlFor="sidebar-active" className="openButton z-20 sm:hidden">
+        <input
+          onChange={handleCheckboxChange}
+          checked={isChecked}
+          type="checkbox"
+          id="sidebar-active"
+          className="hidden"
+        />
+        <label
+          id="overlay"
+          onClick={() => handleReset()}
+          className="sm:hidden"
+        ></label>
+        <label htmlFor="sidebar-active" className="openButton z-30 sm:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -35,7 +55,7 @@ export const Navbar = () => {
         </label>
         <label
           htmlFor="sidebar-active"
-          className="closeButton z-20 hidden sm:hidden"
+          className="closeButton z-30 hidden sm:hidden"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -52,11 +72,42 @@ export const Navbar = () => {
             />
           </svg>
         </label>
-        <div className="links-container transition-right -right-[100%] flex flex-col items-center mt-8 sm:mt-0 justify-evenly h-full fixed top-0 z-10 bg-white opacity-75 shadow-2xl w-[50%] sm:bg-white sm:shadow-none sm:w-auto sm:flex-row sm:space-x-10 sm:static">
-          <a href="">Home</a>
-          <a href="">About Me</a>
-          <a href="">Proyects</a>
-          <a href="">Contact</a>
+        <div
+          className="links-container transition-right -right-[100%] flex flex-col items-center mt-8 justify-evenly h-full fixed top-0 z-20 bg-white opacity-75 shadow-2xl w-[50%] 
+          sm:mt-0 sm:bg-white sm:shadow-none sm:w-[100%] sm:flex-row sm:space-x-10 sm:static"
+        >
+          <a
+            className={` ${
+              isChecked ? "opacity-100" : "opacity-0"
+            } nav-link transition-all ease-linear duration-[800ms] delay-[400ms] nav-link sm:mr-auto sm:opacity-100 sm:transition-none`}
+            href=""
+          >
+            Home
+          </a>
+          <a
+            className={` ${
+              isChecked ? "opacity-100" : "opacity-0"
+            } nav-link transition-all ease-linear duration-[800ms] delay-[400ms] nav-link sm:opacity-100 sm:transition-none`}
+            href=""
+          >
+            AboutMe
+          </a>
+          <a
+            className={` ${
+              isChecked ? "opacity-100" : "opacity-0"
+            } nav-link transition-all ease-linear duration-[800ms] delay-[400ms] nav-link sm:opacity-100 sm:transition-none`}
+            href=""
+          >
+            Proyects
+          </a>
+          <a
+            className={` ${
+              isChecked ? "opacity-100" : "opacity-0"
+            } nav-link transition-all ease-linear duration-[800ms] delay-[400ms] nav-link sm:opacity-100 sm:transition-none`}
+            href=""
+          >
+            Contact
+          </a>
         </div>
       </div>
     </nav>
