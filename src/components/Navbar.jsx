@@ -23,8 +23,8 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-white shadow-lg p-4">
-      <div className="flex justify-end items-center text-xl h-8 ">
+    <nav className="bg-white shadow-lg p-4 w-full fixed top-0">
+      <div className="flex justify-end items-center text-xl h-8">
         <input
           onChange={handleCheckboxChange}
           checked={isChecked}
