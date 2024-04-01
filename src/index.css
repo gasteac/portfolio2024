@@ -1,11 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-::-webkit-scrollbar{
-  display: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
 .transition-right {
   transition: right 0.4s ease;
 }
@@ -24,4 +33,61 @@
   position: fixed;
   top: 0;
   left: 0;
+}
+.menu-icon {
+  -webkit-transition: -webkit-transform 300ms ease-in;
+  transition: -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+}
+.menu-icon > span {
+  -webkit-transition: -webkit-transform 300ms ease-in;
+  transition: -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+}
+.menu-icon > span:before,
+.menu-icon > span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.menu-icon > span:before {
+  -webkit-transform: translateY(-0.5em);
+  transform: translateY(-0.5em);
+}
+.menu-icon > span:after {
+  -webkit-transform: translateY(0.5em);
+  transform: translateY(0.5em);
+  
+}
+#sidebar-active:checked ~ .menu-icon {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#sidebar-active:checked ~ .menu-icon > span:before{
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#sidebar-active:checked ~ .menu-icon > span:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+@layer utilities {
+  .links-container a:not(.wolfIcon) {
+    @apply relative tracking-[1px];
+  }
+  .links-container a:not(.wolfIcon)::after {
+    @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-1 rounded-full duration-300;
+  }
+  .links-container a:not(.wolfIcon)::after:hover {
+    @apply w-[100%];
+  }
 }
