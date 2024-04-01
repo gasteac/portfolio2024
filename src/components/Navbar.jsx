@@ -74,7 +74,7 @@ export const Navbar = () => {
             className="tablet:hidden"
           ></label>
           <div
-            className="navGlass:bg-secondary  navGlass:shadow-2xl links-container transition-right -right-[100%] flex flex-col items-center justify-start space-y-24 h-full fixed top-0 z-50 shadow-2xl w-[60%] tablet:space-y-0
+            className="navGlass:bg-secondary navGlass:shadow-2xl links-container transition-right -right-[100%] flex flex-col items-center space-y-14 h-full fixed top-0 z-50 shadow-2xl w-[60%] tablet:space-y-0
           tablet:mt-0 tablet:shadow-none tablet:w-[100%] tablet:flex-row tablet:space-x-10 tablet:static"
           >
             <div className="tablet:mr-auto flex items-center justify-center">
