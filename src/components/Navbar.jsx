@@ -54,13 +54,13 @@ export const Navbar = () => {
       <nav className="p-4 w-full fixed top-0 tablet:glass z-50">
         {theme === "cyberpunk" ? (
           <img
-            className="w-[200px] drop-shadow-lg absolute top-3 left-3"
+            className="w-[200px] tablet:hidden drop-shadow-lg absolute top-3 left-3"
             src="./icons/cyberpunk.svg"
             alt=""
           />
         ) : (
           <img
-            className="w-[250px]  drop-shadow-lg absolute top-2 -left-3"
+            className="w-[250px] tablet:hidden drop-shadow-lg absolute top-2 -left-3"
             src="./icons/dark.svg"
             alt=""
           />
