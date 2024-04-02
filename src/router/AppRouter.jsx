@@ -6,13 +6,6 @@ export const AppRouter = () => {
   const [isLoading, setIsLoading] = useState(true);
   const theme = localStorage.getItem("theme") ? localStorage.getItem("theme") : 'cyberpunk';
   useEffect(() => {
-    if (theme === 'cyberpunk'){
-      document.querySelector("body").style.backgroundImage =
-        "url('./images/wallpaperCyberpunk.jpg')";
-    } else {
-       document.querySelector("body").style.backgroundImage =
-         "url('./images/wallpaperDark.jpg')";
-    }
     const fakeDataFetch = () => {
       setTimeout(() => {
         setIsLoading(false);

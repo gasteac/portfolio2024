@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    
     screens: {
       navGlass: { max: "707px" },
       tablet: "708px",
@@ -21,6 +23,7 @@ export default {
       {
         cyberpunk: {
           ...require("daisyui/src/theming/themes")["cyberpunk"],
+          fontFamily: "Cyberpunk",
           secondary: "#f6d860",
           ".toggle": {
             "border-radius": "100px",
@@ -28,6 +31,7 @@ export default {
         },
         dark: {
           ...require("daisyui/src/theming/themes")["dark"],
+          fontFamily:"Dark",
           secondary: "#4B4A54",
         },
       },
