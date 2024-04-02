@@ -1,5 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-const themeSaved = localStorage.getItem("theme");
+const themeSaved = localStorage.getItem("theme")
+  ? localStorage.getItem("theme")
+  : "cyberpunk";
 export const themeSlice = createSlice({
   name: "theme",
   initialState: {

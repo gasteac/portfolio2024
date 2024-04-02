@@ -10,16 +10,18 @@ export const Navbar = () => {
   const dispatch = useDispatch();
   //con el estado de redux y localhost el manejo el cambio de tema
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "cyberpunk"
   );
   const handleToggle = (e) => {
     dispatch(changeTheme());
     if (e.target.checked) {
       setTheme("dark");
-      console.log(e.target.checked);
+      document.querySelector("body").style.backgroundImage =
+        "url('./images/wallpaperDark.jpg')";
     } else {
       setTheme("cyberpunk");
-      console.log("dark");
+      document.querySelector("body").style.backgroundImage =
+        "url('./images/wallpaperCyberpunk.jpg')";
     }
   };
 
@@ -53,7 +55,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="p-4 w-full fixed top-0 tablet:glass">
+      <nav className="p-4 w-full fixed top-0 tablet:glass z-50">
         <div className="flex justify-end items-center text-xl h-12">
           <input
             onChange={handleCheckboxChange}
@@ -86,8 +88,8 @@ export const Navbar = () => {
               >
                 <img
                   className={`w-14 drop-shadow-2xl ${
-                    theme === "dark"
-                  ? '' : 'rounded-2xl'}`}
+                    theme === "dark" ? "" : "rounded-2xl"
+                  }`}
                   src={
                     theme === "dark"
                       ? "/images/wolfLogo.svg"

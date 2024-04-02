@@ -4,8 +4,15 @@ import { Navbar } from "../components/Navbar";
 import { AboutMePage, ContactPage, HomePage, ProyectsPage } from "../pages";
 export const AppRouter = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const theme = localStorage.getItem("theme");
+  const theme = localStorage.getItem("theme") ? localStorage.getItem("theme") : 'cyberpunk';
   useEffect(() => {
+    if (theme === 'cyberpunk'){
+      document.querySelector("body").style.backgroundImage =
+        "url('./images/wallpaperCyberpunk.jpg')";
+    } else {
+       document.querySelector("body").style.backgroundImage =
+         "url('./images/wallpaperDark.jpg')";
+    }
     const fakeDataFetch = () => {
       setTimeout(() => {
         setIsLoading(false);
@@ -18,10 +25,14 @@ export const AppRouter = () => {
       {isLoading ? (
         <div
           className={`flex justify-center items-center h-screen ${
-            theme === "dark" ? "bg-[#1C232B]" : "bg-[#FFF349]"
+            theme === "dark" ? "bg-[#1C232B]" : "bg-[#FFF349] "
           }`}
         >
-          <span className="loading loading-infinity loading-lg scale-[2]"></span>
+          {theme === "dark" ? (
+            <span className="loading loading-dots loading-lg scale-[2]  text-white"></span>
+          ) : (
+            <span className="loading loading-infinity loading-lg scale-[2] text-black"></span>
+          )}
         </div>
       ) : (
         <>
