@@ -137,7 +137,7 @@ export const Navbar = () => {
             <NavLink
               className={` ${
                 isChecked ? "opacity-100" : "opacity-0"
-              } tablet:hidden font-semibold nav-link nav transition-all ease-linear duration-[200ms] nav-link tablet:opacity-100 tablet:transition-none`}
+              } navlinks duration-[200ms]`}
               to="/home"
             >
               Home
@@ -145,7 +145,7 @@ export const Navbar = () => {
             <NavLink
               className={` ${
                 isChecked ? "opacity-100" : "opacity-0"
-              } font-semibold nav-link nav transition-all ease-linear duration-[600ms] nav-link tablet:opacity-100 tablet:transition-none`}
+              } navlinks duration-[600ms]`}
               to="/about"
             >
               AboutMe
@@ -153,7 +153,7 @@ export const Navbar = () => {
             <NavLink
               className={` ${
                 isChecked ? "opacity-100" : "opacity-0"
-              } font-semibold nav-link transition-all ease-linear duration-[1000ms] nav-link tablet:opacity-100 tablet:transition-none`}
+              } navlinks duration-[1000ms]`}
               to="/proyects"
             >
               Proyects
@@ -161,7 +161,7 @@ export const Navbar = () => {
             <NavLink
               className={` ${
                 isChecked ? "opacity-100" : "opacity-0"
-              } font-semibold nav-link transition-all ease-linear duration-[1400ms] nav-link tablet:opacity-100 tablet:transition-none`}
+              } navlinks duration-[1400ms]`}
               to="/contact"
             >
               Contact

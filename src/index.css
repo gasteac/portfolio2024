@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+.navlinks {
+    @apply font-semibold transition-all ease-linear duration-[600ms] tablet:opacity-100 tablet:transition-none
+}
+
 @font-face  {
   font-family: "Cyberpunk";
   src: url("../public/fonts/cyberpunk.ttf");
@@ -17,7 +20,7 @@
   font-family: "Dark";
   src: url("../public/fonts/dark.ttf");
 }
-}
+
 
 * {
   box-sizing: border-box;
