@@ -6,6 +6,7 @@ export const themeSlice = createSlice({
   name: "theme",
   initialState: {
     theme: themeSaved,
+    isPageLoaded: false,
   },
   reducers: {
     changeTheme: (state) => {
@@ -15,7 +16,10 @@ export const themeSlice = createSlice({
         state.theme = "dark";
       }
     },
+    pageLoaded: (state) =>{
+      state.isPageLoaded = true
+    }
   },
 });
-export const { changeTheme } = themeSlice.actions;
+export const { changeTheme, pageLoaded } = themeSlice.actions;
 

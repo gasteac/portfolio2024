@@ -1,24 +1,31 @@
 import React, { useEffect } from "react";
 import { SliderComponent } from "../components/Slider";
 import "animate.css";
+import { useSelector } from "react-redux";
 export const HomePage = () => {
+  const { isPageLoaded } = useSelector((state) => state.theme);
+  let delayValue = 1;
   useEffect(() => {
     let i;
     let name = new SplitType("#name");
     let rol = new SplitType("#rol");
     let beta = new SplitType("#beta");
-
     let characters = document.querySelectorAll(".char");
     for (i = 0; i < characters.length; i++) {
       characters[i].classList.add("translate-y-full");
     }
+  }, []);
+  useEffect(() => {
+    if (isPageLoaded) {
+      delayValue = 0;
+    }
     gsap.to(".char", {
       y: 0,
       stagger: 0.05,
-      delay: 0.02,
+      delay: 0.02 + delayValue,
       duration: 0,
     });
-  }, []);
+  }, [isPageLoaded]);
 
   return (
     <>
@@ -37,11 +44,13 @@ export const HomePage = () => {
         >
           Full Stack Developer
         </h1>
-
-        <div className="rounded-2xl border-primary flex items-center overflow-hidden border-r-4 border-l-4 h-[80px] tablet:h-[100px] w-[80%] tablet:w-[550px] animate__animated animate__fadeIn animate__delay-1s animate__slower">
+        <div
+          className={`rounded-2xl border-primary flex items-center overflow-hidden border-r-4 border-l-4 h-[80px] tablet:h-[100px] w-[80%] tablet:w-[550px] animate__animated animate__fadeIn animate__delay-${
+            delayValue + 1
+          }s animate__slower`}
+        >
           <SliderComponent />
         </div>
-
         <h3
           id="beta"
           style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
@@ -52,4 +61,4 @@ export const HomePage = () => {
       </div>
     </>
   );
-}
+};
