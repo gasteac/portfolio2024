@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import {
-  darkTheme,
-  cyberpunkTheme,
-  changeTheme,
-} from "../../store/slices/theme/themeSlice";
+import { changeTheme } from "../../store/slices/theme/themeSlice";
 export const Navbar = () => {
   const dispatch = useDispatch();
   //con el estado de redux y localhost el manejo el cambio de tema
@@ -52,7 +48,7 @@ export const Navbar = () => {
   return (
     <>
       <nav className="p-4 w-full fixed top-0 tablet:glass z-50">
-        {theme === "cyberpunk" ? (
+        {/* {theme === "cyberpunk" ? (
           <img
             className="w-[200px] tablet:hidden drop-shadow-lg absolute top-3 left-3"
             src="./icons/cyberpunk.svg"
@@ -64,7 +60,7 @@ export const Navbar = () => {
             src="./icons/dark.svg"
             alt=""
           />
-        )}
+        )} */}
         <div className="flex justify-end items-center text-xl h-12">
           <input
             onChange={handleCheckboxChange}
@@ -85,7 +81,7 @@ export const Navbar = () => {
             className="tablet:hidden"
           ></label>
           <div
-            className="navGlass:bg-secondary navGlass:shadow-2xl links-container transition-right -right-[100%] flex flex-col items-center space-y-14 h-full fixed top-0 z-10 shadow-2xl w-[60%] tablet:space-y-0
+            className="navGlass:bg-secondary navGlass:shadow-2xl links-container transition-right -right-[100%] flex flex-col items-center space-y-14 h-full tablet:max-w-[100%] w-[40%] min-w-[105px] fixed top-0 z-10 shadow-2xl tablet:space-y-0
           tablet:mt-0 tablet:shadow-none tablet:w-[100%] tablet:flex-row tablet:space-x-10 tablet:static"
           >
             <div className="tablet:mr-auto flex items-center justify-center">

@@ -3,9 +3,9 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    
     screens: {
       navGlass: { max: "707px" },
+      400: { max: "400px" },
       tablet: "708px",
       // => @media (min-width: 640px) { ... }
 
@@ -24,6 +24,7 @@ export default {
         cyberpunk: {
           ...require("daisyui/src/theming/themes")["cyberpunk"],
           fontFamily: "Cyberpunk",
+          backgroundColor: "#fff44c",
           secondary: "#f6d860",
           ".toggle": {
             "border-radius": "100px",
@@ -31,8 +32,9 @@ export default {
         },
         dark: {
           ...require("daisyui/src/theming/themes")["dark"],
-          fontFamily:"Dark",
+          fontFamily: "Dark",
           secondary: "#4B4A54",
+          backgroundColor: "black",
         },
       },
     ],

@@ -15,13 +15,7 @@ export const themeSlice = createSlice({
         state.theme = "dark";
       }
     },
-    darkTheme: (state) => {
-      state.theme = "dark";
-    },
-    cyberpunkTheme: (state) => {
-      state.theme = "cyberpunk";
-    },
   },
 });
-export const { changeTheme, darkTheme, cyberpunkTheme } = themeSlice.actions;
+export const { changeTheme } = themeSlice.actions;
 

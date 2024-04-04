@@ -1,0 +1,1 @@
+export {default as gasteacApi} from './gasteacApi'
