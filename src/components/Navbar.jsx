@@ -92,13 +92,9 @@ export const Navbar = () => {
                 to="/"
               >
                 <img
-                  className={`w-14 drop-shadow-2xl ${
-                    theme === "dark" ? "" : "rounded-2xl drop-shadow-xl"
-                  }`}
+                  className="w-12 mr-3"
                   src={
-                    theme === "dark"
-                      ? "/images/wolfLogo.svg"
-                      : "/images/skull.png"
+                    theme === "dark" ? "/icons/GABlack.svg" : "/icons/GA.svg"
                   }
                   alt="wolf icon"
                 />
