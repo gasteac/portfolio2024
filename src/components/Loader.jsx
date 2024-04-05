@@ -9,6 +9,7 @@ const Loader = () => {
     const fakeDataFetch = () => {
       setTimeout(() => {
         setIsLoading(false);
+        document.body.classList.remove("no-scroll");
       }, 1000);
     };
     fakeDataFetch();

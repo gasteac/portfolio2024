@@ -27,13 +27,8 @@
   padding: 0;
 }
 
-body {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* filter: opacity(50%); */
-  height: 100vh;
-  width: auto;
+.no-scroll {
+   overflow: hidden;
 }
 
 ::-webkit-scrollbar {

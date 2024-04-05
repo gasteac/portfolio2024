@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { SliderComponent } from "./Slider";
-import "animate.css";
 import { useSelector } from "react-redux";
 export const Home = () => {
   const { isPageLoaded } = useSelector((state) => state.theme);

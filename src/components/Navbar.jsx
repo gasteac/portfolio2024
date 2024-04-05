@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { changeTheme } from "../../store/slices/theme/themeSlice";
-import { Proyects } from "./Proyects";
-export const Navbar = () => {
+export const Navbar = ({ handleScroll }) => {
   const dispatch = useDispatch();
   //con el estado de redux y localhost el manejo el cambio de tema
   const [theme, setTheme] = useState(
@@ -120,32 +119,25 @@ export const Navbar = () => {
             <a
               className={` ${
                 isChecked ? "opacity-100" : "opacity-0"
-              } navlinks duration-[200ms] cursor-pointer`}
-              to="/home"
+              } navlinks duration-[1000ms] cursor-pointer`}
+              onClick={() => handleScroll("home")}
             >
               Home
             </a>
+
             <a
               className={` ${
                 isChecked ? "opacity-100" : "opacity-0"
-              } navlinks duration-[600ms] cursor-pointer`}
-              to="/about"
+              } navlinks duration-[1000ms] cursor-pointer`}
+              onClick={() => handleScroll("projects")}
             >
-              AboutMe
+              Projects
             </a>
             <a
               className={` ${
                 isChecked ? "opacity-100" : "opacity-0"
               } navlinks duration-[1000ms] cursor-pointer`}
-              to={<Proyects />}
-            >
-              Proyects
-            </a>
-            <a
-              className={` ${
-                isChecked ? "opacity-100" : "opacity-0"
-              } navlinks duration-[1400ms] cursor-pointer`}
-              to="/contact"
+              onClick={() => handleScroll("contact")}
             >
               Contact
             </a>
@@ -161,7 +153,7 @@ export const Navbar = () => {
                     theme === "gasteacDark"
                       ? "bg-black border-black"
                       : "bg-white border-white"
-                  } rounded-[100%] border-4 opacity-70`}
+                  } rounded-[100%] border-4 opacity-70 hover:opacity-100`}
                   src={
                     theme === "gasteacDark"
                       ? "/icons/github.svg"
@@ -187,7 +179,7 @@ export const Navbar = () => {
                     theme === "gasteacDark"
                       ? "bg-white border-black"
                       : "bg-black border-white"
-                  } rounded-[100%] border-4 opacity-70`}
+                  } rounded-[100%] border-4 opacity-70 hover:opacity-100`}
                 />
               </a>
             </div>
