@@ -48,7 +48,7 @@ export const Navbar = ({ handleScroll }) => {
 
   return (
     <>
-      <nav className="p-6 w-full fixed top-0 z-20 tablet:bg-[rgba(0,0,0,0,0.5)] tablet:backdrop-blur-[50px]">
+      <nav className="p-6 w-screen sticky top-0 z-50 tablet:bg-[rgba(0,0,0,0,0.5)] tablet:backdrop-blur-[50px]">
         <div className="flex justify-end items-center text-xl h-8">
           <input
             onChange={handleCheckboxChange}
@@ -59,7 +59,7 @@ export const Navbar = ({ handleScroll }) => {
           />
           <label
             htmlFor="sidebar-active"
-            className="menu-icon z-20 block relative w-[25px] h-full cursor-pointer tablet:hidden"
+            className="menu-icon z-30 block relative w-[25px] h-full cursor-pointer tablet:hidden"
           >
             <span className="absolute top-[55%] -mt-[0.2em] w-full h-[0.2em] rounded-[1px] bg-accent after:bg-accent before:bg-accent"></span>
           </label>
@@ -69,14 +69,14 @@ export const Navbar = ({ handleScroll }) => {
             className="tablet:hidden z-10"
           ></label>
           <div
-            className="navGlass:bg-primary navGlass:glass links-container transition-right -right-[100%] flex flex-col items-center space-y-14 h-screen tablet:max-w-[100%] w-[40%] min-w-[105px] fixed top-0 z-10 shadow-2xl tablet:space-y-0
+            className="navGlass:bg-base navGlass:shadow-2xl navGlass:glass links-container transition-right -right-[100%] flex flex-col items-center space-y-16 h-full tablet:max-w-[100%] w-[50%] min-w-[105px] fixed top-0 z-10 shadow-2xl tablet:space-y-0
           tablet:mt-0 tablet:shadow-none tablet:w-[100%] tablet:flex-row tablet:space-x-10 tablet:static"
           >
             <div className="tablet:mr-auto flex items-center justify-center">
               <a
                 className={` ${
                   isChecked ? "opacity-100" : "opacity-0"
-                } socials tablet:block hidden font-semibold  nav-link  tablet:opacity-100 tablet:transition-none`}
+                } socials tablet:block hidden font-semibold nav-link tablet:opacity-100 tablet:transition-none`}
                 to="/"
               >
                 <img
@@ -141,11 +141,11 @@ export const Navbar = ({ handleScroll }) => {
             >
               Contact
             </a>
-            <div className="navGlass:block  navGlass:opacity-80 tablet:flex items-center justify-center space-x-2">
+            <div className="navGlass:block navGlass:opacity-80 tablet:flex items-center justify-center space-x-2">
               <a
                 href="https://github.com/gasteac"
                 target="_blank"
-                className="socials hover:drop-shadow-xl"
+                className="socials"
               >
                 <img
                   width={"50px"}
@@ -153,7 +153,7 @@ export const Navbar = ({ handleScroll }) => {
                     theme === "gasteacDark"
                       ? "bg-black border-black"
                       : "bg-white border-white"
-                  } rounded-[100%] border-4 opacity-70 hover:opacity-100`}
+                  } rounded-[100%] border-4 opacity-85 hover:opacity-100`}
                   src={
                     theme === "gasteacDark"
                       ? "/icons/github.svg"
@@ -165,7 +165,7 @@ export const Navbar = ({ handleScroll }) => {
               <a
                 href="https://www.linkedin.com/in/gasteac/"
                 target="_blank"
-                className="socials hover:drop-shadow-xl "
+                className="socials"
               >
                 <img
                   width={"50px"}
@@ -179,7 +179,7 @@ export const Navbar = ({ handleScroll }) => {
                     theme === "gasteacDark"
                       ? "bg-white border-black"
                       : "bg-black border-white"
-                  } rounded-[100%] border-4 opacity-70 hover:opacity-100`}
+                  } rounded-[100%] border-4 opacity-85 hover:opacity-100`}
                 />
               </a>
             </div>

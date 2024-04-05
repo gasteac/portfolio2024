@@ -27,47 +27,32 @@ export const SliderComponent = () => {
 
   const { theme } = useSelector((state) => state.theme);
   return (
-    <Slider
-      className="slider w-[60px] tablet:w-[100px]"
-      width={xvariation}
-      duration={10}
-      pauseOnHover={true}
-    >
-      <Slider.Slide>
-        <a href="https://react.dev/" target="_blank" rel="noreferrer">
+    <div className="animate__animated animate__fadeIn animate__slower animate__delay-5s rounded-2xl border-accent flex items-center overflow-hidden border-r-8 border-l-8 max-w-[80%] w-[300px] tablet:max-w-[70%] tablet:w-[450px]">
+      <Slider width={xvariation} duration={15}>
+        <Slider.Slide>
           <img
-            className="w-[50px] h-[50px] tablet:w-[80px] tablet:h-[80px] flex items-center justify-center"
+            className="w-[50px] h-[50px] tablet:w-[auto] tablet:h-[60px] flex items-center justify-center"
             src="/icons/react.svg"
             alt="react"
           />
-        </a>
-      </Slider.Slide>
-      <Slider.Slide>
-        <a href="https://nodejs.org/en" target="_blank" rel="noreferrer">
+        </Slider.Slide>
+        <Slider.Slide>
           <img
-            className="w-[45px] h-[auto] tablet:w-[75px] tablet:h-[auto] flex items-center justify-center"
+            className="w-[45px] h-[auto] tablet:w-[55px] tablet:h-[auto] flex items-center justify-center"
             src="/icons/nodejs.svg"
             alt="nodejs"
           />
-        </a>
-      </Slider.Slide>
-      <Slider.Slide>
-        <a href="https://flutter.dev/" target="_blank" rel="noreferrer">
+        </Slider.Slide>
+        <Slider.Slide>
           <img
-            className="w-[50px] h-[50px] tablet:w-[80px] tablet:h-[80px] flex items-center justify-center"
+            className="w-[50px] h-[50px] tablet:w-[auto] tablet:h-[60px] flex items-center justify-center"
             src="/icons/flutter.svg"
             alt="flutter"
           />
-        </a>
-      </Slider.Slide>
-      <Slider.Slide>
-        <a
-          href="https://developer.mozilla.org/es/docs/Web/JavaScript"
-          target="_blank"
-          rel="noreferrer"
-        >
+        </Slider.Slide>
+        <Slider.Slide>
           <img
-            className="w-[50px] rounded-xl h-[50px] tablet:w-[80px] tablet:h-[80px] flex items-center justify-center"
+            className="w-[50px] rounded-xl h-[50px] tablet:w-[auto] tablet:h-[60px] flex items-center justify-center"
             src={
               theme === "gasteacDark"
                 ? "/icons/javascript.svg"
@@ -75,34 +60,24 @@ export const SliderComponent = () => {
             }
             alt="javascript"
           />
-        </a>
-      </Slider.Slide>
-      <Slider.Slide>
-        <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+        </Slider.Slide>
+        <Slider.Slide>
           <img
-            className="w-[50px] h-[60px] tablet:w-[80px] tablet:h-[80px] flex items-center justify-center"
+            className="tablet:ml-4 w-[50px] h-[60px] tablet:w-[auto] tablet:h-[60px] flex items-center justify-center"
             src="/icons/mongodb.svg"
             alt="mongodb"
           />
-        </a>
-      </Slider.Slide>
-      <Slider.Slide>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
-          target="_blank"
-          rel="noreferrer"
-        >
+        </Slider.Slide>
+        <Slider.Slide>
           <img
-            className="w-[50px] h-[50px] tablet:w-[80px] tablet:h-[80px] flex items-center justify-center"
+            className="w-[50px] h-[50px] tablet:w-[auto] tablet:h-[60px] flex items-center justify-center"
             src="/icons/html5.svg"
             alt="html5"
           />
-        </a>
-      </Slider.Slide>
-      <Slider.Slide>
-        <a href="https://github.com/" target="_blank" rel="noreferrer">
+        </Slider.Slide>
+        <Slider.Slide>
           <img
-            className="w-[52px] h-[52px] tablet:w-[82px] tablet:h-[82px] flex items-center justify-center"
+            className="w-[52px] h-[52px] tablet:w-[62px] tablet:h-[62px] flex items-center justify-center"
             src={
               theme === "gasteacDark"
                 ? "/icons/github.svg"
@@ -110,39 +85,25 @@ export const SliderComponent = () => {
             }
             alt="github"
           />
-        </a>
-      </Slider.Slide>
-      <Slider.Slide>
-        <a
-          style={{ clipPath: "polygon(0 0, 100% 0, 100% 85%, 0% 85%)" }}
-          href="https://www.python.org/community/logos/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        </Slider.Slide>
+        <Slider.Slide>
           <img
-            className="w-[50px] shadow-2xl h-[auto] tablet:w-[80px] tablet:h-[auto] mt-5 flex items-center justify-center"
+            style={{ clipPath: "polygon(0 0, 100% 0, 100% 85%, 0% 85%)" }}
+            className="w-[50px] h-[auto] tablet:w-[60px] tablet:h-[auto] mt-3 flex items-center justify-center"
             src="/icons/python.svg"
             alt="python"
           />
-        </a>
-      </Slider.Slide>
-      <Slider.Slide>
-        <a
-          href="https://developer.mozilla.org/es/docs/Web/CSS"
-          target="_blank"
-          rel="noreferrer"
-        >
+        </Slider.Slide>
+        <Slider.Slide>
           <img
-            className="w-[50px] h-[50px] tablet:w-[80px] tablet:h-[80px] flex items-center justify-center"
+            className="w-[50px] h-[50px] tablet:w-[auto] tablet:h-[60px] flex items-center justify-center"
             src="/icons/css.svg"
             alt="css"
           />
-        </a>
-      </Slider.Slide>
-      <Slider.Slide>
-        <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+        </Slider.Slide>
+        <Slider.Slide>
           <img
-            className="w-[50px] h-[50px] tablet:w-[80px] tablet:h-[80px] flex items-center justify-center"
+            className="w-[50px] h-[50px] tablet:w-[auto] tablet:h-[60px] flex items-center justify-center"
             src={
               theme === "gasteacDark"
                 ? "/icons/mysql.svg"
@@ -150,8 +111,8 @@ export const SliderComponent = () => {
             }
             alt="mysql"
           />
-        </a>
-      </Slider.Slide>
-    </Slider>
+        </Slider.Slide>
+      </Slider>
+    </div>
   );
 };

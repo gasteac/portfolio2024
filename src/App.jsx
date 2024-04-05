@@ -1,10 +1,15 @@
-import React, { useRef } from 'react'
-import { Contact, Home, Navbar, Projects } from './components'
-import Loader from './components/Loader'
+import React, { useEffect, useRef } from "react";
+import { Contact, Home, Navbar, Projects } from "./components";
+import Loader from "./components/Loader";
 import "animate.css";
-  
 
 const App = () => {
+  useEffect(() => {
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+  }, []);
+
   const homeRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
@@ -25,21 +30,20 @@ const App = () => {
   };
   return (
     <>
-      <Loader />
+      <div ref={homeRef}>
+        <Loader />
+      </div>
       <Navbar handleScroll={handleScroll} />
-      <div className="relative max-w-[1300px] mx-auto desktop:p-[1.5rem]">
-        <div ref={homeRef}>
-          <Home />
-        </div>
-        <div ref={projectsRef}>
-          <Projects />
-        </div>
-        <div ref={contactRef}>
-          <Contact />
-        </div>
+
+      <Home />
+      <div ref={projectsRef}>
+        <Projects />
+      </div>
+      <div ref={contactRef}>
+        <Contact />
       </div>
     </>
   );
-}
+};
 
-export default App
+export default App;

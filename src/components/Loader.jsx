@@ -23,14 +23,14 @@ const Loader = () => {
     <>
       {isLoading && (
         <div
-          className={` align-middle justify-center items-center${
+          className={`align-middle justify-center items-center h-full w-full${
             theme === "gasteacDark" ? "bg-[#1f2937]" : "bg-[#f3f4f6] "
           }`}
         >
-          {theme === "gasteacDark" ? (
-            <span className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] loading loading-infinity loading-lg scale-[3] text-white"></span>
-          ) : (
+          {theme === "gasteacLight" ? (
             <span className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] loading loading-infinity loading-lg scale-[3] text-black"></span>
+          ) : (
+            <span className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] loading loading-infinity loading-lg scale-[3] text-white"></span>
           )}
         </div>
       )}

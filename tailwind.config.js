@@ -5,7 +5,11 @@ export default {
   theme: {
     screens: {
       navGlass: { max: "707px" },
-      400: { max: "400px" },
+
+  
+
+      phone: "500px",
+ 
       tablet: "708px",
       // => @media (min-width: 640px) { ... }
 
@@ -22,7 +26,9 @@ export default {
     themes: [
       {
         gasteacDark: {
-          fontFamily: "Dark",
+          color: "white",
+          fontFamily: "Poppins",
+          fontWeight: 700,
           primary: "#164e63",
           secondary: "#115e59",
           accent: "#f3f4f6",
@@ -34,7 +40,9 @@ export default {
           error: "#991b1b",
         },
         gasteacLight: {
-          fontFamily: "Dark",
+          color: "black",
+          fontFamily: "Poppins",
+          fontWeight: 700,
           primary: "#0d9488",
           secondary: "#14b8a6",
           accent: "#111827",
