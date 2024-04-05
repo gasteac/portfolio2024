@@ -53,7 +53,7 @@ export const HomePage = () => {
           Full Stack Developer
         </h1>
         <div
-          className={`rounded-2xl border-accent flex items-center overflow-hidden border-r-8 border-l-8 h-[80px] tablet:h-[100px] w-[80%] tablet:w-[550px] animate__animated animate__delay-${delayValue}s ${
+          className={`rounded-2xl border-accent flex items-center overflow-hidden border-r-8 border-l-8 h-[80px] tablet:h-[100px] w-[80%] tablet:w-[550px] animate__animated animate__delay-${delayValue+1}s ${
             !isPageLoaded && "animate__fadeIn animate__slower"
           }`}
         >

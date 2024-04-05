@@ -17,9 +17,9 @@ export const AppRouter = () => {
     fakeDataFetch();
   }, []);
   useEffect(() => {
-      setTimeout(() => {
-        dispatch(pageLoaded());
-      }, 5000);
+    setTimeout(() => {
+      dispatch(pageLoaded());
+    }, 5000);
   }, []);
   return (
     <>
@@ -38,10 +38,6 @@ export const AppRouter = () => {
       )}
 
       <Navbar />
-      <HomePage />
-      <AboutMePage />
-      <ProyectsPage />
-      <ContactPage />
       <Routes>
         <Route path="/*" element={<HomePage />} />
         <Route path="/about" element={<AboutMePage />} />

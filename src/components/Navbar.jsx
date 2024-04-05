@@ -6,12 +6,13 @@ export const Navbar = () => {
   const dispatch = useDispatch();
   //con el estado de redux y localhost el manejo el cambio de tema
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "gasteacDark"
+    localStorage.getItem("theme")
+      ? localStorage.getItem("theme")
+      : "gasteacDark"
   );
   const handleToggle = (e) => {
     dispatch(changeTheme());
     if (e.target.checked) {
-      
       setTheme("gasteacLight");
     } else {
       setTheme("gasteacDark");
@@ -61,7 +62,7 @@ export const Navbar = () => {
             htmlFor="sidebar-active"
             className="menu-icon z-20 block relative w-[25px] h-full cursor-pointer tablet:hidden"
           >
-            <span className="block absolute top-[55%] -mt-[0.2em] w-full h-[0.2em] rounded-[1px] bg-accent after:bg-accent before:bg-accent"></span>
+            <span className="absolute top-[55%] -mt-[0.2em] w-full h-[0.2em] rounded-[1px] bg-accent after:bg-accent before:bg-accent"></span>
           </label>
           <label
             id="overlay"
@@ -76,7 +77,7 @@ export const Navbar = () => {
               <NavLink
                 className={` ${
                   isChecked ? "opacity-100" : "opacity-0"
-                } wolfIcon tablet:block hidden font-semibold  nav-link  tablet:opacity-100 tablet:transition-none`}
+                } socials tablet:block hidden font-semibold  nav-link  tablet:opacity-100 tablet:transition-none`}
                 to="/"
               >
                 <img
@@ -148,8 +149,46 @@ export const Navbar = () => {
             >
               Contact
             </NavLink>
+            <div className="flex items-center justify-center space-x-4 flex-wrap">
+              <a
+                href="https://github.com/gasteac"
+                target="_blank"
+                className="socials hover:drop-shadow-xl hover:scale-[1.05] transition-all"
+              >
+                <img
+                  width={"50px"}
+                  className={`${
+                    theme === "gasteacDark" ? "bg-black" : "bg-white"
+                  } rounded-[100%] `}
+                  src={
+                    theme === "gasteacDark"
+                      ? "/icons/github.svg"
+                      : "/icons/githubBlack.svg"
+                  }
+                  alt="github"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/gasteac/"
+                target="_blank"
+                className="socials hover:drop-shadow-xl hover:scale-[1.05] transition-all"
+              >
+                <img
+                  width={"50px"}
+                  src={
+                    theme === "gasteacDark"
+                      ? "/icons/linkedinBlack.svg"
+                      : "/icons/linkedin.svg"
+                  }
+                  alt="linkedin"
+                  className={`${
+                    theme === "gasteacDark" ? "bg-white" : "bg-black"
+                  } rounded-[100%] `}
+                />
+              </a>
+            </div>
+
             <label className="swap swap-rotate tablet:hidden">
-              {/* this hidden checkbox controls the state */}
               <input
                 type="checkbox"
                 className="theme-controller"
@@ -157,7 +196,6 @@ export const Navbar = () => {
                 checked={theme === "gasteacDark" ? false : true}
               />
 
-              {/* sun icon */}
               <svg
                 className="swap-off fill-current w-10 h-10"
                 xmlns="http://www.w3.org/2000/svg"
