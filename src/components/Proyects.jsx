@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "animate.css";
-export const ProyectsPage = () => {
+export const Proyects = () => {
   const { theme } = useSelector((state) => state.theme);
   return (
     <>

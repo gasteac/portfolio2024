@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import { SliderComponent } from "../components/Slider";
+import { SliderComponent } from "./Slider";
 import "animate.css";
 import { useSelector } from "react-redux";
-export const HomePage = () => {
+export const Home = () => {
   const { isPageLoaded } = useSelector((state) => state.theme);
   let delayValue = 1;
   let delayAbout = 3;
@@ -52,13 +52,6 @@ export const HomePage = () => {
         >
           Full Stack Developer
         </h1>
-        <div
-          className={`rounded-2xl border-accent flex items-center overflow-hidden border-r-8 border-l-8 h-[80px] tablet:h-[100px] w-[80%] tablet:w-[550px] animate__animated animate__delay-${delayValue+1}s ${
-            !isPageLoaded && "animate__fadeIn animate__slower"
-          }`}
-        >
-          <SliderComponent />
-        </div>
         <h3
           id="beta"
           style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
@@ -66,6 +59,13 @@ export const HomePage = () => {
         >
           Beta version 1.0.
         </h3>
+        <div
+          className={`rounded-2xl border-accent flex items-center overflow-hidden border-r-8 border-l-8 h-[80px] tablet:h-[100px] w-[80%] tablet:w-[550px] animate__animated animate__delay-${
+            delayValue + 2
+          }s ${!isPageLoaded && "animate__fadeIn animate__slower"}`}
+        >
+          <SliderComponent />
+        </div>
       </div>
     </>
   );

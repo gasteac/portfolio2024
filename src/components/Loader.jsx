@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
-import { Navbar } from "../components/Navbar";
-import { AboutMePage, ContactPage, HomePage, ProyectsPage } from "../pages";
 import { useDispatch, useSelector } from "react-redux";
 import { pageLoaded } from "../../store/slices/theme/themeSlice";
-export const AppRouter = () => {
+const Loader = () => {
   const dispatch = useDispatch();
   const { theme } = useSelector((state) => state.theme);
   const [isLoading, setIsLoading] = useState(true);
@@ -36,14 +33,8 @@ export const AppRouter = () => {
           )}
         </div>
       )}
-
-      <Navbar />
-      <Routes>
-        <Route path="/*" element={<HomePage />} />
-        <Route path="/about" element={<AboutMePage />} />
-        <Route path="/proyects" element={<ProyectsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
     </>
   );
 };
+
+export default Loader;

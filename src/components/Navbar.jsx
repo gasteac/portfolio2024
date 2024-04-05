@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { changeTheme } from "../../store/slices/theme/themeSlice";
+import { Proyects } from "./Proyects";
 export const Navbar = () => {
   const dispatch = useDispatch();
   //con el estado de redux y localhost el manejo el cambio de tema
@@ -49,7 +49,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="p-4 w-full fixed top-0 z-20 tablet:bg-[rgba(0,0,0,0,0.5)] tablet:backdrop-blur-[50px]">
+      <nav className="p-6 w-full fixed top-0 z-20 tablet:bg-[rgba(0,0,0,0,0.5)] tablet:backdrop-blur-[50px]">
         <div className="flex justify-end items-center text-xl h-8">
           <input
             onChange={handleCheckboxChange}
@@ -74,7 +74,7 @@ export const Navbar = () => {
           tablet:mt-0 tablet:shadow-none tablet:w-[100%] tablet:flex-row tablet:space-x-10 tablet:static"
           >
             <div className="tablet:mr-auto flex items-center justify-center">
-              <NavLink
+              <a
                 className={` ${
                   isChecked ? "opacity-100" : "opacity-0"
                 } socials tablet:block hidden font-semibold  nav-link  tablet:opacity-100 tablet:transition-none`}
@@ -89,7 +89,7 @@ export const Navbar = () => {
                   }
                   alt="wolf icon"
                 />
-              </NavLink>
+              </a>
               <label className="swap-rotate hidden tablet:swap">
                 <input
                   type="checkbox"
@@ -117,49 +117,51 @@ export const Navbar = () => {
                 </svg>
               </label>
             </div>
-            <NavLink
+            <a
               className={` ${
                 isChecked ? "opacity-100" : "opacity-0"
-              } navlinks duration-[200ms]`}
+              } navlinks duration-[200ms] cursor-pointer`}
               to="/home"
             >
               Home
-            </NavLink>
-            <NavLink
+            </a>
+            <a
               className={` ${
                 isChecked ? "opacity-100" : "opacity-0"
-              } navlinks duration-[600ms]`}
+              } navlinks duration-[600ms] cursor-pointer`}
               to="/about"
             >
               AboutMe
-            </NavLink>
-            <NavLink
+            </a>
+            <a
               className={` ${
                 isChecked ? "opacity-100" : "opacity-0"
-              } navlinks duration-[1000ms]`}
-              to="/proyects"
+              } navlinks duration-[1000ms] cursor-pointer`}
+              to={<Proyects />}
             >
               Proyects
-            </NavLink>
-            <NavLink
+            </a>
+            <a
               className={` ${
                 isChecked ? "opacity-100" : "opacity-0"
-              } navlinks duration-[1400ms]`}
+              } navlinks duration-[1400ms] cursor-pointer`}
               to="/contact"
             >
               Contact
-            </NavLink>
-            <div className="flex items-center justify-center space-x-4 flex-wrap">
+            </a>
+            <div className="navGlass:block  navGlass:opacity-80 tablet:flex items-center justify-center space-x-2">
               <a
                 href="https://github.com/gasteac"
                 target="_blank"
-                className="socials hover:drop-shadow-xl hover:scale-[1.05] transition-all"
+                className="socials hover:drop-shadow-xl"
               >
                 <img
                   width={"50px"}
                   className={`${
-                    theme === "gasteacDark" ? "bg-black" : "bg-white"
-                  } rounded-[100%] `}
+                    theme === "gasteacDark"
+                      ? "bg-black border-black"
+                      : "bg-white border-white"
+                  } rounded-[100%] border-4 opacity-70`}
                   src={
                     theme === "gasteacDark"
                       ? "/icons/github.svg"
@@ -171,7 +173,7 @@ export const Navbar = () => {
               <a
                 href="https://www.linkedin.com/in/gasteac/"
                 target="_blank"
-                className="socials hover:drop-shadow-xl hover:scale-[1.05] transition-all"
+                className="socials hover:drop-shadow-xl "
               >
                 <img
                   width={"50px"}
@@ -182,8 +184,10 @@ export const Navbar = () => {
                   }
                   alt="linkedin"
                   className={`${
-                    theme === "gasteacDark" ? "bg-white" : "bg-black"
-                  } rounded-[100%] `}
+                    theme === "gasteacDark"
+                      ? "bg-white border-black"
+                      : "bg-black border-white"
+                  } rounded-[100%] border-4 opacity-70`}
                 />
               </a>
             </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "animate.css";
-export const ContactPage = () => {
+export const Contact = () => {
   const { theme } = useSelector((state) => state.theme);
   return (
     <>
