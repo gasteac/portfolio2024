@@ -9,9 +9,7 @@ export const ProyectsPage = () => {
         <h1 className="text-5xl tablet:text-7xl ">
           PROYECTS
         </h1>
-        <h1 className="text-3xl tablet:text-4xl ">
-          {theme === "cyberpunk" ? "CYBERPUNK THEME" : "DARK THEME"}
-        </h1>
+        
       </div>
     </>
   );

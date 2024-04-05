@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 export const HomePage = () => {
   const { isPageLoaded } = useSelector((state) => state.theme);
   let delayValue = 1;
+  let delayAbout = 3;
   useEffect(() => {
     let i;
     let name = new SplitType("#name");
@@ -18,6 +19,13 @@ export const HomePage = () => {
   useEffect(() => {
     if (isPageLoaded) {
       delayValue = 0;
+      delayAbout = 0;
+      gsap.to(".char", {
+        y: 0,
+        stagger: 0,
+        delay: 0,
+        duration: 0,
+      });
     }
     gsap.to(".char", {
       y: 0,
@@ -29,7 +37,7 @@ export const HomePage = () => {
 
   return (
     <>
-      <div className="flex px-2 h-[100vh] justify-center items-center flex-col overflow-hidden space-y-4">
+      <div className="flex h-screen px-2 justify-center items-center flex-col overflow-hidden space-y-4">
         <h1
           style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
           id="name"
@@ -40,14 +48,14 @@ export const HomePage = () => {
         <h1
           id="rol"
           style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
-          className="text-3xl tablet:text-5xl text-nowrap"
+          className="text-3xl tablet:text-4xl text-nowrap"
         >
           Full Stack Developer
         </h1>
         <div
-          className={`rounded-2xl border-primary flex items-center overflow-hidden border-r-4 border-l-4 h-[80px] tablet:h-[100px] w-[80%] tablet:w-[550px] animate__animated animate__fadeIn animate__delay-${
-            delayValue + 1
-          }s animate__slower`}
+          className={`rounded-2xl border-accent flex items-center overflow-hidden border-r-8 border-l-8 h-[80px] tablet:h-[100px] w-[80%] tablet:w-[550px] animate__animated animate__delay-${delayValue}s ${
+            !isPageLoaded && "animate__fadeIn animate__slower"
+          }`}
         >
           <SliderComponent />
         </div>

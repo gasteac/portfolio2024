@@ -6,14 +6,15 @@ export const Navbar = () => {
   const dispatch = useDispatch();
   //con el estado de redux y localhost el manejo el cambio de tema
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "cyberpunk"
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "gasteacDark"
   );
   const handleToggle = (e) => {
     dispatch(changeTheme());
     if (e.target.checked) {
-      setTheme("dark");
+      
+      setTheme("gasteacLight");
     } else {
-      setTheme("cyberpunk");
+      setTheme("gasteacDark");
     }
   };
 
@@ -47,21 +48,8 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="p-4 w-full fixed top-0 tablet:glass z-50">
-        {/* {theme === "cyberpunk" ? (
-          <img
-            className="w-[200px] tablet:hidden drop-shadow-lg absolute top-3 left-3"
-            src="./icons/cyberpunk.svg"
-            alt=""
-          />
-        ) : (
-          <img
-            className="w-[250px] tablet:hidden drop-shadow-lg absolute top-2 -left-3"
-            src="./icons/dark.svg"
-            alt=""
-          />
-        )} */}
-        <div className="flex justify-end items-center text-xl h-12">
+      <nav className="p-4 w-full fixed top-0 z-20 tablet:bg-[rgba(0,0,0,0,0.5)] tablet:backdrop-blur-[50px]">
+        <div className="flex justify-end items-center text-xl h-8">
           <input
             onChange={handleCheckboxChange}
             checked={isChecked}
@@ -73,15 +61,15 @@ export const Navbar = () => {
             htmlFor="sidebar-active"
             className="menu-icon z-20 block relative w-[25px] h-full cursor-pointer tablet:hidden"
           >
-            <span className="block absolute top-[55%] -mt-[0.2em] w-full h-[0.2em] rounded-[1px] bg-primary after:bg-primary before:bg-primary"></span>
+            <span className="block absolute top-[55%] -mt-[0.2em] w-full h-[0.2em] rounded-[1px] bg-accent after:bg-accent before:bg-accent"></span>
           </label>
           <label
             id="overlay"
             onClick={() => handleReset()}
-            className="tablet:hidden"
+            className="tablet:hidden z-10"
           ></label>
           <div
-            className="navGlass:bg-secondary navGlass:shadow-2xl links-container transition-right -right-[100%] flex flex-col items-center space-y-14 h-full tablet:max-w-[100%] w-[40%] min-w-[105px] fixed top-0 z-10 shadow-2xl tablet:space-y-0
+            className="navGlass:bg-primary navGlass:glass links-container transition-right -right-[100%] flex flex-col items-center space-y-14 h-screen tablet:max-w-[100%] w-[40%] min-w-[105px] fixed top-0 z-10 shadow-2xl tablet:space-y-0
           tablet:mt-0 tablet:shadow-none tablet:w-[100%] tablet:flex-row tablet:space-x-10 tablet:static"
           >
             <div className="tablet:mr-auto flex items-center justify-center">
@@ -94,7 +82,9 @@ export const Navbar = () => {
                 <img
                   className="w-12 mr-3"
                   src={
-                    theme === "dark" ? "/icons/GABlack.svg" : "/icons/GA.svg"
+                    theme === "gasteacDark"
+                      ? "/icons/GABlack.svg"
+                      : "/icons/GA.svg"
                   }
                   alt="wolf icon"
                 />
@@ -104,7 +94,7 @@ export const Navbar = () => {
                   type="checkbox"
                   className="theme-controller"
                   onChange={handleToggle}
-                  checked={theme === "dark" ? true : false}
+                  checked={theme === "gasteacDark" ? false : true}
                 />
 
                 {/* sun icon */}
@@ -164,7 +154,7 @@ export const Navbar = () => {
                 type="checkbox"
                 className="theme-controller"
                 onChange={handleToggle}
-                checked={theme === "dark" ? true : false}
+                checked={theme === "gasteacDark" ? false : true}
               />
 
               {/* sun icon */}

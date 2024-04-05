@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-infinite-logo-slider";
 import { useSelector } from "react-redux";
 export const SliderComponent = () => {
-  const { theme } = useSelector((state) => state.theme)
+  const [xvariation, setXvariation] = useState('120px');
+
+  useEffect(() => {
+      if (window.innerWidth <= 708) {
+        setXvariation("70px");
+      }
+      if (window.innerWidth >= 708) {
+        setXvariation("120px");
+      }
+    function handleResize() {
+      if (window.innerWidth <= 708) {
+        setXvariation("70px");
+      }
+      if (window.innerWidth >= 708) {
+        setXvariation("120px");
+      }
+    }
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const { theme } = useSelector((state) => state.theme);
   return (
     <Slider
       className="slider w-[60px] tablet:w-[100px]"
-      width="120px"
+      width={xvariation}
       duration={10}
       pauseOnHover={true}
     >
@@ -46,7 +69,7 @@ export const SliderComponent = () => {
           <img
             className="w-[50px] rounded-xl h-[50px] tablet:w-[80px] tablet:h-[80px] flex items-center justify-center"
             src={
-              theme === "dark"
+              theme === "gasteacDark"
                 ? "/icons/javascript.svg"
                 : "/icons/javascriptBlack.svg"
             }
@@ -81,7 +104,9 @@ export const SliderComponent = () => {
           <img
             className="w-[52px] h-[52px] tablet:w-[82px] tablet:h-[82px] flex items-center justify-center"
             src={
-              theme === "dark" ? "/icons/github.svg" : "/icons/githubBlack.svg"
+              theme === "gasteacDark"
+                ? "/icons/github.svg"
+                : "/icons/githubBlack.svg"
             }
             alt="github"
           />
@@ -119,7 +144,9 @@ export const SliderComponent = () => {
           <img
             className="w-[50px] h-[50px] tablet:w-[80px] tablet:h-[80px] flex items-center justify-center"
             src={
-              theme === "dark" ? "/icons/mysql.svg" : "/icons/mysqlBlack.svg"
+              theme === "gasteacDark"
+                ? "/icons/mysql.svg"
+                : "/icons/mysqlBlack.svg"
             }
             alt="mysql"
           />

@@ -12,43 +12,42 @@ export const AppRouter = () => {
     const fakeDataFetch = () => {
       setTimeout(() => {
         setIsLoading(false);
-        dispatch(pageLoaded())
       }, 1000);
     };
     fakeDataFetch();
+  }, []);
+  useEffect(() => {
+      setTimeout(() => {
+        dispatch(pageLoaded());
+      }, 5000);
   }, []);
   return (
     <>
       {isLoading && (
         <div
-          className={`flex justify-center items-center h-screen ${
-            theme === "dark" ? "bg-[#1C232B]" : "bg-[#FFF349] "
+          className={` align-middle justify-center items-center${
+            theme === "gasteacDark" ? "bg-[#1f2937]" : "bg-[#f3f4f6] "
           }`}
         >
-          {theme === "dark" ? (
-            <span className="loading loading-dots loading-lg scale-[2]  text-white"></span>
+          {theme === "gasteacDark" ? (
+            <span className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] loading loading-infinity loading-lg scale-[3] text-white"></span>
           ) : (
-            <span className="loading loading-infinity loading-lg scale-[2] text-black"></span>
+            <span className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] loading loading-infinity loading-lg scale-[3] text-black"></span>
           )}
         </div>
       )}
 
-      <Navbar/>
+      <Navbar />
+      <HomePage />
+      <AboutMePage />
+      <ProyectsPage />
+      <ContactPage />
       <Routes>
         <Route path="/*" element={<HomePage />} />
         <Route path="/about" element={<AboutMePage />} />
         <Route path="/proyects" element={<ProyectsPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
-      {theme === "cyberpunk" ? (
-        <h1 className="select-none 400:hidden opacity-50 flex text-2xl fixed bottom-3 right-5">
-          CYBERPUNK
-        </h1>
-      ) : (
-        <h1 className="select-none 400:hidden opacity-50 flex text-3xl fixed bottom-3 right-5">
-          DARK THEME
-        </h1>
-      )}
     </>
   );
 };

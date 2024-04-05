@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .navlinks {
-    @apply font-semibold transition-all ease-linear duration-[600ms] tablet:opacity-100 tablet:transition-none
+  @apply font-semibold transition-all ease-linear duration-[600ms] tablet:opacity-100 tablet:transition-none;
 }
 
-@font-face  {
+@font-face {
   font-family: "Cyberpunk";
   src: url("../public/fonts/cyberpunk.ttf");
 }
@@ -21,15 +21,13 @@
   src: url("../public/fonts/dark.ttf");
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
-
+body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -91,13 +89,12 @@ body{
 .menu-icon > span:after {
   -webkit-transform: translateY(0.5em);
   transform: translateY(0.5em);
-  
 }
 #sidebar-active:checked ~ .menu-icon {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-#sidebar-active:checked ~ .menu-icon > span:before{
+#sidebar-active:checked ~ .menu-icon > span:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -111,7 +108,7 @@ body{
     @apply relative tracking-[1px];
   }
   .links-container a:not(.wolfIcon)::after {
-    @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-1 rounded-full duration-300;
+    @apply content-[''] absolute bg-accent h-[3px] w-[0%] left-0 -bottom-1 rounded-full duration-300;
   }
   .links-container a:not(.wolfIcon)::after:hover {
     @apply w-[100%];

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 const themeSaved = localStorage.getItem("theme")
   ? localStorage.getItem("theme")
-  : "cyberpunk";
+  : "gasteacBlack";
 export const themeSlice = createSlice({
   name: "theme",
   initialState: {
@@ -10,10 +10,10 @@ export const themeSlice = createSlice({
   },
   reducers: {
     changeTheme: (state) => {
-      if (state.theme === "dark") {
-        state.theme = "cyberpunk";
+      if (state.theme === "gasteacDark") {
+        state.theme = "gasteacLight";
       } else {
-        state.theme = "dark";
+        state.theme = "gasteacDark";
       }
     },
     pageLoaded: (state) =>{

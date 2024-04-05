@@ -5,7 +5,7 @@ export const AboutMePage = () => {
   const { theme } = useSelector((state) => state.theme);
   return (
     <>
-      <div className="flex px-2 h-[100vh] justify-center items-center flex-col overflow-hidden animate__animated animate__fadeIn space-y-4">
+      <div className="flex px-2 h-[full] justify-center items-center flex-col overflow-hidden animate__animated animate__fadeIn space-y-4">
         <h1 className="text-5xl tablet:text-7xl">ABOUT ME</h1>
         <h1 className="tablet:text-2xl p-2 max-w-screen-tablet text-justify">
           Hello! I'm a soon-to-be graduate from the Information Systems
