@@ -25,7 +25,7 @@ export default {
       {
         gasteacDark: {
           background:
-            "linear-gradient(128deg, rgba(20,50,57,1) 0%, rgba(8,57,56,1) 47%, rgba(0,57,53,1) 100%)",
+            "linear-gradient(128deg, rgba(20,50,57,1) 0%, rgba(13,74,73,1) 47%, rgba(2,70,65,1) 100%)",
           color: "white",
           fontFamily: "Poppins",
           primary: "#164e63",
