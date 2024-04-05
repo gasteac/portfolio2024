@@ -24,6 +24,8 @@ export default {
     themes: [
       {
         gasteacDark: {
+          background:
+            "linear-gradient(128deg, rgba(20,50,57,1) 0%, rgba(8,57,56,1) 47%, rgba(0,57,53,1) 100%)",
           color: "white",
           fontFamily: "Poppins",
           primary: "#164e63",
@@ -37,6 +39,8 @@ export default {
           error: "#991b1b",
         },
         gasteacLight: {
+          background:
+            "linear-gradient(128deg, rgba(26,138,164,1) 0%, rgba(0,138,134,1) 47%, rgba(0,193,178,1) 100%)",
           color: "black",
           fontFamily: "Poppins",
           primary: "#0d9488",
