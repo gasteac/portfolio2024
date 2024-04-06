@@ -11,15 +11,15 @@ export const Contact = () => {
           <h1 className="text-[2rem] phone:text-[4rem] tablet:text-[5rem] ">
             Contactame
           </h1>
-          <div className="phone:space-x-2 space-y-2 justify-center items-center">
-            <button className="btn w-full phone:w-auto bg-primary outline-none border-none text-black text-[0.7rem] phone:text-[0.9rem] tablet:text-[1rem] hover:bg-primary hover:bg-opacity-80">
+          <div className="phone:space-x-2 mt-2 space-y-2 phone:flex phone:space-y-0 justify-center items-center">
+            <p className="cursor-default p-2 flex items-center justify-center rounded-lg phone:w-auto bg-primary outline-none border-none text-black text-[0.7rem] phone:text-[0.9rem] tablet:text-[1rem] hover:bg-primary hover:bg-opacity-80">
               <span class="material-symbols-outlined">mail</span>
               gasteac@gmail.com
-            </button>
-            <button className="btn w-full phone:w-auto bg-primary outline-none border-none text-black text-[0.7rem] phone:text-[0.9rem] tablet:text-[1rem] hover:bg-primary hover:bg-opacity-80">
+            </p>
+            <p className="cursor-default p-2 flex items-center justify-center rounded-lg phone:w-auto bg-primary outline-none border-none text-black text-[0.7rem] phone:text-[0.9rem] tablet:text-[1rem] hover:bg-primary hover:bg-opacity-80">
               <span class="material-symbols-outlined">phone_android</span>
               (+54)3795130132
-            </button>
+            </p>
           </div>
         </div>
 
