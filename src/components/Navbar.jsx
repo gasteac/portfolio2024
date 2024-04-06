@@ -55,7 +55,6 @@ export const Navbar = ({ handleScroll, activeLink, setActiveLink }) => {
                   className="w-12 mr-3 hover:scale-95 active:scale-100 transition-transform duration-100"
                   src="/icons/GA.svg"
                   alt="gasteacIcon"
-  
                 />
               </a>
             </div>
@@ -63,6 +62,7 @@ export const Navbar = ({ handleScroll, activeLink, setActiveLink }) => {
               className={`cursor-pointer ${
                 activeLink === "home" ? "text-primary activeLink" : "text-white"
               }`}
+              // cuando haces clic en un link solo le avisas a app.jsx que ejecute su funcion handleScroll con determinado ref y que actualice el estado del link activo
               onClick={() => {
                 setActiveLink("home");
                 handleScroll("home");
@@ -76,6 +76,8 @@ export const Navbar = ({ handleScroll, activeLink, setActiveLink }) => {
                   ? "text-primary activeLink"
                   : "text-white"
               }`}
+              // cuando haces clic en un link solo le avisas a app.jsx que ejecute su funcion handleScroll con determinado ref y que actualice el estado del link activo
+
               onClick={() => {
                 setActiveLink("projects");
                 handleScroll("projects");
@@ -89,6 +91,8 @@ export const Navbar = ({ handleScroll, activeLink, setActiveLink }) => {
                   ? "text-primary activeLink"
                   : "text-white"
               }`}
+              // cuando haces clic en un link solo le avisas a app.jsx que ejecute su funcion handleScroll con determinado ref y que actualice el estado del link activo
+
               onClick={() => {
                 setActiveLink("contact");
                 handleScroll("contact");

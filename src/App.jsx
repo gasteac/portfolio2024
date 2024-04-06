@@ -4,27 +4,35 @@ import Loader from "./components/Loader";
 import "animate.css";
 
 const App = () => {
+  //con esto volves al inicio cuando recargas la pagina sino se rompe todo
   useEffect(() => {
     window.onbeforeunload = function () {
       window.scrollTo(0, 0);
     };
   }, []);
+  //este para actualizar el componente activo
   const [activeLink, setActiveLink] = useState("home");
+  //creas la referencia a cada componente y dsp se los mandas como atributo
   const homeRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
   useEffect(() => {
     let scrollTimeout;
-
+    //esto se va a activar siempre que gires la ruedita
     const handleScroll = () => {
       clearTimeout(scrollTimeout);
+      //creas un timeout para que el navlink se vuelva active dsp de un ratito nomas o sino se activaba solo si pasabas por arriba y se rompia todo porque pensaba que se tenia que activar, le pones un ratito nomas 200ms y ya anda
       scrollTimeout = setTimeout(() => {
+        //aca unis el desplazamiento vertical con el tamaño vertical de la ventana /2 para obtener aproximadamente la mitad, asi al desplazarte te paras en la mitad del componente
         const scrollPosition = window.scrollY + window.innerHeight / 2;
+        //creas las referencia a la posicion de cada componente
         const homePos = homeRef.current.offsetTop;
         const projectsPos = projectsRef.current.offsetTop;
         const contactPos = contactRef.current.offsetTop;
-
+        //esto se hace para determinar donde estas parado y volver active al navlink
+        //fijate que comparas la posicion de home por ejemplo y donde esta tu ventana con otro componente
+        //asi no importa el tamaño vertical del componente va a funcionar igual
         if (scrollPosition >= homePos && scrollPosition < projectsPos) {
           setActiveLink("home");
         } else if (
@@ -35,15 +43,16 @@ const App = () => {
         } else if (scrollPosition >= contactPos) {
           setActiveLink("contact");
         }
-      }, 200); // Adjust this value to control the delay after scrolling stops
+      }, 200); //este es el tiempito necesario para que no se active por ejemplo proyecto si te moves a contacto y pasas por encima de el
     };
-
+    //bueno y esto agregas los listeners al scroll nomas para q este useEffect se ejecute siempre que te muevas con la ruedita
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+    //segun el navlink que clickes te manda a ese componente de forma smooooothhhsxzzz
   const handleScroll = (id) => {
     switch (id) {
       case "home":
@@ -62,15 +71,18 @@ const App = () => {
 
   return (
     <>
+      {/* aca tuve que ponerle al loader que se encuentra arriba de todo el ref de home para que suba bien arriba */}
       <div ref={homeRef}>
         <Loader />
       </div>
+      {/* le pasas la funcion scroll y active a la nav para que desde ella actives aca la funcion pa moverte */}
       <Navbar
         handleScroll={handleScroll}
         activeLink={activeLink}
         setActiveLink={setActiveLink}
       />
-      <Home />
+      {/* home esta solito porque su ref lo tiene loader */}
+      <Home /> 
       <div ref={projectsRef}>
         <Projects />
       </div>
