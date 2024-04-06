@@ -7,16 +7,16 @@ export const Contact = () => {
   return (
     <>
       <div className="flex px-6 h-[100vh] tablet:items-center flex-col">
-        <div className="flex-col flex tablet:flex-col space-x-5 items-center justify-center pb-2 tablet:pb-4 tablet:mt-[100px] mt-[60px]">
+        <div className="flex-col mb-2 flex tablet:flex-col space-x-5 items-center justify-center pb-2 tablet:pb-4 tablet:mt-[100px] mt-[60px]">
           <h1 className="text-[2rem] phone:text-[4rem] tablet:text-[5rem] ">
             Contactame
           </h1>
-          <div className="space-x-5 flex">
-            <button className="btn bg-primary outline-none border-none text-black text-[0.7rem] phone:text-[0.9rem] tablet:text-[1rem] hover:bg-primary hover:bg-opacity-80">
+          <div className="phone:space-x-2 space-y-2 justify-center items-center">
+            <button className="btn w-full phone:w-auto bg-primary outline-none border-none text-black text-[0.7rem] phone:text-[0.9rem] tablet:text-[1rem] hover:bg-primary hover:bg-opacity-80">
               <span class="material-symbols-outlined">mail</span>
               gasteac@gmail.com
             </button>
-            <button className="btn bg-primary outline-none border-none text-black text-[0.7rem] phone:text-[0.9rem] tablet:text-[1rem] hover:bg-primary hover:bg-opacity-80">
+            <button className="btn w-full phone:w-auto bg-primary outline-none border-none text-black text-[0.7rem] phone:text-[0.9rem] tablet:text-[1rem] hover:bg-primary hover:bg-opacity-80">
               <span class="material-symbols-outlined">phone_android</span>
               (+54)3795130132
             </button>
