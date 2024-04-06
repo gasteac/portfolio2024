@@ -80,9 +80,26 @@ export const Contact = () => {
             placeholder="Tu mensaje aquí"
             className="text-[1rem] phone:text-[1.2rem] tablet:text-[1.4rem] p-4 rounded-xl min-h-[8rem] tablet:min-h-[20rem] border-none outline-none text-black w-full"
           />
-          <button className="btn mt-4 w-full bg-primary outline-none border-none text-black text-[1rem] phone:text-[1.2rem] tablet:text-[1.4rem] hover:bg-primary hover:bg-opacity-80">
+          <button
+            onClick={() => document.getElementById("my_modal_1").showModal()}
+            className="btn mt-4 w-full bg-primary outline-none border-none text-black text-[1rem] phone:text-[1.2rem] tablet:text-[1.4rem] hover:bg-primary hover:bg-opacity-80"
+          >
             Enviar
           </button>
+          <dialog id="my_modal_1" className="modal">
+            <div className="modal-box bg-primary">
+              <h3 className="font-bold text-lg text-black">Mensaje enviado!</h3>
+              <p className="py-4 text-black">
+                Gracias! :D Responderé cuanto antes OWO
+              </p>
+              <div className="modal-action">
+                <form method="dialog">
+                  {/* if there is a button in form, it will close the modal */}
+                  <button className="btn ">Cerrar</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
         </form>
       </div>
     </>
