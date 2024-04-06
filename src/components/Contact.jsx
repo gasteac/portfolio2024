@@ -1,45 +1,36 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import {gasteacApi} from '../../api'
+import { gasteacApi } from "../../api";
 
 export const Contact = () => {
-  
-    const handleSucces = () => {
-      setTimeout(() => {
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      name: "",
+      message: "",
+      phone: "",
+    },
+    validationSchema: Yup.object({
+      name: Yup.string().required("Requerido!"),
+      message: Yup.string().required("Requerido!"),
+      email: Yup.string().email("Email invalido").required("Requerido!"),
+    }),
+    onSubmit: async ({ name, email, phone = "", message }) => {
+      try {
+        await gasteacApi.post("/form/new", {
+          name: name,
+          email: email,
+          phone: phone,
+          newMessage: message,
+        });
         formik.resetForm();
         document.getElementById("my_modal_1").showModal();
-      }, 2100);
-    };
-    const formik = useFormik({
-      initialValues: {
-        email: "",
-        name: "",
-        message: "",
-        phone: "",
-      },
-      validationSchema: Yup.object({
-        name: Yup.string()
-          .required("Requerido!"),
-        message: Yup.string().required("Requerido!"),
-        email: Yup.string()
-          .email("Email invalido")
-          .required("Requerido!"),
-      }),
-      onSubmit: async ({ name, email, phone = "", message }) => {
-        try {
-          await gasteacApi.post("/form/new", {
-            name: name,
-            email: email,
-            phone: phone,
-            newMessage: message,
-          });
-          handleSucces();
-        } catch (error) {
-          console.log(error);
-        }
-      },
-    });
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  });
   return (
     <>
       <dialog id="my_modal_1" className="modal">
@@ -73,10 +64,7 @@ export const Contact = () => {
           </div>
         </div>
 
-        <form
-          onSubmit={formik.handleSubmit}
-          className="max-w-[1000px] w-full"
-        >
+        <form onSubmit={formik.handleSubmit} className="max-w-[1000px] w-full">
           <div className="flex flex-col space-y-2 tablet:space-y-0 tablet:space-x-6 mb-2 tablet:flex-row">
             <div className="flex flex-col w-full">
               <div className="flex items-end">
