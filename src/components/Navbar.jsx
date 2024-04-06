@@ -23,7 +23,7 @@ export const Navbar = ({ handleScroll, activeLink, setActiveLink }) => {
   return (
     <>
       <nav className="p-6 w-screen sticky top-0 z-50 tablet:bg-[rgb(20,50,57,0.05)] bg-[linear-gradient(320deg,_rgba(20,50,57,0.1)_0%,_rgba(13,74,73,0.2)_47%,_rgba(2,70,65,0.4)_100%)] tablet:backdrop-blur-[50px]">
-        <div className="flex justify-end items-center text-xl h-8">
+        <div className="flex justify-end items-center text-xl h-[3vh]">
           <input
             onChange={handleCheckboxChange}
             checked={isChecked}
@@ -43,7 +43,7 @@ export const Navbar = ({ handleScroll, activeLink, setActiveLink }) => {
             className="tablet:hidden z-10"
           ></label>
           <div
-            className="navGlass:backdrop-blur-[50px] navGlass:shadow-2xl links-container transition-right -right-[100%] flex flex-col items-center space-y-16 h-screen tablet:max-w-[100%] min-w-[115px] max-w-[250px] w-[70vw] fixed top-0 z-10 shadow-2xl tablet:space-y-0
+            className="navGlass:backdrop-blur-[50px] navGlass:shadow-2xl links-container transition-right -right-[100%] flex flex-col items-center space-y-16 navGlass:h-screen tablet:max-w-[100%] min-w-[115px] max-w-[250px] w-[70vw] fixed top-0 z-10 shadow-2xl tablet:space-y-0
           tablet:mt-0 tablet:shadow-none tablet:w-[100%] tablet:flex-row tablet:space-x-10 tablet:static"
           >
             <div className="tablet:mr-auto flex items-center justify-center">
