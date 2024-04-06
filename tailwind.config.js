@@ -26,9 +26,9 @@ export default {
         gasteacDark: {
           background:
             "linear-gradient(128deg, rgba(20,50,57,1) 0%, rgba(13,74,73,1) 47%, rgba(2,70,65,1) 100%)",
-          color: "white",
+          color: "#FFFFFFff",
           fontFamily: "Poppins",
-          primary: "#164e63",
+          primary: "#34D399",
           secondary: "#115e59",
           accent: "#f3f4f6",
           neutral: "#374151",
@@ -37,21 +37,6 @@ export default {
           success: "#15803d",
           warning: "#9a3412",
           error: "#991b1b",
-        },
-        gasteacLight: {
-          background:
-            "linear-gradient(128deg, rgba(26,138,164,1) 0%, rgba(0,138,134,1) 47%, rgba(0,193,178,1) 100%)",
-          color: "black",
-          fontFamily: "Poppins",
-          primary: "#0d9488",
-          secondary: "#14b8a6",
-          accent: "#111827",
-          neutral: "#9ca3af",
-          "base-100": "#f3f4f6",
-          info: "#bef264",
-          success: "#22c55e",
-          warning: "#fb923c",
-          error: "#ef4444",
         },
       },
     ],

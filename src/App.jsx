@@ -9,7 +9,6 @@ const App = () => {
       window.scrollTo(0, 0);
     };
   }, []);
-
   const homeRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
@@ -34,7 +33,6 @@ const App = () => {
         <Loader />
       </div>
       <Navbar handleScroll={handleScroll} />
-
       <Home />
       <div ref={projectsRef}>
         <Projects />
@@ -45,5 +43,4 @@ const App = () => {
     </>
   );
 };
-
 export default App;

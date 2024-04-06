@@ -6,16 +6,6 @@
   @apply font-semibold transition-all ease-linear duration-[600ms] tablet:opacity-100 tablet:transition-none;
 }
 
-@font-face {
-  font-family: "Cyberpunk";
-  src: url("../public/fonts/cyberpunk.ttf");
-}
-
-@font-face {
-  font-family: "Dark";
-  src: url("../public/fonts/dark.ttf");
-}
-
 *{
   box-sizing: border-box;
   margin: 0;
@@ -98,7 +88,7 @@
     @apply relative tracking-[1px];
   }
   .links-container a:not(.socials)::after {
-    @apply content-[''] absolute bg-accent h-[3px] w-[0%] left-0 -bottom-1 rounded-full duration-300;
+    @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-1 rounded-full duration-300;
   }
   .links-container a:not(.socials)::after:hover {
     @apply w-[100%];
