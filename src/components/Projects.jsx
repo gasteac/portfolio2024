@@ -4,7 +4,7 @@ export const Projects = () => {
   return (
     <>
       <div className="flex h-auto min-h-screen w-full items-center flex-col">
-        <h1 className="text-[2rem] phone:text-[4rem] tablet:text-[5rem] tablet:pb-4 tablet:mt-[100px] mt-[60px]">
+        <h1 className="text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] tablet:pb-4 tablet:mt-[100px] mt-[60px]">
           Proyectos
         </h1>
         <div className="p-12">
