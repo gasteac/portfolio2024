@@ -51,25 +51,35 @@ export const Contact = () => {
             Contactame
           </h1>
           <div className="phone:space-x-2 mt-2 space-y-3 phone:flex phone:flex-row phone:space-y-0 phone:items-center  flex flex-col items-start">
-            <p className="cursor-default  flex items-center justify-center  phone:w-auto  outline-none border-none text-white text-[0.7rem] phone:text-[0.9rem] tablet:text-[1rem] hover:bg-primary hover:bg-opacity-80">
-              <span className="material-symbols-outlined mr-1">mail</span>
+            <a
+              href="mailto:gasteac@gmail.com"
+              target="_blank"
+              className="hover:text-primary flex items-center justify-center  phone:w-auto  outline-none border-none text-white text-[0.7rem] phone:text-[0.9rem] tablet:text-[1rem]"
+            >
+              <span className="cursor-default material-symbols-outlined mr-1 ">
+                mail
+              </span>
               gasteac@gmail.com
-            </p>
-            <p className="cursor-default flex items-center justify-center  phone:w-auto  outline-none border-none text-white text-[0.7rem] phone:text-[0.9rem] tablet:text-[1rem] hover:bg-primary hover:bg-opacity-80">
-              <span className="material-symbols-outlined mr-1 ml-2">
+            </a>
+            <a
+              target="_blank"
+              href="https://wa.me/543795130132"
+              className="hover:text-primary flex items-center justify-center  phone:w-auto  outline-none border-none text-white text-[0.7rem] phone:text-[0.9rem] tablet:text-[1rem]"
+            >
+              <span className="cursor-default material-symbols-outlined mr-1 ml-2">
                 phone_android
               </span>
               (+54)3795130132
-            </p>
+            </a>
           </div>
         </div>
 
         <form onSubmit={formik.handleSubmit} className="max-w-[1000px] w-full">
           <div className="flex flex-col space-y-2 tablet:space-y-0 tablet:space-x-6 mb-2 tablet:flex-row">
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full group">
               <div className="flex items-end">
                 <label
-                  className="text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
+                  className="group-focus-within:text-primary text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
                   htmlFor="name"
                 >
                   Nombre
@@ -90,10 +100,10 @@ export const Contact = () => {
                 className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl border-none outline-none text-black w-full"
               />
             </div>
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full group">
               <div className="flex items-end">
                 <label
-                  className="text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
+                  className="group-focus-within:text-primary text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
                   htmlFor="email"
                 >
                   Correo
@@ -114,9 +124,9 @@ export const Contact = () => {
                 className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl border-none outline-none text-black w-full"
               />
             </div>
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full group">
               <label
-                className="text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
+                className="group-focus-within:text-primary text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
                 htmlFor="phone"
               >
                 Celular
@@ -132,31 +142,33 @@ export const Contact = () => {
               />
             </div>
           </div>
-          <div className="flex items-end">
-            <label
-              className="text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
-              htmlFor="newMessage"
-            >
-              Mensaje
-            </label>
-            {formik.touched.name && formik.errors.name ? (
-              <h6 className="ml-2 text-red-300 text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
-                {formik.errors.message}
-              </h6>
-            ) : null}
+          <div className="flex flex-col w-full group">
+            <div className="flex items-end">
+              <label
+                className="group-focus-within:text-primary text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
+                htmlFor="newMessage"
+              >
+                Mensaje
+              </label>
+              {formik.touched.name && formik.errors.name ? (
+                <h6 className="ml-2 text-red-300 text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
+                  {formik.errors.message}
+                </h6>
+              ) : null}
+            </div>
+            <textarea
+              id="newMessage"
+              type="text"
+              name="message"
+              onChange={formik.handleChange}
+              value={formik.values.message}
+              placeholder="Tu mensaje aquí"
+              className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl min-h-[4rem] tablet:min-h-[10rem] border-none outline-none text-black w-full"
+            />
           </div>
-          <textarea
-            id="newMessage"
-            type="text"
-            name="message"
-            onChange={formik.handleChange}
-            value={formik.values.message}
-            placeholder="Tu mensaje aquí"
-            className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl min-h-[4rem] tablet:min-h-[10rem] border-none outline-none text-black w-full"
-          />
           <button
             type="submit"
-            className="p-2 rounded-lg mt-4 w-full bg-primary outline-none border-none text-black text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem] hover:bg-primary hover:bg-opacity-80"
+            className="active:scale-95 active:bg-opacity-100 transition-all p-2 rounded-lg mt-4 w-full bg-primary outline-none border-none text-black text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem] hover:bg-primary hover:bg-opacity-80"
           >
             Enviar
           </button>

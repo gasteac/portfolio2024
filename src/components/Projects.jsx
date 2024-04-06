@@ -10,96 +10,136 @@ export const Projects = () => {
         <div className="p-12">
           <div className="flex justify-evenly w-full h-full flex-wrap gap-8">
             <Tilt>
-              <a href="">
+              <a target="_blank" href="">
                 <div className="card max-w-[40rem] w-auto glass m-auto">
                   <figure>
                     <img
                       src="./images/proyect1.jpg"
                       alt="car!"
-                      className="hover:scale-125 transition-all duration-300"
+                      className="brightness-90 hover:brightness-100 transition-all duration-300"
                       loading="lazy"
                     />
                   </figure>
                   <div className="card-body">
-                    <h2 className="card-title">Nombre del proyectito</h2>
-                    <p>Que aprendi, que me costo mas?</p>
-                    <div className="card-actions justify-evenly mt-5">
-                      <span>React</span>
-                      <span>Javascript</span>
-                      <span>MongoDB</span>
-                      <span>Redux</span>
+                    <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
+                      Portafolio personal
+                    </h2>
+                    <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
+                      Con este proyecto aprendi a utilizar tailwindcss.
+                    </p>
+                    <div className="card-actions justify-evenly mt-5 text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
+                      <span className="bg-[#0c9fcb] p-2 rounded-xl">React</span>
+                      <span className="bg-yellow-300 text-black p-2 rounded-xl">
+                        Javascript
+                      </span>
+                      <span className="bg-green-500 p-2 rounded-xl">
+                        MongoDB
+                      </span>
+                      <span className="bg-[#16becb] p-2 rounded-xl">
+                        Tailwindcss
+                      </span>
                     </div>
                   </div>
                 </div>
               </a>
             </Tilt>
             <Tilt>
-              <a href="">
+              <a target="_blank" href="">
                 <div className="card max-w-[40rem] w-auto glass m-auto">
                   <figure>
                     <img
                       src="./images/proyect1.jpg"
                       alt="car!"
-                      className="hover:scale-125 transition-all duration-300"
+                      className="brightness-90 hover:brightness-100 transition-all duration-300"
                       loading="lazy"
                     />
                   </figure>
                   <div className="card-body">
-                    <h2 className="card-title">Nombre del proyectito</h2>
-                    <p>Que aprendi, que me costo mas?</p>
-                    <div className="card-actions justify-evenly mt-5">
-                      <span>React</span>
-                      <span>Javascript</span>
-                      <span>MongoDB</span>
-                      <span>Redux</span>
+                    <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
+                      Portafolio personal
+                    </h2>
+                    <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
+                      Con este proyecto aprendi a utilizar tailwindcss.
+                    </p>
+                    <div className="card-actions justify-evenly mt-5 text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
+                      <span className="bg-[#0c9fcb] p-2 rounded-xl">React</span>
+                      <span className="bg-yellow-300 text-black p-2 rounded-xl">
+                        Javascript
+                      </span>
+                      <span className="bg-green-500 p-2 rounded-xl">
+                        MongoDB
+                      </span>
+                      <span className="bg-[#16becb] p-2 rounded-xl">
+                        Tailwindcss
+                      </span>
                     </div>
                   </div>
                 </div>
               </a>
             </Tilt>
             <Tilt>
-              <a href="">
+              <a target="_blank" href="">
                 <div className="card max-w-[40rem] w-auto glass m-auto">
                   <figure>
                     <img
                       src="./images/proyect1.jpg"
                       alt="car!"
-                      className="hover:scale-125 transition-all duration-300"
+                      className="brightness-90 hover:brightness-100 transition-all duration-300"
                       loading="lazy"
                     />
                   </figure>
                   <div className="card-body">
-                    <h2 className="card-title">Nombre del proyectito</h2>
-                    <p>Que aprendi, que me costo mas?</p>
-                    <div className="card-actions justify-evenly mt-5">
-                      <span>React</span>
-                      <span>Javascript</span>
-                      <span>MongoDB</span>
-                      <span>Redux</span>
+                    <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
+                      Portafolio personal
+                    </h2>
+                    <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
+                      Con este proyecto aprendi a utilizar tailwindcss.
+                    </p>
+                    <div className="card-actions justify-evenly mt-5 text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
+                      <span className="bg-[#0c9fcb] p-2 rounded-xl">React</span>
+                      <span className="bg-yellow-300 text-black p-2 rounded-xl">
+                        Javascript
+                      </span>
+                      <span className="bg-green-500 p-2 rounded-xl">
+                        MongoDB
+                      </span>
+                      <span className="bg-[#16becb] p-2 rounded-xl">
+                        Tailwindcss
+                      </span>
                     </div>
                   </div>
                 </div>
               </a>
             </Tilt>
             <Tilt>
-              <a href="">
+              <a target="_blank" href="">
                 <div className="card max-w-[40rem] w-auto glass m-auto">
                   <figure>
                     <img
                       src="./images/proyect1.jpg"
                       alt="car!"
-                      className="hover:scale-125 transition-all duration-300"
+                      className="brightness-90 hover:brightness-100 transition-all duration-300"
                       loading="lazy"
                     />
                   </figure>
                   <div className="card-body">
-                    <h2 className="card-title">Nombre del proyectito</h2>
-                    <p>Que aprendi, que me costo mas?</p>
-                    <div className="card-actions justify-evenly mt-5">
-                      <span>React</span>
-                      <span>Javascript</span>
-                      <span>MongoDB</span>
-                      <span>Redux</span>
+                    <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
+                      Portafolio personal
+                    </h2>
+                    <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
+                      Con este proyecto aprendi a utilizar tailwindcss.
+                    </p>
+                    <div className="card-actions justify-evenly mt-5 text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
+                      <span className="bg-[#0c9fcb] p-2 rounded-xl">React</span>
+                      <span className="bg-yellow-300 text-black p-2 rounded-xl">
+                        Javascript
+                      </span>
+                      <span className="bg-green-500 p-2 rounded-xl">
+                        MongoDB
+                      </span>
+                      <span className="bg-[#16becb] p-2 rounded-xl">
+                        Tailwindcss
+                      </span>
                     </div>
                   </div>
                 </div>

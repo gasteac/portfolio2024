@@ -52,7 +52,7 @@ export const Navbar = ({ handleScroll, activeLink, setActiveLink }) => {
                 onClick={() => handleScroll("home")}
               >
                 <img
-                  className="w-12 mr-3 hover:scale-95 active:scale-100 transition-transform duration-100"
+                  className="w-14 mr-3 hover:scale-95 active:scale-100 transition-all duration-100"
                   src="/icons/GA.svg"
                   alt="gasteacIcon"
                 />
