@@ -46,11 +46,11 @@ export const Contact = () => {
         </div>
       </dialog>
       <div className="flex px-6 h-screen items-center justify-center flex-col">
-        <div className="flex-col flex tablet:flex-col space-x-5 items-center justify-center mb-5">
+        <div className="flex-col flex tablet:flex-col space-x-5 phone:space-x-0  items-center justify-center mb-5">
           <h1 className="text-center text-[2rem] phone:text-[3rem] tablet:text-[3.7rem]">
             Contactame
           </h1>
-          <div className="phone:space-x-2 mt-2 space-y-3 phone:flex phone:flex-row phone:space-y-0 phone:items-center flex flex-col items-start">
+          <div className="phone:space-x-2 mt-2 space-y-3 phone:flex phone:flex-row phone:space-y-0 phone:items-center  flex flex-col items-start">
             <p className="cursor-default  flex items-center justify-center  phone:w-auto  outline-none border-none text-white text-[0.7rem] phone:text-[0.9rem] tablet:text-[1rem] hover:bg-primary hover:bg-opacity-80">
               <span className="material-symbols-outlined mr-1">mail</span>
               gasteac@gmail.com
