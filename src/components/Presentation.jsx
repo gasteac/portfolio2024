@@ -1,6 +1,7 @@
 import React from "react";
 import { SliderComponent } from "./Slider";
 import { TypeAnimation } from "react-type-animation";
+import { Fade, JackInTheBox } from "react-awesome-reveal";
 export const Presentation = () => {
   return (
     <div className="flex flex-col space-y-4 tablet:space-y-6 p-6 w-full h-[70%] tablet:h-[100%] justify-center items-center ">
@@ -26,28 +27,31 @@ export const Presentation = () => {
           sequence={["</>", 0]}
           wrapper="span"
           speed={60}
+          cursor={false}
           preRenderFirstString="hola"
           style={{ display: "inline-block" }}
           className="text-[1rem] phone:text-[1.6rem] tablet:text-[2.2rem] text-emerald-400 animate__animated animate__fadeIn animate__slower animate__delay-1s "
         />
       </div>
-      <TypeAnimation
-        sequence={["", 4000, "Apasionado por el desarrollo web:)", 2000]}
-        wrapper="span"
-        speed={60}
-        style={{ display: "inline-block" }}
-        className="text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]  animate__animated animate__fadeIn animate__slower animate__delay-1s "
-        repeat={true}
-        cursor={false}
-      />
-      <SliderComponent />
-      <a
-        className="text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] animate__animated animate__fadeIn animate__slower animate__delay-5s cursor-pointer w-fit z-10  border-none bg-emerald-700 hover:bg-emerald-800 text-center transition-all duration-200 py-2 pr-4 pl-3 rounded-xl active:scale-95"
-        href="AcostaGastonResume.pdf"
-        target="_blank"
+      <Fade
+        triggerOnce={true}
+        cascade
+        delay={5200}
+        damping={0.03}
+        className="text-[0.7rem] phone:text-[1.2rem] tablet:text-[1.5rem]"
       >
-        Descargar CV
-      </a>
+        Apasionado por el desarrollo web :)
+      </Fade>
+      <SliderComponent />
+      <JackInTheBox triggerOnce={true} delay={7000} duration={1000}>
+        <a
+          className="text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer w-fit z-10  border-none bg-emerald-700 hover:bg-emerald-800 text-center transition-all duration-200 py-2 pr-4 pl-3 rounded-xl active:scale-95"
+          href="AcostaGastonResume.pdf"
+          target="_blank"
+        >
+          Descargar CV
+        </a>
+      </JackInTheBox>
     </div>
   );
 };
