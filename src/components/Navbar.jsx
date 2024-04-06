@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-export const Navbar = ({ handleScroll }) => {
+export const Navbar = ({ handleScroll, activeLink, setActiveLink }) => {
   const [isChecked, setIsChecked] = useState(false);
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
@@ -48,29 +48,51 @@ export const Navbar = ({ handleScroll }) => {
           >
             <div className="tablet:mr-auto flex items-center justify-center">
               <a
-                className="socials tablet:block hidden font-semibold   cursor-pointer"
+                className="socials tablet:block hidden font-semibold  cursor-pointer"
                 onClick={() => handleScroll("home")}
               >
                 <img
-                  className="w-12 mr-3"
-                  src="/icons/GABlack.svg"
+                  className="w-12 mr-3 hover:scale-95 active:scale-100 transition-transform duration-100"
+                  src="/icons/GA.svg"
                   alt="gasteacIcon"
+  
                 />
               </a>
             </div>
-            <a className="cursor-pointer" onClick={() => handleScroll("home")}>
+            <a
+              className={`cursor-pointer ${
+                activeLink === "home" ? "text-primary activeLink" : "text-white"
+              }`}
+              onClick={() => {
+                setActiveLink("home");
+                handleScroll("home");
+              }}
+            >
               Home
             </a>
-
             <a
-              className="cursor-pointer"
-              onClick={() => handleScroll("projects")}
+              className={`cursor-pointer ${
+                activeLink === "projects"
+                  ? "text-primary activeLink"
+                  : "text-white"
+              }`}
+              onClick={() => {
+                setActiveLink("projects");
+                handleScroll("projects");
+              }}
             >
               Projects
             </a>
             <a
-              className="cursor-pointer"
-              onClick={() => handleScroll("contact")}
+              className={`cursor-pointer ${
+                activeLink === "contact"
+                  ? "text-primary activeLink"
+                  : "text-white"
+              }`}
+              onClick={() => {
+                setActiveLink("contact");
+                handleScroll("contact");
+              }}
             >
               Contact
             </a>

@@ -87,10 +87,15 @@
   .links-container a:not(.socials) {
     @apply relative tracking-[1px];
   }
-  .links-container a:not(.socials)::after {
-    @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-1 rounded-full duration-300;
+  .links-container a:not(.socials, .activeLink)::after {
+    @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-1 rounded-full duration-200;
   }
-  .links-container a:not(.socials)::after:hover {
+  .links-container a:not(.socials, .activeLink)::after:hover {
     @apply w-[100%];
   }
+
+    .activeLink::after {
+    @apply content-[''] absolute bg-primary h-[3px] w-[100%] left-0 -bottom-1 rounded-full transition-all duration-200;
+  }
+
 }
