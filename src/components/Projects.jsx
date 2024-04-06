@@ -4,9 +4,11 @@ export const Projects = () => {
   return (
     <>
       <div className="flex h-auto min-h-screen w-full items-center flex-col">
-        <h1 className="text-5xl pb-4 tablet:text-7xl mt-[100px]">Proyectos</h1>
+        <h1 className="text-[2rem] phone:text-[4rem] tablet:text-[5rem] tablet:pb-4 tablet:mt-[100px] mt-[60px]">
+          Proyectos
+        </h1>
         <div className="p-12">
-          <div className="flex justify-evenly w-full h-full flex-wrap gap-6">
+          <div className="flex justify-evenly w-full h-full flex-wrap gap-8">
             <Tilt>
               <a href="">
                 <div className="card max-w-[40rem] w-auto glass m-auto">
@@ -15,6 +17,7 @@ export const Projects = () => {
                       src="./images/proyect1.jpg"
                       alt="car!"
                       className="hover:scale-125 transition-all duration-300"
+                      loading="lazy"
                     />
                   </figure>
                   <div className="card-body">
@@ -38,6 +41,7 @@ export const Projects = () => {
                       src="./images/proyect1.jpg"
                       alt="car!"
                       className="hover:scale-125 transition-all duration-300"
+                      loading="lazy"
                     />
                   </figure>
                   <div className="card-body">
@@ -61,6 +65,7 @@ export const Projects = () => {
                       src="./images/proyect1.jpg"
                       alt="car!"
                       className="hover:scale-125 transition-all duration-300"
+                      loading="lazy"
                     />
                   </figure>
                   <div className="card-body">
@@ -84,6 +89,7 @@ export const Projects = () => {
                       src="./images/proyect1.jpg"
                       alt="car!"
                       className="hover:scale-125 transition-all duration-300"
+                      loading="lazy"
                     />
                   </figure>
                   <div className="card-body">

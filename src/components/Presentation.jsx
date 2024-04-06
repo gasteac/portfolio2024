@@ -3,7 +3,7 @@ import { SliderComponent } from "./Slider";
 import { TypeAnimation } from "react-type-animation";
 export const Presentation = () => {
   return (
-    <div className="flex flex-col space-y-4 tablet:space-y-6 p-6 w-full h-[80%] tablet:justify-center items-center ">
+    <div className="flex flex-col space-y-4 tablet:space-y-6 p-6 w-full h-[80%] tablet:h-[100%] justify-center items-center ">
       <TypeAnimation
         sequence={["Hola!", 2000, "Hola! soy Gaston.", 3000]}
         wrapper="span"
