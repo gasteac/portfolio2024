@@ -36,12 +36,11 @@ export const Presentation = () => {
       <SliderComponent />
       <a
         className=" animate__animated animate__fadeIn animate__slower animate__delay-5s text-[1.2rem] phone:text-[1.6rem] tablet:text-[1.6rem] cursor-pointer w-fit z-10  border-none bg-emerald-700 hover:bg-emerald-800 text-center transition-all duration-200 py-2 pr-4 pl-3 rounded-xl active:scale-95"
-        href="ResumeAcostaGaston.pdf"
+        href="AcostaGastonResume.pdf"
         target="_blank"
       >
         Descargar CV
       </a>
-      
     </div>
   );
 };
