@@ -48,7 +48,7 @@ export const Contact = () => {
       <div className="flex px-6 h-screen items-center justify-center flex-col">
         <div className="flex-col flex tablet:flex-col space-x-5 phone:space-x-0  items-center justify-center mb-5">
           <h1 className="text-center text-[2rem] phone:text-[3rem] tablet:text-[3.7rem]">
-            <Fade triggerOnce={true} cascade fraction={0.1} damping={0.1}>
+            <Fade triggerOnce={true} cascade fraction={0.01} damping={0.1}>
               Contactame
             </Fade>
           </h1>

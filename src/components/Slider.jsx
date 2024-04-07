@@ -27,7 +27,7 @@ export const SliderComponent = () => {
     <div className="flex items-center overflow-hidden max-w-[80%] w-[300px] tablet:max-w-[70%] tablet:w-[450px]">
       <Fade
         triggerOnce={true}
-        delay={6500}
+        delay={5500}
         duration={2000}
         className="border-accent rounded-2xl w-full border-r-8 border-l-8"
       >

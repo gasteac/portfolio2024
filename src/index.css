@@ -6,17 +6,15 @@
   @apply font-semibold transition-all ease-linear duration-[600ms] tablet:opacity-100 tablet:transition-none;
 }
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-} 
-
-.no-scroll {
-   overflow: hidden;
 }
 
-
+.no-scroll {
+  overflow: hidden;
+}
 
 ::-webkit-scrollbar {
   display: none;
@@ -86,30 +84,18 @@
   transform: rotate(90deg);
 }
 @layer utilities {
-  .links-container a:not(.socials) {
-    @apply relative tracking-[1px];
-  }
-  .links-container a:not(.socials, .activeLink)::after {
-    @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-1 rounded-full duration-200;
-  }
-  .links-container a:not(.socials, .activeLink)::after:hover {
-    @apply w-[100%];
-  }
-
-    .activeLink::after {
-    @apply content-[''] absolute bg-primary h-[3px] w-[100%] left-0 -bottom-1 rounded-full transition-all duration-200;
-  }
-
-}
-
-@keyframes move {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(50%);
-  }
-  100% {
-    transform: translateX(0);
+  @media (min-width: 707px) {
+    .links-container a:not(.socials) {
+      @apply relative tracking-[1px];
+    }
+    .links-container a:not(.socials)::after {
+      @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-1 rounded-full duration-200;
+    }
+    .links-container a:not(.socials, .activeLink)::after:hover {
+      @apply w-[100%];
+    }
+    .links-container .activeLink a::after {
+      @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-1 rounded-full duration-200;
+    }
   }
 }

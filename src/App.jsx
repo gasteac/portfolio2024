@@ -12,6 +12,7 @@ const App = () => {
   }, []);
   //este para actualizar el componente activo
   const [activeLink, setActiveLink] = useState("home");
+  console.log(activeLink);
   //creas la referencia a cada componente y dsp se los mandas como atributo
   const homeRef = useRef(null);
   const projectsRef = useRef(null);
@@ -43,7 +44,7 @@ const App = () => {
         } else if (scrollPosition >= contactPos) {
           setActiveLink("contact");
         }
-      }, 200); //este es el tiempito necesario para que no se active por ejemplo proyecto si te moves a contacto y pasas por encima de el
+      }, 100); //este es el tiempito necesario para que no se active por ejemplo proyecto si te moves a contacto y pasas por encima de el
     };
     //bueno y esto agregas los listeners al scroll nomas para q este useEffect se ejecute siempre que te muevas con la ruedita
     window.addEventListener("scroll", handleScroll);
@@ -52,8 +53,8 @@ const App = () => {
     };
   }, []);
 
-    //segun el navlink que clickes te manda a ese componente de forma smooooothhhsxzzz
-  const handleScroll = (id) => {
+  //segun el navlink que clickes te manda a ese componente de forma smooooothhhsxzzz
+  const handleClickScroll = (id) => {
     switch (id) {
       case "home":
         homeRef.current.scrollIntoView({ behavior: "smooth" });
@@ -77,14 +78,14 @@ const App = () => {
       </div>
       {/* le pasas la funcion scroll y active a la nav para que desde ella actives aca la funcion pa moverte */}
       <Navbar
-        handleScroll={handleScroll}
+        handleClickScroll={handleClickScroll}
         activeLink={activeLink}
         setActiveLink={setActiveLink}
       />
       {/* home esta solito porque su ref lo tiene loader */}
       <Home />
       <div ref={projectsRef}>
-        <Projects handleScroll={handleScroll} />
+        <Projects handleClickScroll={handleClickScroll} />
       </div>
       <div ref={contactRef}>
         <Contact />

@@ -1,12 +1,12 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import { Fade } from "react-awesome-reveal";
-export const Projects = ({handleScroll}) => {
+export const Projects = ({ handleClickScroll }) => {
   return (
     <>
       <div className="flex h-auto min-h-screen w-full items-center flex-col">
         <h1 className="text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] tablet:pb-4 tablet:mt-[120px] mt-[60px]">
-          <Fade triggerOnce={true} cascade fraction={0.1} damping={0.1}>
+          <Fade triggerOnce={true} cascade fraction={0.01} damping={0.1}>
             Proyectos
           </Fade>
         </h1>
@@ -17,7 +17,7 @@ export const Projects = ({handleScroll}) => {
               <Tilt>
                 <a
                   target="_blank"
-                  onClick={() => handleScroll("home")}
+                  onClick={() => handleClickScroll("home")}
                   className="cursor-pointer"
                 >
                   <div className="card max-w-[40rem] max-h-[30rem] w-auto glass m-auto">

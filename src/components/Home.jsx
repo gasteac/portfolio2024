@@ -5,8 +5,7 @@ import { Fade } from "react-awesome-reveal";
 export const Home = () => {
   return (
     <>
-      <div className="h-[100vh] tablet:h-[80vh] w-full flex flex-col items-center justify-start">
-        
+      <div className="h-[100vh] tablet:h-[85vh]">
         <Presentation />
       </div>
     </>

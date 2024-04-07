@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-export const Navbar = ({ handleScroll, activeLink, setActiveLink }) => {
+export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
   const [isChecked, setIsChecked] = useState(false);
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
@@ -65,7 +65,7 @@ export const Navbar = ({ handleScroll, activeLink, setActiveLink }) => {
               // cuando haces clic en un link solo le avisas a app.jsx que ejecute su funcion handleScroll con determinado ref y que actualice el estado del link activo
               onClick={() => {
                 setActiveLink("home");
-                handleScroll("home");
+                handleClickScroll("home");
               }}
             >
               Home
@@ -80,7 +80,7 @@ export const Navbar = ({ handleScroll, activeLink, setActiveLink }) => {
 
               onClick={() => {
                 setActiveLink("projects");
-                handleScroll("projects");
+                handleClickScroll("projects");
               }}
             >
               Projects
@@ -95,7 +95,7 @@ export const Navbar = ({ handleScroll, activeLink, setActiveLink }) => {
 
               onClick={() => {
                 setActiveLink("contact");
-                handleScroll("contact");
+                handleClickScroll("contact");
               }}
             >
               Contact

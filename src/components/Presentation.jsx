@@ -6,7 +6,7 @@ export const Presentation = () => {
   return (
     <div className="flex flex-col space-y-4 tablet:space-y-6 p-6 w-full h-[70%] tablet:h-[100%] justify-center items-center ">
       <TypeAnimation
-        sequence={["Hola!", 2000, "Hola! soy Gaston.", 3000]}
+        sequence={["Hola!", 1500, "Hola! soy Gaston.", 3000]}
         wrapper="span"
         speed={15}
         style={{ display: "inline-block" }}
@@ -15,7 +15,7 @@ export const Presentation = () => {
       />
       <div>
         <TypeAnimation
-          sequence={["", 4000, "Desarrollador Full Stack", 2000]}
+          sequence={["", 3500, "Desarrollador Full Stack", 2000]}
           wrapper="span"
           speed={60}
           style={{ display: "inline-block" }}
@@ -35,15 +35,15 @@ export const Presentation = () => {
       </div>
       <Fade
         triggerOnce={true}
-        cascade
-        delay={5200}
-        damping={0.03}
+        duration={1500}
+        delay={4500}
+        
         className="text-[0.7rem] phone:text-[1.2rem] tablet:text-[1.5rem]"
       >
-        Apasionado por el desarrollo web :)
+        <p>Apasionado por el desarrollo web :)</p>
       </Fade>
       <SliderComponent />
-      <JackInTheBox triggerOnce={true} delay={7000} duration={1000}>
+      <JackInTheBox triggerOnce={true} delay={6000} duration={1000}>
         <a
           className="text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer w-fit z-10  border-none bg-emerald-700 hover:bg-emerald-800 text-center transition-all duration-200 py-2 pr-4 pl-3 rounded-xl active:scale-95"
           href="AcostaGastonResume.pdf"
