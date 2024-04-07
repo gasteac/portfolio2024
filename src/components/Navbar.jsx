@@ -22,6 +22,19 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
 
   return (
     <>
+      <a
+        className="socials fixed z-[60000] tablet:hidden top-[22px] left-3 cursor-pointer"
+        onClick={() => {
+          setActiveLink("home");
+          handleClickScroll("home");
+        }}
+      >
+        <img
+          className="w-8 mr-3 hover:scale-95 active:scale-100 transition-all duration-100"
+          src="/icons/GA.svg"
+          alt="gasteacIcon"
+        />
+      </a>
       <nav className="p-6 w-screen sticky top-0 z-50 tablet:bg-[rgb(20,50,57,0.05)] bg-[linear-gradient(320deg,_rgba(20,50,57,0.1)_0%,_rgba(13,74,73,0.2)_47%,_rgba(2,70,65,0.4)_100%)] tablet:backdrop-blur-[50px]">
         <div className="flex justify-end items-center text-xl h-[3vh]">
           <input
@@ -49,7 +62,10 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
             <div className="tablet:mr-auto flex items-center justify-center">
               <a
                 className="socials tablet:block hidden font-semibold  cursor-pointer"
-                onClick={() => handleScroll("home")}
+                onClick={() => {
+                  setActiveLink("home");
+                  handleClickScroll("home");
+                }}
               >
                 <img
                   className="w-14 mr-3 hover:scale-95 active:scale-100 transition-all duration-100"
