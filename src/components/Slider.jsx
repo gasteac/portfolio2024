@@ -55,6 +55,13 @@ export const SliderComponent = () => {
           </Slider.Slide>
           <Slider.Slide>
             <img
+              className="bg-white rounded-full p-1 w-[25px] h-[auto] tablet:w-[35px] tablet:h-[auto] flex items-center justify-center"
+              src="/icons/expressjs.svg"
+              alt="express"
+            />
+          </Slider.Slide>
+          <Slider.Slide>
+            <img
               className="w-[30px] h-[30px] tablet:w-[auto] tablet:h-[40px] flex items-center justify-center"
               src="/icons/flutter.svg"
               alt="flutter"

@@ -82,9 +82,9 @@ const App = () => {
         setActiveLink={setActiveLink}
       />
       {/* home esta solito porque su ref lo tiene loader */}
-      <Home /> 
+      <Home />
       <div ref={projectsRef}>
-        <Projects />
+        <Projects handleScroll={handleScroll} />
       </div>
       <div ref={contactRef}>
         <Contact />

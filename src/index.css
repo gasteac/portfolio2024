@@ -16,6 +16,8 @@
    overflow: hidden;
 }
 
+
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -111,4 +113,3 @@
     transform: translateX(0);
   }
 }
-
