@@ -112,7 +112,7 @@ export const Contact = () => {
                   >
                     Correo
                   </label>
-                  {formik.touched.name && formik.errors.name ? (
+                  {formik.touched.email && formik.errors.email ? (
                     <h6 className="ml-2 text-red-300 text-[0.8rem]  phone:text-[1rem] tablet:text-[1.2rem]">
                       {formik.errors.email}
                     </h6>
@@ -156,7 +156,7 @@ export const Contact = () => {
                 >
                   Mensaje
                 </label>
-                {formik.touched.name && formik.errors.name ? (
+                {formik.touched.message && formik.errors.message ? (
                   <h6 className="ml-2 text-red-300 text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
                     {formik.errors.message}
                   </h6>
@@ -168,7 +168,7 @@ export const Contact = () => {
                 name="message"
                 onChange={formik.handleChange}
                 value={formik.values.message}
-                placeholder="Tu mensaje aquí"
+                placeholder="Escribeme y nos ponemos en contacto ;)"
                 className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl min-h-[4rem] tablet:min-h-[10rem] border-none outline-none text-black w-full"
               />
             </div>
