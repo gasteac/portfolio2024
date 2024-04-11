@@ -39,7 +39,6 @@ export const Contact = () => {
           <p className="py-4 text-black">Gracias! Responderé cuanto antes :)</p>
           <div className="modal-action">
             <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
               <button className="btn ">Cerrar</button>
             </form>
           </div>
