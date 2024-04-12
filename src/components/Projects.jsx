@@ -64,6 +64,51 @@ export const Projects = ({ handleClickScroll }) => {
               <Tilt>
                 <a
                   target="_blank"
+                  href="https://mern-project-cfqm.onrender.com/"
+                >
+                  <div className="card max-w-[40rem] max-h-[30rem] w-auto glass m-auto">
+                    <figure>
+                      <img
+                        src="./images/project9.jpg"
+                        alt="Red Social {en progreso..}"
+                        className="brightness-90 hover:brightness-100 transition-all duration-300"
+                        loading="lazy"
+                      />
+                    </figure>
+                    <div className="card-body">
+                      <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
+                        Red Social, en progreso..
+                      </h2>
+                      <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
+                        MERN Stack
+                      </p>
+                      <div className="card-actions justify-evenly mt-5 text-[0.5rem] phone:text-[0.6rem] tablet:text-[0.8rem]">
+                        <span className="bg-[#0c9fcb] p-2 rounded-xl">
+                          React+Vite
+                        </span>
+
+                        <span className="bg-yellow-300 text-black p-2 rounded-xl">
+                          Javascript
+                        </span>
+                        <span className="bg-green-500 p-2 rounded-xl">
+                          MongoDB
+                        </span>
+                        <span className="bg-[#16becb] p-2 rounded-xl">
+                          Tailwindcss
+                        </span>
+                        <span className="bg-[#16becb] p-2 rounded-xl">
+                          Express.js
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </Tilt>
+            </Fade>
+            <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
+              <Tilt>
+                <a
+                  target="_blank"
                   href="https://gasteaccontrolgastos.vercel.app/"
                 >
                   <div className="card max-w-[40rem] max-h-[30rem] w-auto glass m-auto">
