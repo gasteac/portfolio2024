@@ -16,7 +16,7 @@ export const Projects = ({ handleClickScroll }) => {
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
               <Tilt
                 glareEnable
-                glareBorderRadius={"1.5rem"}
+                glareBorderRadius={"1rem"}
                 scale="1.1"
                 perspective="4000"
               >
@@ -68,7 +68,7 @@ export const Projects = ({ handleClickScroll }) => {
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
               <Tilt
                 glareEnable
-                glareBorderRadius={"1.5rem"}
+                glareBorderRadius={"1rem"}
                 scale="1.1"
                 perspective="4000"
               >
@@ -92,7 +92,7 @@ export const Projects = ({ handleClickScroll }) => {
                       <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
                         React, Redux-Persist, Tailwind CSS, Mongoose, MongoDB,
                         Express.js, Node.js, Firebase, JWT, Axios, Formik, Yup,
-                        FlowBite,
+                        FlowBite.
                       </p>
                       <div className="card-actions justify-evenly mt-5 text-[0.5rem] phone:text-[0.6rem] tablet:text-[0.8rem]">
                         <span className="bg-[#0c9fcb] p-2 rounded-xl">
@@ -120,7 +120,7 @@ export const Projects = ({ handleClickScroll }) => {
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
               <Tilt
                 glareEnable
-                glareBorderRadius={"1.5rem"}
+                glareBorderRadius={"1rem"}
                 scale="1.1"
                 perspective="4000"
               >
@@ -161,7 +161,7 @@ export const Projects = ({ handleClickScroll }) => {
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
               <Tilt
                 glareEnable
-                glareBorderRadius={"1.5rem"}
+                glareBorderRadius={"1rem"}
                 scale="1.1"
                 perspective="4000"
               >
@@ -202,7 +202,7 @@ export const Projects = ({ handleClickScroll }) => {
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
               <Tilt
                 glareEnable
-                glareBorderRadius={"1.5rem"}
+                glareBorderRadius={"1rem"}
                 scale="1.1"
                 perspective="4000"
               >
@@ -243,7 +243,7 @@ export const Projects = ({ handleClickScroll }) => {
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
               <Tilt
                 glareEnable
-                glareBorderRadius={"1.5rem"}
+                glareBorderRadius={"1rem"}
                 scale="1.1"
                 perspective="4000"
               >
@@ -281,7 +281,7 @@ export const Projects = ({ handleClickScroll }) => {
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
               <Tilt
                 glareEnable
-                glareBorderRadius={"1.5rem"}
+                glareBorderRadius={"1rem"}
                 scale="1.1"
                 perspective="4000"
               >
@@ -320,7 +320,7 @@ export const Projects = ({ handleClickScroll }) => {
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
               <Tilt
                 glareEnable
-                glareBorderRadius={"1.5rem"}
+                glareBorderRadius={"1rem"}
                 scale="1.1"
                 perspective="4000"
               >
