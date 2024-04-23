@@ -14,7 +14,12 @@ export const Projects = ({ handleClickScroll }) => {
         <div className="p-14">
           <div className="flex justify-evenly w-full h-full flex-wrap gap-16">
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
-              <Tilt>
+              <Tilt
+                glareEnable
+                glareBorderRadius={"1.5rem"}
+                scale="1.1"
+                perspective="4000"
+              >
                 <a
                   target="_blank"
                   onClick={() => handleClickScroll("home")}
@@ -25,7 +30,7 @@ export const Projects = ({ handleClickScroll }) => {
                       <img
                         src="./images/project1.jpg"
                         alt="Portafolio personal"
-                        className="brightness-90 hover:brightness-100 transition-all duration-300"
+                        className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
                         loading="lazy"
                       />
                     </figure>
@@ -61,7 +66,12 @@ export const Projects = ({ handleClickScroll }) => {
             </Fade>
 
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
-              <Tilt>
+              <Tilt
+                glareEnable
+                glareBorderRadius={"1.5rem"}
+                scale="1.1"
+                perspective="4000"
+              >
                 <a
                   target="_blank"
                   href="https://mern-project-cfqm.onrender.com/"
@@ -71,16 +81,18 @@ export const Projects = ({ handleClickScroll }) => {
                       <img
                         src="./images/project9.jpg"
                         alt="Red Social {en progreso..}"
-                        className="brightness-90 hover:brightness-100 transition-all duration-300"
+                        className="brightness-90 hover:brightness-100 self-start transition-all duration-300"
                         loading="lazy"
                       />
                     </figure>
                     <div className="card-body">
                       <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
-                        Red Social, en progreso..
+                        Proyecto MERN completo
                       </h2>
                       <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
-                        MERN Stack
+                        React, Redux-Persist, Tailwind CSS, Mongoose, MongoDB,
+                        Express.js, Node.js, Firebase, JWT, Axios, Formik, Yup,
+                        FlowBite,
                       </p>
                       <div className="card-actions justify-evenly mt-5 text-[0.5rem] phone:text-[0.6rem] tablet:text-[0.8rem]">
                         <span className="bg-[#0c9fcb] p-2 rounded-xl">
@@ -106,7 +118,12 @@ export const Projects = ({ handleClickScroll }) => {
               </Tilt>
             </Fade>
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
-              <Tilt>
+              <Tilt
+                glareEnable
+                glareBorderRadius={"1.5rem"}
+                scale="1.1"
+                perspective="4000"
+              >
                 <a
                   target="_blank"
                   href="https://gasteaccontrolgastos.vercel.app/"
@@ -116,7 +133,7 @@ export const Projects = ({ handleClickScroll }) => {
                       <img
                         src="./images/project4.jpg"
                         alt="Control de gastos"
-                        className="brightness-90 hover:brightness-100 transition-all duration-300"
+                        className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
                         loading="lazy"
                       />
                     </figure>
@@ -142,14 +159,19 @@ export const Projects = ({ handleClickScroll }) => {
               </Tilt>
             </Fade>
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
-              <Tilt>
+              <Tilt
+                glareEnable
+                glareBorderRadius={"1.5rem"}
+                scale="1.1"
+                perspective="4000"
+              >
                 <a target="_blank" href="https://gasteacheroes.vercel.app/">
                   <div className="card max-w-[40rem] max-h-[30rem] w-auto glass m-auto">
                     <figure>
                       <img
                         src="./images/project2.jpg"
                         alt="Pagina para buscar heroes"
-                        className="brightness-90 hover:brightness-100 transition-all duration-300"
+                        className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
                         loading="lazy"
                       />
                     </figure>
@@ -178,7 +200,12 @@ export const Projects = ({ handleClickScroll }) => {
               </Tilt>
             </Fade>
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
-              <Tilt>
+              <Tilt
+                glareEnable
+                glareBorderRadius={"1.5rem"}
+                scale="1.1"
+                perspective="4000"
+              >
                 <a
                   target="_blank"
                   href="https://gasteacveterinaria.vercel.app/"
@@ -188,7 +215,7 @@ export const Projects = ({ handleClickScroll }) => {
                       <img
                         src="./images/project5.jpg"
                         alt="Veterinaria"
-                        className="brightness-90 hover:brightness-100 transition-all duration-300"
+                        className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
                         loading="lazy"
                       />
                     </figure>
@@ -214,14 +241,19 @@ export const Projects = ({ handleClickScroll }) => {
               </Tilt>
             </Fade>
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
-              <Tilt>
+              <Tilt
+                glareEnable
+                glareBorderRadius={"1.5rem"}
+                scale="1.1"
+                perspective="4000"
+              >
                 <a target="_blank" href="https://gasteacgifs.vercel.app/">
                   <div className="card max-w-[40rem] max-h-[30rem] w-auto glass m-auto">
                     <figure>
                       <img
                         src="./images/project3.jpg"
                         alt="Buscador de gifs"
-                        className="brightness-90 hover:brightness-100 transition-all duration-300"
+                        className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
                         loading="lazy"
                       />
                     </figure>
@@ -247,14 +279,19 @@ export const Projects = ({ handleClickScroll }) => {
               </Tilt>
             </Fade>
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
-              <Tilt>
+              <Tilt
+                glareEnable
+                glareBorderRadius={"1.5rem"}
+                scale="1.1"
+                perspective="4000"
+              >
                 <a target="_blank" href="https://gasteaclobos.vercel.app/">
                   <div className="card max-w-[40rem] max-h-[30rem] w-auto glass m-auto">
                     <figure>
                       <img
                         src="./images/project6.jpg"
                         alt="Mi primera pagina con HTML, CSS y JS"
-                        className="brightness-90 hover:brightness-100 transition-all duration-300"
+                        className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
                         loading="lazy"
                       />
                     </figure>
@@ -281,14 +318,19 @@ export const Projects = ({ handleClickScroll }) => {
               </Tilt>
             </Fade>
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
-              <Tilt>
+              <Tilt
+                glareEnable
+                glareBorderRadius={"1.5rem"}
+                scale="1.1"
+                perspective="4000"
+              >
                 <a target="_blank" href="https://gasteacriptos.vercel.app">
                   <div className="card max-w-[40rem] max-h-[30rem] w-auto glass m-auto">
                     <figure>
                       <img
                         src="./images/project7.jpg"
                         alt="Cotizador de crptos"
-                        className="brightness-90 hover:brightness-100 transition-all duration-300"
+                        className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
                         loading="lazy"
                       />
                     </figure>
@@ -305,42 +347,6 @@ export const Projects = ({ handleClickScroll }) => {
                         </span>
                         <span className="bg-yellow-300 text-black p-2 rounded-xl">
                           Javascript
-                        </span>
-                        <span className="bg-[#1c3db1] p-2 rounded-xl">CSS</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </Tilt>
-            </Fade>
-            <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
-              <Tilt>
-                <a target="_blank" className="cursor-pointer">
-                  <div className="card max-w-[40rem] max-h-[30rem] w-auto glass m-auto">
-                    <figure>
-                      <img
-                        src="./images/project8.jpg"
-                        alt="CRM de Clientes"
-                        className="brightness-90 hover:brightness-100 transition-all duration-300"
-                        loading="lazy"
-                      />
-                    </figure>
-                    <div className="card-body">
-                      <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
-                        CRM de Clientes
-                      </h2>
-                      <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
-                        Practicando con un servidor json falso
-                      </p>
-                      <div className="card-actions justify-evenly mt-5 text-[0.5rem] phone:text-[0.6rem] tablet:text-[0.8rem]">
-                        <span className="bg-[#0c9fcb] p-2 rounded-xl">
-                          React
-                        </span>
-                        <span className="bg-yellow-300 text-black p-2 rounded-xl">
-                          Javascript
-                        </span>
-                        <span className="bg-[#16becb] p-2 rounded-xl">
-                          Tailwindcss
                         </span>
                         <span className="bg-[#1c3db1] p-2 rounded-xl">CSS</span>
                       </div>
