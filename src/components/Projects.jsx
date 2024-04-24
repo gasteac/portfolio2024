@@ -72,10 +72,7 @@ export const Projects = ({ handleClickScroll }) => {
                 scale="1.1"
                 perspective="4000"
               >
-                <a
-                  target="_blank"
-                  href="https://mern-project-cfqm.onrender.com/"
-                >
+                <a target="_blank" href="https://facerook.up.railway.app/">
                   <div className="card max-w-[40rem] max-h-[30rem] w-auto glass m-auto">
                     <figure>
                       <img
