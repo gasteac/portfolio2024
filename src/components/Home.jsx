@@ -1,6 +1,4 @@
-import React from "react";
 import { Presentation } from "./Presentation";
-import { Fade } from "react-awesome-reveal";
 
 export const Home = () => {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import Tilt from "react-parallax-tilt";
 import { Fade } from "react-awesome-reveal";
 export const Projects = ({ handleClickScroll }) => {

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { gasteacApi } from "../../api";
@@ -167,7 +166,7 @@ export const Contact = () => {
                 name="message"
                 onChange={formik.handleChange}
                 value={formik.values.message}
-                placeholder="Escribeme y nos ponemos en contacto ;)"
+                placeholder="Escribeme y nos ponemos en contacto!"
                 className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl min-h-[4rem] tablet:min-h-[10rem] border-none outline-none text-black w-full"
               />
             </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
   const [isChecked, setIsChecked] = useState(false);
   const handleCheckboxChange = () => {
