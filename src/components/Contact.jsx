@@ -122,7 +122,7 @@ export const Contact = () => {
                   onChange={formik.handleChange}
                   value={formik.values.email}
                   type="text"
-                  placeholder="mail@company.com"
+                  placeholder="email@company.com"
                   className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl border-none outline-none text-black w-full"
                 />
               </div>
