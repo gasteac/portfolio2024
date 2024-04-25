@@ -6,7 +6,7 @@ export const Projects = ({ handleClickScroll }) => {
       <div className="flex h-auto min-h-screen w-full items-center flex-col">
         <h1 className="text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] tablet:pb-4 tablet:mt-[120px] mt-[60px]">
           <Fade triggerOnce={true} cascade fraction={0.01} damping={0.1}>
-            Proyectos
+            Projects
           </Fade>
         </h1>
 
@@ -35,7 +35,7 @@ export const Projects = ({ handleClickScroll }) => {
                     </figure>
                     <div className="card-body">
                       <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.3rem]">
-                        Portafolio personal
+                        Personal Portfolio.
                       </h2>
                       <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
                         Tailwind CSS, Axios, Formik+Yup, DaisyUI.
@@ -83,7 +83,7 @@ export const Projects = ({ handleClickScroll }) => {
                     </figure>
                     <div className="card-body">
                       <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
-                        Proyecto MERN completo
+                        Complete MERN Project.
                       </h2>
                       <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
                         React, Redux-Persist, Tailwind CSS, Mongoose, MongoDB,
@@ -135,10 +135,10 @@ export const Projects = ({ handleClickScroll }) => {
                     </figure>
                     <div className="card-body">
                       <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
-                        Control de gastos
+                        Expense Control.
                       </h2>
                       <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
-                        Manejo de estados a través de props en React
+                        State management through props in React.
                       </p>
                       <div className="card-actions justify-evenly mt-5 text-[0.5rem] phone:text-[0.6rem] tablet:text-[0.8rem]">
                         <span className="bg-[#0c9fcb] p-2 rounded-xl">
@@ -173,10 +173,10 @@ export const Projects = ({ handleClickScroll }) => {
                     </figure>
                     <div className="card-body">
                       <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.3rem]">
-                        Pagina para buscar heroes
+                        Page to search for heroes.
                       </h2>
                       <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
-                        Rutas protegidas, useContext - useProvider, Bootstrap.
+                        Protected routes, useContext - useProvider, Bootstrap.
                       </p>
                       <div className="card-actions justify-evenly mt-5 text-[0.5rem] phone:text-[0.6rem] tablet:text-[0.8rem]">
                         <span className="bg-[#0c9fcb] p-2 rounded-xl">
@@ -217,10 +217,10 @@ export const Projects = ({ handleClickScroll }) => {
                     </figure>
                     <div className="card-body">
                       <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
-                        Veterinaria
+                        Veterinary patient management.
                       </h2>
                       <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
-                        Agregar eliminar componentes / LocalStorage
+                        Add, Delete components / LocalStorage.
                       </p>
                       <div className="card-actions justify-evenly mt-5 text-[0.5rem] phone:text-[0.6rem] tablet:text-[0.8rem]">
                         <span className="bg-[#0c9fcb] p-2 rounded-xl">
@@ -255,10 +255,10 @@ export const Projects = ({ handleClickScroll }) => {
                     </figure>
                     <div className="card-body">
                       <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
-                        Buscador de gifs
+                        Gifts Searcher.
                       </h2>
                       <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
-                        Custom React Hook para Fetch Data con Async/Await
+                        Custom React hooks for fetching data with Async/Await.
                       </p>
                       <div className="card-actions justify-evenly mt-5 text-[0.5rem] phone:text-[0.6rem] tablet:text-[0.8rem]">
                         <span className="bg-[#0c9fcb] p-2 rounded-xl">
@@ -293,10 +293,10 @@ export const Projects = ({ handleClickScroll }) => {
                     </figure>
                     <div className="card-body">
                       <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
-                        Mi primera pagina con HTML, CSS y JS
+                        WOLVES. One of my first pages.
                       </h2>
                       <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
-                        Nada más que primeros pasos 😊
+                        First steps working with HTML, CSS y JS.
                       </p>
                       <div className="card-actions justify-evenly mt-5 text-[0.5rem] phone:text-[0.6rem] tablet:text-[0.8rem]">
                         <span className="bg-[#ffa435] p-2 rounded-xl">
@@ -332,10 +332,10 @@ export const Projects = ({ handleClickScroll }) => {
                     </figure>
                     <div className="card-body">
                       <h2 className="card-title text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
-                        Cotizador de crptos
+                        Crypto price calculator.
                       </h2>
                       <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
-                        Practicando fetch data
+                        Practicing fetch data.
                       </p>
                       <div className="card-actions justify-evenly mt-5 text-[0.5rem] phone:text-[0.6rem] tablet:text-[0.8rem]">
                         <span className="bg-[#0c9fcb] p-2 rounded-xl">

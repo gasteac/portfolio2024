@@ -34,11 +34,11 @@ export const Contact = () => {
     <>
       <dialog id="my_modal_1" className="modal">
         <div className="modal-box bg-primary">
-          <h3 className="font-bold text-lg text-black">Mensaje enviado!</h3>
-          <p className="py-4 text-black">Gracias! Responderé cuanto antes :)</p>
+          <h3 className="font-bold text-lg text-black">Message Sent!</h3>
+          <p className="py-4 text-black">I'll get back to you soon!</p>
           <div className="modal-action">
             <form method="dialog">
-              <button className="btn ">Cerrar</button>
+              <button className="btn ">Close</button>
             </form>
           </div>
         </div>
@@ -47,7 +47,7 @@ export const Contact = () => {
         <div className="flex-col flex tablet:flex-col space-x-5 phone:space-x-0  items-center justify-center mb-5">
           <h1 className="text-center text-[2rem] phone:text-[3rem] tablet:text-[3.7rem]">
             <Fade triggerOnce={true} cascade fraction={0.01} damping={0.1}>
-              Contactame
+              Contact Me
             </Fade>
           </h1>
           <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.4}>
@@ -84,7 +84,7 @@ export const Contact = () => {
                     className="group-focus-within:text-primary text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
                     htmlFor="name"
                   >
-                    Nombre
+                    Name
                   </label>
                   {formik.touched.name && formik.errors.name ? (
                     <h6 className="ml-2 text-red-300 text-[0.8rem]  phone:text-[1rem] tablet:text-[1.2rem]">
@@ -98,7 +98,7 @@ export const Contact = () => {
                   onChange={formik.handleChange}
                   value={formik.values.name}
                   type="text"
-                  placeholder="Nombre"
+                  placeholder="Gaston"
                   className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl border-none outline-none text-black w-full"
                 />
               </div>
@@ -108,7 +108,7 @@ export const Contact = () => {
                     className="group-focus-within:text-primary text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
                     htmlFor="email"
                   >
-                    Correo
+                    Email
                   </label>
                   {formik.touched.email && formik.errors.email ? (
                     <h6 className="ml-2 text-red-300 text-[0.8rem]  phone:text-[1rem] tablet:text-[1.2rem]">
@@ -122,7 +122,7 @@ export const Contact = () => {
                   onChange={formik.handleChange}
                   value={formik.values.email}
                   type="text"
-                  placeholder="correo@correo.com"
+                  placeholder="mail@company.com"
                   className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl border-none outline-none text-black w-full"
                 />
               </div>
@@ -131,7 +131,7 @@ export const Contact = () => {
                   className="group-focus-within:text-primary text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
                   htmlFor="phone"
                 >
-                  Celular
+                  Phone
                 </label>
                 <input
                   id="phone"
@@ -152,7 +152,7 @@ export const Contact = () => {
                   className="group-focus-within:text-primary text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
                   htmlFor="newMessage"
                 >
-                  Mensaje
+                  Message
                 </label>
                 {formik.touched.message && formik.errors.message ? (
                   <h6 className="ml-2 text-red-300 text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
@@ -166,7 +166,7 @@ export const Contact = () => {
                 name="message"
                 onChange={formik.handleChange}
                 value={formik.values.message}
-                placeholder="Escribeme y nos ponemos en contacto!"
+                placeholder="Let's get in touch!"
                 className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl min-h-[4rem] tablet:min-h-[10rem] border-none outline-none text-black w-full"
               />
             </div>
@@ -176,7 +176,7 @@ export const Contact = () => {
               type="submit"
               className="active:scale-95 active:bg-opacity-100 transition-all p-2 rounded-lg mt-4 w-full bg-primary outline-none border-none text-black text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem] hover:bg-primary hover:bg-opacity-80"
             >
-              Enviar
+              Send
             </button>
           </Fade>
         </form>
