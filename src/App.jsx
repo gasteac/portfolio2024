@@ -12,7 +12,7 @@ const App = () => {
   }, []);
   //este para actualizar el componente activo
   const [activeLink, setActiveLink] = useState("home");
-  console.log(activeLink);
+  // console.log(activeLink);
   //creas la referencia a cada componente y dsp se los mandas como atributo
   const homeRef = useRef(null);
   const projectsRef = useRef(null);
@@ -73,9 +73,9 @@ const App = () => {
   return (
     <>
       {/* aca tuve que ponerle al loader que se encuentra arriba de todo el ref de home para que suba bien arriba */}
-      <div ref={homeRef}>
-        <Loader />
-      </div>
+
+      {/* <Loader /> */}
+
       {/* le pasas la funcion scroll y active a la nav para que desde ella actives aca la funcion pa moverte */}
       <Navbar
         handleClickScroll={handleClickScroll}
@@ -83,7 +83,9 @@ const App = () => {
         setActiveLink={setActiveLink}
       />
       {/* home esta solito porque su ref lo tiene loader */}
-      <Home />
+      <div ref={homeRef}>
+        <Home />
+      </div>
       <div ref={projectsRef}>
         <Projects handleClickScroll={handleClickScroll} />
       </div>

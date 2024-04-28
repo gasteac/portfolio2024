@@ -1,29 +1,27 @@
-import { SliderComponent } from "./Slider";
+// import { SliderComponent } from "./Slider";
 import { TypeAnimation } from "react-type-animation";
 import { Fade } from "react-awesome-reveal";
 export const Presentation = () => {
   return (
-    <div className="flex flex-col space-y-4 tablet:space-y-6 p-6 w-full h-[70%] tablet:h-[100%] justify-center items-center ">
+    <div className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
       <TypeAnimation
-        sequence={["Hi!", 1500, "Hi! I'm Gastón.", 3000]}
+        sequence={["Hi! I'm Gastón."]}
         wrapper="span"
-        speed={15}
         style={{ display: "inline-block" }}
-        className="text-center text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] animate__animated animate__fadeIn animate__slower animate__delay-1s "
+        className="text-center text-[2rem] phone:text-[3rem] tablet:text-[5rem] animate__animated animate__fadeIn animate__slower animate__delay-0s "
         repeat={false}
       />
       <div>
         <TypeAnimation
-          sequence={["", 3500, "Full Stack Developer", 2000]}
+          sequence={["", 1000, "I'm a Full Stack Developer", 1500]}
           wrapper="span"
           speed={60}
           style={{ display: "inline-block" }}
-          className="text-[1rem] phone:text-[1.6rem] tablet:text-[2.2rem] text-emerald-400 animate__animated animate__fadeIn animate__slower animate__delay-1s "
-          repeat={false}
+          className="text-[1rem]  phone:text-[1.6rem] tablet:text-[2.2rem] text-emerald-400 animate__animated animate__fadeIn animate__slower animate__delay-0s "
           cursor={false}
         />
         <TypeAnimation
-          sequence={["</>", 0]}
+          sequence={["</>", 1000]}
           wrapper="span"
           speed={60}
           cursor={false}
@@ -32,15 +30,16 @@ export const Presentation = () => {
           className="text-[1rem] phone:text-[1.6rem] tablet:text-[2.2rem] text-emerald-400 animate__animated animate__fadeIn animate__slower animate__delay-1s "
         />
       </div>
-      <SliderComponent />
-      <Fade triggerOnce={true} delay={5000} duration={1000}>
-        <div className="dropdown">
+
+      {/* <SliderComponent /> */}
+      <Fade triggerOnce={true} delay={2100} duration={1400}>
+        <div className="dropdown mt-2">
           <div
             tabIndex={0}
             role="button"
-            className="text-white m-1 btn text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer w-fit z-10  border-none bg-emerald-700 hover:bg-emerald-800 text-center transition-all duration-200 rounded-xl active:scale-95"
+            className="text-white mt-3 p-2 text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer  z-10  border-none bg-emerald-700 hover:bg-emerald-800 text-center transition-all duration-200 rounded-xl active:scale-95"
           >
-            Download CV
+            My Resume
           </div>
           <ul
             tabIndex={0}
