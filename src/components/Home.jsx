@@ -9,7 +9,7 @@ export const Home = () => {
         </div>
         <img
           src="./icons/wolfHero.svg"
-          className=" absolute z-[-500] right-[12rem] w-[44rem] h-auto filter blur-[4px] animate__animated animate__fadeIn animate__slower animate__delay-1s"
+          className=" absolute z-[-500] laptop:right-[10rem] w-[44rem] h-auto filter blur-[4px] animate__animated animate__fadeIn animate__slower animate__delay-1s"
           alt="wolficon"
         />
       </div>

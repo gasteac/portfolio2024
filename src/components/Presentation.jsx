@@ -37,7 +37,7 @@ export const Presentation = () => {
           <div
             tabIndex={0}
             role="button"
-            className="text-white mt-3 p-2 text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer  z-10  border-none bg-emerald-700 hover:bg-emerald-800 text-center transition-all duration-200 rounded-xl active:scale-95"
+            className="text-white shadow-lg shadow-gray-800 mt-3 p-2 text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer  z-10  border-none bg-emerald-700 hover:bg-emerald-800 text-center transition-all duration-200 rounded-xl active:scale-95"
           >
             My Resume
           </div>
