@@ -3,13 +3,16 @@ import { Fade } from "react-awesome-reveal";
 export const Projects = ({ handleClickScroll }) => {
   return (
     <>
-      <div className="flex h-auto min-h-screen w-full items-center flex-col">
-        <h1 className="text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] tablet:pb-4 tablet:mt-[120px] mt-[60px]">
-          <Fade triggerOnce={true} cascade fraction={0.01} damping={0.1}>
-            Projects
-          </Fade>
-        </h1>
-
+      <div className="flex h-auto min-h-screen w-full items-center flex-col overflow-hidden">
+        <div className="relative flex items-center py-5 text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] tablet:pb-4 tablet:mt-[120px] mt-[60px]">
+          <div className="flex-none border-t-4 border-emerald-800 w-screen "></div>
+          <span className="flex-none mx-4">
+            <Fade triggerOnce={true} cascade fraction={0.01} damping={0.1}>
+              Projects
+            </Fade>
+          </span>
+          <div className="flex-none border-t-4 border-emerald-800 w-screen "></div>
+        </div>
         <div className="p-14">
           <div className="flex justify-evenly w-full h-full flex-wrap gap-16">
             {/* Portfolio */}

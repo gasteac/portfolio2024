@@ -25,7 +25,7 @@ export default {
       {
         gasteacDark: {
           background:
-            "linear-gradient(128deg, rgba(20,50,57,1) 0%, rgba(13,74,73,1) 47%, rgba(2,70,65,1) 100%)",
+            "#0a0a0a url('http://www.transparenttextures.com/patterns/asfalt-light.png')",
           color: "#FFFFFFff",
           fontFamily: "Poppins",
           primary: "#34D399",
@@ -42,3 +42,4 @@ export default {
     ],
   },
 };
+

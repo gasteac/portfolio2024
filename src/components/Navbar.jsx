@@ -35,7 +35,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
           alt="gasteacIcon"
         />
       </a>
-      <nav className="p-6 w-screen fixed top-0 z-50 tablet:bg-[rgb(20,50,57,0.05)] bg-[linear-gradient(320deg,_rgba(20,50,57,0.1)_0%,_rgba(13,74,73,0.2)_47%,_rgba(2,70,65,0.4)_100%)] tablet:backdrop-blur-[50px]">
+      <nav className="p-6 w-screen fixed top-0 z-50 tablet:bg-[rgb(20,50,57,0.05)] bg-[linear-gradient(320deg,_#0a0a0a40_0%,_#0f0f0f40_47%,_#1a1a1a40_100%)] tablet:backdrop-blur-[50px]">
         <div className="flex justify-end items-center text-xl h-[3vh]">
           <input
             onChange={handleCheckboxChange}
@@ -83,7 +83,6 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
                 setActiveLink("home");
                 handleClickScroll("home");
               }}
-              
             >
               Home
             </a>

@@ -43,13 +43,17 @@ export const Contact = () => {
           </div>
         </div>
       </dialog>
-      <div className="flex px-6 h-screen items-center justify-center flex-col">
-        <div className="flex-col flex tablet:flex-col space-x-5 phone:space-x-0  items-center justify-center mb-5">
-          <h1 className="text-center text-[2rem] phone:text-[3rem] tablet:text-[3.7rem]">
-            <Fade triggerOnce={true} cascade fraction={0.01} damping={0.1}>
-              Contact Me
-            </Fade>
-          </h1>
+      <div className="flex px-6 h-screen items-center flex-col overflow-hidden ">
+        <div className="flex-col  flex tablet:flex-col space-x-5 phone:space-x-0  items-center justify-center mb-5">
+          <div className="relative flex items-center py-5 text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] tablet:pb-4 tablet:mt-[120px] mt-[60px]">
+            <div className="flex-none border-t-4  border-emerald-800 w-screen"></div>
+            <span className="flex-none mx-4">
+              <Fade triggerOnce={true} cascade fraction={0.01} damping={0.1}>
+                Contact Me
+              </Fade>
+            </span>
+            <div className="flex-none border-t-4 border-emerald-800 w-screen"></div>
+          </div>
           <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.4}>
             <div className="phone:space-x-2 mt-2 space-y-3 phone:flex phone:flex-row phone:space-y-0 phone:items-center  flex flex-col items-start">
               <a
@@ -167,7 +171,7 @@ export const Contact = () => {
                 onChange={formik.handleChange}
                 value={formik.values.message}
                 placeholder="Let's get in touch!"
-                className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl min-h-[4rem] tablet:min-h-[10rem] border-none outline-none text-black w-full"
+                className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl min-h-[4rem] tablet:min-h-[10rem] max-h-[20rem] border-none outline-none text-black w-full"
               />
             </div>
           </Fade>
