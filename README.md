@@ -6,7 +6,8 @@
 This project was made with:
  - React + Vite
  - TailwindCSS
- - MongoDB + Express.js
+ - Node.js + Express.js
+ - MongoDB + Mongoose
  - React Type Animation 
  - React Parallax Tilt
  - Formik + Yup
