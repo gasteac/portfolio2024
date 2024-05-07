@@ -1,6 +1,6 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { gasteacApi } from "../../api";
+import axios from "axios";
 import { Fade } from "react-awesome-reveal";
 export const Contact = () => {
   const formik = useFormik({
@@ -17,7 +17,7 @@ export const Contact = () => {
     }),
     onSubmit: async ({ name, email, phone = "", message }) => {
       try {
-        await gasteacApi.post("/form/new", {
+        await axios.post("api/form/new", {
           name: name,
           email: email,
           phone: phone,
