@@ -1,13 +1,12 @@
 const express = require("express");
 const path = require("path");
-const dotenv = require("dotenv");
 require("dotenv").config();
 const cors = require("cors");
 const { dbConnection } = require("./database/config");
 const app = express();
-dbConnection();
 app.use(cors());
 app.use(express.json());
+dbConnection();
 app.use("/api/form", require("./routes/message"));
 app.use(express.static(path.join(__dirname, "/frontend/dist")));
 app.get("*", (req, res) => {
