@@ -1,7 +1,6 @@
-const {response} = require('express');
-const Message = require('../models/Message')
-
-const sendMessage = async(req, res = response) =>{
+import { response } from 'express'
+import Message from '../models/Message.js'
+export const sendMessage = async(req, res = response) =>{
     const {newMessage, name, email, phone} = req.body
     console.log(newMessage, name, email, phone)
     try {
@@ -22,4 +21,3 @@ const sendMessage = async(req, res = response) =>{
     }
 }
 
-module.exports = {sendMessage}

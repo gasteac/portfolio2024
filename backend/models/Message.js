@@ -1,4 +1,4 @@
-const {Schema, model} = require('mongoose');
+import {Schema, model} from 'mongoose';
 const MessageSchema = Schema({
     newMessage:{
         type: String,
@@ -18,4 +18,5 @@ const MessageSchema = Schema({
     }
 });
 
-module.exports = model('Message', MessageSchema)
+const Message = model('Message', MessageSchema);
+export default Message;
