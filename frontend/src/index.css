@@ -6,6 +6,7 @@
   @apply font-semibold transition-all ease-linear duration-[600ms] tablet:opacity-100 tablet:transition-none;
 }
 
+
 * {
   box-sizing: border-box;
   margin: 0;

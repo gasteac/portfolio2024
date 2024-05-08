@@ -32,6 +32,7 @@ export const Presentation = () => {
 
       {/* <SliderComponent /> */}
       <Fade triggerOnce={true} delay={3400} duration={1400}>
+
         <div className="dropdown">
           <div
             tabIndex={0}
