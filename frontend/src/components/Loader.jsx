@@ -13,7 +13,7 @@ const Loader = () => {
   return (
     <>
       {isLoading && (
-        <div className="align-middle justify-center items-center h-full w-full bg-[#1f2937]">
+        <div className="align-middle justify-center items-center h-screen w-screen bg-black">
           <span className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] loading loading-infinity loading-lg scale-[3] text-white" />
         </div>
       )}

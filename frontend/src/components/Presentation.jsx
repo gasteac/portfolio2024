@@ -5,7 +5,7 @@ export const Presentation = () => {
   return (
     <div className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
       <TypeAnimation
-        sequence={["Hi! I'm Gastón."]}
+        sequence={["", 1000, "Hello I'm Gastón :)"]}
         wrapper="span"
         style={{ display: "inline-block" }}
         className="text-center text-[2rem] phone:text-[3rem] tablet:text-[5rem] animate__animated animate__fadeIn animate__slower animate__delay-0s "
@@ -13,7 +13,7 @@ export const Presentation = () => {
       />
       <div>
         <TypeAnimation
-          sequence={["", 1000, "I'm a Full Stack Developer ", 1500]}
+          sequence={["", 2500, "I'm a Full Stack Developer "]}
           wrapper="span"
           speed={60}
           style={{ display: "inline-block" }}
@@ -31,18 +31,18 @@ export const Presentation = () => {
       </div>
 
       <SliderComponent />
-      <Fade triggerOnce={true} delay={2100} duration={1400}>
+      <Fade triggerOnce={true} delay={2600} duration={1400}>
         <div className="dropdown">
           <div
             tabIndex={0}
             role="button"
-            className="colorized text-white shadow-lg shadow-gray-800 mt-3 p-2 text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer  z-10  border-none bg-emerald-700 hover:bg-emerald-800 text-center transition-all duration-200 rounded-xl active:scale-95"
+            className=" text-white mt-3 py-3 px-5 text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer  z-10  border-none bg-emerald-500 bg-opacity-40   text-center transition-all duration-200 rounded-xl active:scale-95"
           >
             My Resume
           </div>
           <ul
             tabIndex={0}
-            className="p-2 mt-2 shadow menu dropdown-content w-full z-[1] text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer border-none bg-[#0a0a0a] bg-opacity-80  text-center transition-all duration-200  rounded-xl active:scale-95"
+            className="p-2 mt-2 shadow menu dropdown-content w-full z-[1] text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer border-none bg-emerald-500 bg-opacity-40  text-center transition-all duration-200  rounded-xl active:scale-95"
           >
             <li>
               <a href="Acosta Gaston - FullStack Developer.pdf" target="_blank">
