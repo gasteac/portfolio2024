@@ -39,7 +39,7 @@ export const About = () => {
             </div>
             <dialog id="wolfQuote" className="modal">
                 <div className="modal-box bg-slate-300 max-w-[50rem]" >
-                    <img height={900} width={900} className="rounded-xl" src="./images/wolfQuote.jpg" alt="wolfQuote" />
+                    <img height={900} width={900} className="rounded-xl" src="./images/wolfQuote.webp" alt="wolfQuote" />
                 </div>
                 <form method="dialog" className="modal-backdrop">
                     <button>close</button>

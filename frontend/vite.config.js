@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-
+import dotenv from "dotenv";
+dotenv.config();
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
@@ -15,7 +16,7 @@ export default defineConfig({
     //y el front en gasteac.com, y realiza peticiones a gasteac.com/apu que ya esta ahi con él
     proxy: {
       "/api": {
-        target: "http://localhost:4000/",
+        target: `http://localhost:${process.env.PORT}/`,
         secure: false,
       },
     },
