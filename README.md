@@ -1,5 +1,5 @@
-![Portfolio image overview 1](https://github.com/gasteac/portfolio2024/blob/main/public/overview/1.jpg?raw=true)
-![Portfolio image overview 2](https://github.com/gasteac/portfolio2024/blob/main/public/overview/2.jpg?raw=true)
+![Portfolio image overview 1](https://github.com/gasteac/portfolio2024/blob/main/frontend/public/overview/1.jpg?raw=true)
+![Portfolio image overview 2](https://github.com/gasteac/portfolio2024/blob/main/frontend/public/overview/2.jpg?raw=true)
 ## Personal Portfolio
 **Hello! I hope you're doing well :)**
 
