@@ -5,7 +5,7 @@ export const Presentation = () => {
   return (
     <div className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
       <TypeAnimation
-        sequence={["", 1000, "Hello I'm Gastón"]}
+        sequence={["", 1000, "Hello, I'm Gastón"]}
         wrapper="span"
         style={{ display: "inline-block" }}
         className="text-center text-[2rem] phone:text-[3rem] tablet:text-[4rem] animate__animated animate__fadeIn animate__slower animate__delay-0s "
@@ -36,7 +36,7 @@ export const Presentation = () => {
           <div
             tabIndex={0}
             role="button"
-            className=" mt-3 py-3 px-5 text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer  z-10  border-none text-opacity-100 text-black bg-white bg-opacity-70   text-center transition-all duration-200 rounded-xl active:scale-95"
+            className=" mt-3 py-3 px-5 text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer  z-10  border-none text-opacity-100 text-black hover:bg-emerald-500 hover:bg-opacity-40  hover:text-white bg-white bg-opacity-70  text-center transition-all duration-50 rounded-xl active:scale-95"
           >
             My Resume
           </div>

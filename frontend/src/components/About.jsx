@@ -18,7 +18,7 @@ export const About = () => {
                 <div className="max-w-[70%] text-justify text-[1rem] phone:text-[1.4rem] tablet:text-[1.6rem]">
                     <Fade triggerOnce={true} delay={200} duration={2500} fraction={0.2}>
                         <h1>
-                            I'm an Advanced Information Systems Engineering student with a strong aspiration to become a leading Full Stack developer. Motivated by curiosity, I'm continuously exploring and practicing new technologies in my field.
+                            Hello! my name is <span className="text-emerald-600">Gastón Acosta</span>, I'm an Advanced Information Systems Engineering student with a strong aspiration to become a leading Full Stack developer. Motivated by curiosity, I'm continuously exploring and practicing new technologies in my field.
                             <br />
                             <br />
                             My dedication to delivering innovative solutions fuels my passion for building extraordinary software. I actively seek out new learning opportunities, whether through online courses, documentation, tutorials or mentorship programs. By embracing a continuous learning mindset, I aim to develop the skills and expertise necessary to make meaningful contributions to any team or project.
