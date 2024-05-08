@@ -31,12 +31,12 @@ export const Presentation = () => {
       </div>
 
       {/* <SliderComponent /> */}
-      <Fade triggerOnce={true} delay={2600} duration={1400}>
+      <Fade triggerOnce={true} delay={3400} duration={1400}>
         <div className="dropdown">
           <div
             tabIndex={0}
             role="button"
-            className=" mt-3 py-3 px-5 text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer  z-10  border-none text-opacity-100 text-black bg-white bg-opacity-70   text-center transition-all duration-200 rounded-xl active:scale-95"
+            className=" mt-3 py-2 px-5 text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer  z-10  border-none text-opacity-100 text-black bg-white bg-opacity-70   text-center transition-all duration-200 rounded-xl active:scale-95"
           >
             My Resume
           </div>
