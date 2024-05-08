@@ -19,39 +19,47 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
 .transition-right {
   transition: right 0.4s ease;
 }
-#sidebar-active:checked ~ .links-container {
+
+#sidebar-active:checked~.links-container {
   right: 0;
 }
-#sidebar-active:checked ~ .openButton {
+
+#sidebar-active:checked~.openButton {
   display: none;
 }
-#sidebar-active:checked ~ .closeButton {
+
+#sidebar-active:checked~.closeButton {
   display: block;
 }
-#sidebar-active:checked ~ #overlay {
+
+#sidebar-active:checked~#overlay {
   height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
 }
+
 .menu-icon {
   -webkit-transition: -webkit-transform 300ms ease-in;
   transition: -webkit-transform 300ms ease-in;
   transition: transform 300ms ease-in;
   transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
 }
-.menu-icon > span {
+
+.menu-icon>span {
   -webkit-transition: -webkit-transform 300ms ease-in;
   transition: -webkit-transform 300ms ease-in;
   transition: transform 300ms ease-in;
   transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
 }
-.menu-icon > span:before,
-.menu-icon > span:after {
+
+.menu-icon>span:before,
+.menu-icon>span:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -62,38 +70,46 @@
   transition: transform 300ms ease;
   transition: transform 300ms ease, -webkit-transform 300ms ease;
 }
-.menu-icon > span:before {
+
+.menu-icon>span:before {
   -webkit-transform: translateY(-0.5em);
   transform: translateY(-0.5em);
 }
-.menu-icon > span:after {
+
+.menu-icon>span:after {
   -webkit-transform: translateY(0.5em);
   transform: translateY(0.5em);
 }
-#sidebar-active:checked ~ .menu-icon {
+
+#sidebar-active:checked~.menu-icon {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-#sidebar-active:checked ~ .menu-icon > span:before {
+
+#sidebar-active:checked~.menu-icon>span:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-#sidebar-active:checked ~ .menu-icon > span:after {
+#sidebar-active:checked~.menu-icon>span:after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+
 @layer utilities {
   @media (min-width: 707px) {
     .links-container a:not(.socials) {
       @apply relative tracking-[1px];
     }
+
     .links-container a:not(.socials)::after {
       @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-1 rounded-full duration-200;
     }
+
     .links-container a:not(.socials, .activeLink)::after:hover {
       @apply w-[100%];
     }
+
     .links-container .activeLink a::after {
       @apply content-[''] absolute bg-primary h-[3px] w-[0%] left-0 -bottom-1 rounded-full duration-200;
     }
@@ -142,13 +158,11 @@
   :root {
     --m: 2rem;
   }
-}
+} 
 
 
 :root {
-/*  change this for scaling  */
   --m: 4rem;
-  
   --red: #FF6565;
   --pink: #FF64F9;
   --purple: #6B5FFF;
@@ -157,4 +171,27 @@
   --yellow: #FFEE55;
   --orange: #FF6D1B;
   
+}
+
+@keyframes changeColor {
+
+  0%,
+  100% {
+    filter: drop-shadow(0 5px 5px #ffffff);
+  }
+  50% {
+    filter: drop-shadow(0 5px 5px #04ec97);
+  }
+}
+
+.animate-change-color {
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-name: changeColor;
+  animation: changeColor 4s infinite;
+  -webkit-transition: changeColor 4s infinite;
+  -moz-transition: changeColor 4s infinite;
+  -o-transition: changeColor 4s infinite;
+  transition: changeColor 4s infinite;
+  /* 4 seconds for a full cycle */
 }

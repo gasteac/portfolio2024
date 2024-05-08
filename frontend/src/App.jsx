@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Contact, Home, Navbar, Projects } from "./components";
 import Loader from "./components/Loader";
 import "animate.css";
+import { About } from "./components/About";
 
 const App = () => {
   //con esto volves al inicio cuando recargas la pagina sino se rompe todo
@@ -15,6 +16,7 @@ const App = () => {
   // console.log(activeLink);
   //creas la referencia a cada componente y dsp se los mandas como atributo
   const homeRef = useRef(null);
+  const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
@@ -29,14 +31,21 @@ const App = () => {
         const scrollPosition = window.scrollY + window.innerHeight / 2;
         //creas las referencia a la posicion de cada componente
         const homePos = homeRef.current.offsetTop;
+        const aboutPos = aboutRef.current.offsetTop;
         const projectsPos = projectsRef.current.offsetTop;
         const contactPos = contactRef.current.offsetTop;
         //esto se hace para determinar donde estas parado y volver active al navlink
         //fijate que comparas la posicion de home por ejemplo y donde esta tu ventana con otro componente
         //asi no importa el tamaño vertical del componente va a funcionar igual
-        if (scrollPosition >= homePos && scrollPosition < projectsPos) {
+        if (scrollPosition >= homePos && scrollPosition < aboutPos) {
           setActiveLink("home");
         } else if (
+          scrollPosition >= aboutPos &&
+          scrollPosition < projectsPos
+        ) {
+          setActiveLink("about");
+        }
+        else if (
           scrollPosition >= projectsPos &&
           scrollPosition < contactPos
         ) {
@@ -58,6 +67,9 @@ const App = () => {
     switch (id) {
       case "home":
         homeRef.current.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "about":
+        aboutRef.current.scrollIntoView({ behavior: "smooth" });
         break;
       case "projects":
         projectsRef.current.scrollIntoView({ behavior: "smooth" });
@@ -82,6 +94,9 @@ const App = () => {
       {/* home esta solito porque su ref lo tiene loader */}
       <div ref={homeRef}>
         <Home />
+      </div>
+       <div ref={aboutRef}>
+        <About />
       </div>
       <div ref={projectsRef}>
         <Projects handleClickScroll={handleClickScroll} />

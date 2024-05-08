@@ -86,6 +86,21 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
             >
               Home
             </a>
+
+
+            <a
+              className={`cursor-pointer ${activeLink === "about" ? "text-primary activeLink" : "text-white"
+                }`}
+              // cuando haces clic en un link solo le avisas a app.jsx que ejecute su funcion handleScroll con determinado ref y que actualice el estado del link activo
+              onClick={() => {
+                setActiveLink("about");
+                handleClickScroll("about");
+              }}
+            >
+              About
+            </a>
+
+            
             <a
               className={`cursor-pointer ${
                 activeLink === "projects"
