@@ -72,10 +72,7 @@ const App = () => {
 
   return (
     <>
-      {/* aca tuve que ponerle al loader que se encuentra arriba de todo el ref de home para que suba bien arriba */}
-
       <Loader />
-
       {/* le pasas la funcion scroll y active a la nav para que desde ella actives aca la funcion pa moverte */}
       <Navbar
         handleClickScroll={handleClickScroll}
