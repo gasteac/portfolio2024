@@ -10,7 +10,7 @@ i18n
             en: { translation: en },
             es: { translation: es },
         },
-        lng: localStorage.getItem('i18nextLng') || es, // idioma por defecto
+        lng: localStorage.getItem('i18nextLng') ? localStorage.getItem('i18nextLng') : es , // idioma por defecto
         fallbackLng: en, // idioma de respaldo
         interpolation: {
             escapeValue: false,
