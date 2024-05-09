@@ -14,7 +14,7 @@ export const Home = ({ handleClickScroll, setActiveLink }) => {
           <span onClick={() => {
             setActiveLink("about");
             handleClickScroll("about");
-          }} className="cursor-pointer transition-all duration-200 hover:text-emerald-400 material-symbols-outlined absolute text-6xl bottom-8">
+          }} className="cursor-pointer transition-all duration-200 hover:text-emerald-400 material-symbols-outlined absolute text-6xl bottom-14">
             expand_more
           </span>
         </div>
