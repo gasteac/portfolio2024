@@ -1,8 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 export const LanguageSelector = () => {
-    const { i18n } = useTranslation();
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const changeLanguage = (lng) => {
         localStorage.setItem('i18nextLng', lng);
         i18n.changeLanguage(lng);

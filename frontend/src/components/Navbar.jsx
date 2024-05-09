@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { LanguageSelector } from "./LanguageChanger";
 import { Suspense } from "react";
 export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("trans");
   const [isChecked, setIsChecked] = useState(false);
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);

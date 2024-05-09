@@ -3,7 +3,7 @@ import { Tools } from "./Tools";
 import { useTranslation } from 'react-i18next';
 import { Suspense } from "react";
 export const About = () => {
-    const { t } = useTranslation();
+    const { t } = useTranslation("trans");
     return (
         <>
             <Suspense fallback={<div>Loading...</div>}>
