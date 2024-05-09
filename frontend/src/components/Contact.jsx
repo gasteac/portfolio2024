@@ -3,6 +3,7 @@ import * as Yup from "yup";
 import axios from "axios";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
+import { Suspense } from "react";
 export const Contact = () => {
   const { t } = useTranslation();
   const formik = useFormik({
@@ -34,6 +35,7 @@ export const Contact = () => {
   });
   return (
     <>
+      <Suspense fallback={<div>Loading...</div>}>
       <dialog id="messageSent" className="modal">
         <div className="modal-box bg-primary">
           <h3 className="font-bold text-lg text-black">{t('messageSent')}</h3>
@@ -187,6 +189,7 @@ export const Contact = () => {
           </Fade>
         </form>
       </div>
+      </Suspense>
     </>
   );
 };

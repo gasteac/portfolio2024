@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import { LanguageSelector } from "./LanguageChanger";
+import { Suspense } from "react";
 export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
   const { t } = useTranslation();
   const [isChecked, setIsChecked] = useState(false);
@@ -25,6 +26,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
 
   return (
     <>
+      <Suspense fallback={<div>Loading...</div>}>
       <a
         className="socials fixed z-[60000] tablet:hidden top-[22px] left-3 cursor-pointer"
         onClick={() => {
@@ -169,6 +171,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
           </div>
         </div>
       </nav>
+      </Suspense>
     </>
   );
 };

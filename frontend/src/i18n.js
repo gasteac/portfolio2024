@@ -11,10 +11,8 @@ i18n
             es: { translation: es },
         },
         lng: localStorage.getItem('i18nextLng') ? localStorage.getItem('i18nextLng') : es , // idioma por defecto
-        fallbackLng: en, // idioma de respaldo
-        interpolation: {
-            escapeValue: false,
-        },
+        fallbackLng: localStorage.getItem('i18nextLng') ? localStorage.getItem('i18nextLng') : es, // idioma de respaldo
+       
     });
 
 export default i18n;
