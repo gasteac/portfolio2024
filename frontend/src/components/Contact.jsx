@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
 import { Suspense } from "react";
 export const Contact = () => {
-  const { t } = useTranslation("trans");
+  const { t } = useTranslation();
   const formik = useFormik({
     initialValues: {
       email: "",

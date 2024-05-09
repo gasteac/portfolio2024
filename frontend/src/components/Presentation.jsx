@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
 import { Suspense} from "react";
 export const Presentation = () => {
-  const { t } = useTranslation("trans");
+  const { t } = useTranslation();
   return (
     <Suspense fallback={<div>Loading...</div>}>
     <div className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
