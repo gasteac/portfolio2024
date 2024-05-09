@@ -35,7 +35,7 @@ export const About = () => {
                             <Tools />
 
                             <div onClick={() => document.getElementById('wolfQuote').showModal()} className="flex items-center justify-center mt-12 ">
-                                <img className="w-[500px] h-auto hover:scale-95 transition-all cursor-pointer" src="https://d.furaffinity.net/art/canis-ferox/1488278723/1412836498.canis-ferox_tea-gif.gif" alt="wolfGif" />
+                                <img className="w-[500px] h-auto hover:scale-95 transition-all cursor-pointer" src="./gifs/coffeWolf.gif" alt="wolfGif" />
                             </div>
 
                         </Fade>
