@@ -15,4 +15,4 @@ This project was made with:
  - DaisyUI
  - Axios
 
-#### Check it out here: [https://gasteac.vercel.app](https://gasteac.vercel.app)
+#### Check it out here: [https://gasteac.com](https://gasteac.com)
