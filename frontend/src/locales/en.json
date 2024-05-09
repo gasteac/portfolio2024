@@ -5,13 +5,13 @@
     "spanish": "Spanish",
     "presentation": "Hello, I'm Gastón",
     "fullstackdeveloper": "Full Stack Developer",
-    "modalLanguage": "To translate some texts, it's necessary to reload the page, but don't worry, it's not that necessary.",
+    "modalLanguage": "The language has been changed to English.",
     "close": "Close",
     "home": "Home",
     "about": "About Me",
     "projects": "Projects",
     "contact": "Contact",
-    "hellomynameis":"Hello! my name is ",
+    "hellomynameis": "Hello! My name is ",
     "about1": "I'm an Advanced Information Systems Engineering student with a strong aspiration to become a leading Full Stack developer. Motivated by curiosity, I'm continuously exploring and practicing new technologies in my field.",
     "about2": "My dedication to delivering innovative solutions fuels my passion for building extraordinary software. I actively seek out new learning opportunities, whether through online courses, documentation, tutorials or mentorship programs. By embracing a continuous learning mindset, I aim to develop the skills and expertise necessary to make meaningful contributions to any team or project.",
     "currentStack": "My current stack includes:",
@@ -23,9 +23,19 @@
     "phone": "Phone",
     "messageSent": "Message Sent!",
     "iwillgetbacktoyousoon": "I'll get back to you soon!",
-    "getintouch": "Let's get in touch!"
-
-
+    "getintouch": "Let's get in touch!",
+    "project1title": "Portfolio Web",
+    "project1desc": "Personal Portfolio",
+    "project2title": "Complete MERN Project",
+    "project2desc": "This page has an admin, user, and visitor interface, including an admin panel, user profiles, posts, comments, likes, and more.",
+    "project3title": "Search for heroes",
+    "project3desc": "On this page, which has both private and public routes, you can log in and search for your favorite heroes.",
+    "project4title": "GIFs Searcher",
+    "project4desc": "On this page, you can search for any gifs you want.",
+    "project5title": "Expenses Control",
+    "project5desc": "On this page, you can manage your expenses, set your budget, add and delete expenses, categorize them, and view your total spending.",
+    "project6title": "HTML, CSS, JS Practice",
+    "project6desc": "My first page with these technologies.",
+    "project7title": "Crypto Real Price Calculator",
+    "project7desc": "You can search for the real-time price of various cryptocurrencies."
 }
-
-

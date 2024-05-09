@@ -2,12 +2,24 @@ import { LanguageSelector } from "./LanguageChanger";
 import { TypeAnimation } from "react-type-animation";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
-import { Suspense} from "react";
+import { Suspense, useEffect, useState} from "react";
 export const Presentation = () => {
   const { t } = useTranslation();
+  const [key, setKey] = useState(0)
+
   return (
     <Suspense fallback={<div>Loading...</div>}>
-    <div className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
+      <dialog id="languageChanged" className="modal">
+        <div className="modal-box bg-primary">
+          <p className="py-4 text-black">{t('modalLanguage')}</p>
+          <div className="modal-action">
+            <form method="dialog">
+              <button onClick={() => setKey(currentKey => currentKey + 1)} className="btn">{t('close')}</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    <div key={key} className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
       <div className="absolute hidden tablet:block top-24 right-12">
           <LanguageSelector />
       </div>
