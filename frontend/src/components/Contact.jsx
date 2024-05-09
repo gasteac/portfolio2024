@@ -2,7 +2,9 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import { Fade } from "react-awesome-reveal";
+import { useTranslation } from 'react-i18next';
 export const Contact = () => {
+  const { t } = useTranslation();
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -24,7 +26,7 @@ export const Contact = () => {
           newMessage: message,
         });
         formik.resetForm();
-        document.getElementById("my_modal_1").showModal();
+        document.getElementById("messageSent").showModal();
       } catch (error) {
         console.log(error);
       }
@@ -32,13 +34,13 @@ export const Contact = () => {
   });
   return (
     <>
-      <dialog id="my_modal_1" className="modal">
+      <dialog id="messageSent" className="modal">
         <div className="modal-box bg-primary">
-          <h3 className="font-bold text-lg text-black">Message Sent!</h3>
-          <p className="py-4 text-black">I'll get back to you soon!</p>
+          <h3 className="font-bold text-lg text-black">{t('messageSent')}</h3>
+          <p className="py-4 text-black">{t('iwillgetbacktoyousoon')}</p>
           <div className="modal-action">
             <form method="dialog">
-              <button className="btn ">Close</button>
+              <button className="btn ">{t('close')}</button>
             </form>
           </div>
         </div>
@@ -49,7 +51,7 @@ export const Contact = () => {
             <div className="flex-none border-t-4  border-emerald-800 w-screen"></div>
             <span className="flex-none mx-4">
               <Fade triggerOnce={true} cascade fraction={0.01} damping={0.1}>
-                Contact Me
+                {t('contactMe')}
               </Fade>
             </span>
             <div className="flex-none border-t-4 border-emerald-800 w-screen"></div>
@@ -88,7 +90,7 @@ export const Contact = () => {
                     className="group-focus-within:text-primary text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
                     htmlFor="name"
                   >
-                    Name
+                    {t('name')}
                   </label>
                   {formik.touched.name && formik.errors.name ? (
                     <h6 className="ml-2 text-red-300 text-[0.8rem]  phone:text-[1rem] tablet:text-[1.2rem]">
@@ -112,7 +114,7 @@ export const Contact = () => {
                     className="group-focus-within:text-primary text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
                     htmlFor="email"
                   >
-                    Email
+                    {t('email')}
                   </label>
                   {formik.touched.email && formik.errors.email ? (
                     <h6 className="ml-2 text-red-300 text-[0.8rem]  phone:text-[1rem] tablet:text-[1.2rem]">
@@ -135,7 +137,7 @@ export const Contact = () => {
                   className="group-focus-within:text-primary text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
                   htmlFor="phone"
                 >
-                  Phone
+                  {t('phone')}
                 </label>
                 <input
                   id="phone"
@@ -156,7 +158,7 @@ export const Contact = () => {
                   className="group-focus-within:text-primary text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]"
                   htmlFor="newMessage"
                 >
-                  Message
+                  {t('message')}
                 </label>
                 {formik.touched.message && formik.errors.message ? (
                   <h6 className="ml-2 text-red-300 text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem]">
@@ -170,7 +172,7 @@ export const Contact = () => {
                 name="message"
                 onChange={formik.handleChange}
                 value={formik.values.message}
-                placeholder="Let's get in touch!"
+                placeholder={t('getintouch')}
                 className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl min-h-[4rem] tablet:min-h-[10rem] max-h-[20rem] border-none outline-none text-black w-full"
               />
             </div>
@@ -180,7 +182,7 @@ export const Contact = () => {
               type="submit"
               className="active:scale-95 active:bg-opacity-100 transition-all p-2 rounded-lg mt-4 w-full bg-primary outline-none border-none text-black text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem] hover:bg-primary hover:bg-opacity-80"
             >
-              Send
+              {t('send')}
             </button>
           </Fade>
         </form>

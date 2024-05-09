@@ -1,11 +1,16 @@
-import { SliderComponent } from "./Slider";
+import { LanguageSelector } from "./LanguageChanger";
 import { TypeAnimation } from "react-type-animation";
 import { Fade } from "react-awesome-reveal";
+import { useTranslation } from 'react-i18next';
 export const Presentation = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
+      <div className="absolute hidden tablet:block top-24 right-12">
+      <LanguageSelector />
+      </div>
       <TypeAnimation
-        sequence={["", 1000, "Hello, I'm Gastón"]}
+        sequence={["", 1000, `${t('presentation')}`]}
         wrapper="span"
         style={{ display: "inline-block" }}
         className="text-center text-[2rem] phone:text-[3rem] tablet:text-[4rem] animate__animated animate__fadeIn animate__slower animate__delay-0s "
@@ -13,7 +18,7 @@ export const Presentation = () => {
       />
       <div>
         <TypeAnimation
-          sequence={["", 2500, "Full Stack Developer"]}
+          sequence={["", 2500, `${t('fullstackdeveloper')}`]}
           wrapper="span"
           speed={60}
           style={{ display: "inline-block" }}
@@ -32,14 +37,13 @@ export const Presentation = () => {
 
       {/* <SliderComponent /> */}
       <Fade triggerOnce={true} delay={3400} duration={1400}>
-
         <div className="dropdown">
           <div
             tabIndex={0}
             role="button"
-            className=" mt-3 py-3 px-5 text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer  z-10  border-none text-opacity-100 text-black hover:bg-emerald-500 hover:bg-opacity-40  hover:text-white bg-white bg-opacity-70  text-center transition-all duration-50 rounded-xl active:scale-95"
+            className=" mt-3 py-3 px-5 text-[0.7rem] phone:text-[0.9rem] tablet:text-[1.1rem] cursor-pointer  z-10  border-none text-opacity-100 text-black hover:bg-emerald-500 hover:bg-opacity-40  hover:text-white bg-white bg-opacity-70   rounded-xl active:scale-95"
           >
-            My Resume
+            {t('resume')}
           </div>
           <ul
             tabIndex={0}
@@ -47,7 +51,7 @@ export const Presentation = () => {
           >
             <li>
               <a href="Acosta Gaston - FullStack Developer.pdf" target="_blank">
-                English
+                 {t('english')}
               </a>
             </li>
             <li>
@@ -55,11 +59,12 @@ export const Presentation = () => {
                 href="Acosta Gaston - Desarrollador Full Stack.pdf"
                 target="_blank"
               >
-                Spanish
+                {t('spanish')}
               </a>
             </li>
           </ul>
         </div>
+       
       </Fade>
     </div>
   );

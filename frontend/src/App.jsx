@@ -3,6 +3,7 @@ import { Contact, Home, Navbar, Projects } from "./components";
 import Loader from "./components/Loader";
 import "animate.css";
 import { About } from "./components/About";
+import { t } from "i18next";
 
 const App = () => {
   //con esto volves al inicio cuando recargas la pagina sino se rompe todo
@@ -105,6 +106,17 @@ const App = () => {
       <div ref={contactRef}>
         <Contact />
       </div>
+      <dialog id="languageChanged" className="modal">
+        <div className="modal-box bg-primary">
+          <p className="py-4 text-black">{t('modalLanguage')}</p>
+          <div className="modal-action">
+            <form method="dialog">
+              {/* if there is a button in form, it will close the modal */}
+              <button className="btn">{t('close')}</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </>
   );
 };
