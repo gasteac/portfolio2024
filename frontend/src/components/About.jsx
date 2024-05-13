@@ -1,7 +1,7 @@
 import { Fade } from "react-awesome-reveal";
-import { Tools } from "./Tools";
 import { useTranslation } from 'react-i18next';
 import { Suspense } from "react";
+import { Tools } from "./Tools";
 export const About = () => {
     const { t } = useTranslation();
     return (
@@ -33,22 +33,10 @@ export const About = () => {
                         <Fade triggerOnce={true} delay={200} duration={3500} fraction={0.2}>
                             <h1 className="mt-12 text-center text-emerald-500">{t('currentStack')}</h1>
                             <Tools />
-
-                            <div onClick={() => document.getElementById('wolfQuote').showModal()} className="flex items-center justify-center mt-12 ">
-                                <img className="w-[500px] h-auto hover:scale-95 transition-all cursor-pointer" src="./gifs/coffeWolf.gif" alt="wolfGif" />
-                            </div>
-
                         </Fade>
                     </div>
                 </div>
-                <dialog id="wolfQuote" className="modal">
-                    <div className="modal-box bg-slate-300 max-w-[50rem]" >
-                        <img height={900} width={900} className="rounded-xl" src="./images/wolfQuote.webp" alt="wolfQuote" />
-                    </div>
-                    <form method="dialog" className="modal-backdrop">
-                        <button>close</button>
-                    </form>
-                </dialog>
+               
             </Suspense>
         </>
     );
