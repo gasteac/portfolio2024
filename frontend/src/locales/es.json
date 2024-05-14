@@ -17,7 +17,7 @@
     "currentStack": "Mi stack actual incluye:",
     "contactMe": "Contáctame",
     "name": "Nombre",
-    "email": "Correo electrónico",
+    "email": "Email",
     "message": "Mensaje",
     "send": "Enviar",
     "phone": "Teléfono",
@@ -37,5 +37,7 @@
     "project6title": "Práctica con HTML, CSS, JS",
     "project6desc": "Mi primera página con estas tecnologías.",
     "project7title": "Calcular Precio de Criptos",
-    "project7desc": "Puedes buscar el precio en tiempo real de varias criptomonedas."
+    "project7desc": "Puedes buscar el precio en tiempo real de varias criptomonedas.",
+    "required": "Requerido",
+    "invalidEmail": "Email invalido"
 }
