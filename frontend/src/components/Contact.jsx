@@ -14,9 +14,9 @@ export const Contact = () => {
       phone: "",
     },
     validationSchema: Yup.object({
-      name: Yup.string().required("Requerido!"),
-      message: Yup.string().required("Requerido!"),
-      email: Yup.string().email("Email invalido").required("Requerido!"),
+      name: Yup.string().required(t('required')),
+      message: Yup.string().required(t('required')),
+      email: Yup.string().email(t('invalidEmail')).required(t('required')),
     }),
     onSubmit: async ({ name, email, phone = "", message }) => {
       try {
