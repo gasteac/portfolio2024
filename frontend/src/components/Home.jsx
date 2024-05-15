@@ -5,10 +5,14 @@ export const Home = ({ handleClickScroll, setActiveLink }) => {
   return (
     <>
         <div className="relative h-[100vh] justify-center  flex w-screen  items-center  tablet:h-[100vh]">
-        <div className="absolute w-full h-full z-0 animate__animated animate__fadeIn animate__delay-1s animate__slow">
+        {/* <div className="absolute w-full h-full z-0 animate__animated animate__fadeIn animate__delay-1s animate__slow">
           <Spline scene="https://prod.spline.design/hFu6uCrd7dRvcgFT/scene.splinecode" />
 
-          </div>
+          </div> */}
+        <div className="absolute h-screen w-screen overflow-hidden opacity-60">
+          <Spline scene="https://prod.spline.design/hvRaWYvtOaPmXySI/scene.splinecode" />
+          <div className="absolute inset-0 "></div>
+        </div>
           <div>
             <Presentation />
           </div>

@@ -40,9 +40,9 @@ export const About = () => {
                     </div>
                     <Fade triggerOnce={true} delay={200} duration={2500} fraction={0.2}>
 
-                    <div className="flex">
+                    {/* <div className="flex">
                         <Spline className="scale-75 phone:scale-90 tablet:scale-125" scene="https://prod.spline.design/LNX4GdVNTKBqdTLu/scene.splinecode" />
-                    </div>
+                    </div> */}
                     </Fade>
 
                 </div>

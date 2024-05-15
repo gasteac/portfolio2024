@@ -49,9 +49,7 @@ export const Contact = () => {
           </div>
         </dialog>
         <div className="absolute h-screen w-screen overflow-hidden opacity-60">
-          <div className="absolute inset-0 h-screen">
-            <Spline scene="https://prod.spline.design/hvRaWYvtOaPmXySI/scene.splinecode" />
-          </div>
+          <Spline scene="https://prod.spline.design/hvRaWYvtOaPmXySI/scene.splinecode" />
           <div className="absolute inset-0 "></div>
         </div>
         <div className="flex px-6 h-screen items-center flex-col overflow-hidden">

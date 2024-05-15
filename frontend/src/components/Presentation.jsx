@@ -25,10 +25,10 @@ export const Presentation = () => {
         <div className="animate__animated animate__backInRight animate__delay-2s animate__slowest absolute hidden tablet:block top-24 right-12">
           <LanguageSelector />
       </div>
-        {/* <div className='absolute laptop:right-[162px] z-0 opacity-80'>
+        <div className='absolute laptop:right-[162px] z-0 opacity-80'>
           <Spline className="scale-75 phone:scale-105 transition-all " scene="https://prod.spline.design/aZZ5kX7gJc2MkRAO/scene.splinecode" />
       </div>
-        <div className='absolute laptop:right-[162px] -z-10 opacity-50 scale-90'>
+        {/* <div className='absolute laptop:right-[162px] -z-10 opacity-50 scale-90'>
           <Spline className="scale-75 phone:scale-105 transition-all " scene="https://prod.spline.design/euvIx-f1hMWRVDaC/scene.splinecode" />
         </div> */}
         {/* <div className='absolute desktop:right-[292px] desktop:top-26 z-0'>
