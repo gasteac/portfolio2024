@@ -136,7 +136,7 @@ export const Projects = ({ handleClickScroll }) => {
                           </a>
                         </div>
                       </div>
-                      <h2 className=" text-[0.6rem] phone:text-[1rem] text-gray-300">
+                      <h2 className=" text-[0.6rem] phone:text-[1rem] text-gray-300 line-clamp-2 tablet:line-clamp-none">
                         {t('project2desc')}
                       </h2>
                       <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">

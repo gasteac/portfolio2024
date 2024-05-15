@@ -6,11 +6,11 @@ export const Home = ({ handleClickScroll, setActiveLink }) => {
           <div>
             <Presentation />
           </div>
-          <img
+          {/* <img
             src="./icons/wolfHero.svg"
             className=" animate-change-color drop-shadow-[0_35px_35px_white]	 absolute z-[-500] laptop:right-[10rem] w-[44rem] h-auto  "
             alt="wolficon"
-          />
+          /> */}
           <span onClick={() => {
             setActiveLink("about");
             handleClickScroll("about");

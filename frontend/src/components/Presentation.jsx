@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
 import { Suspense, useEffect, useState} from "react";
+import Spline from '@splinetool/react-spline';
 export const Presentation = () => {
   const { t } = useTranslation();
   const [key, setKey] = useState(0)
@@ -22,6 +23,9 @@ export const Presentation = () => {
     <div key={key} className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
       <div className="absolute hidden tablet:block top-24 right-12">
           <LanguageSelector />
+      </div>
+        <div className='absolute laptop:right-[212px] '>
+          <Spline className="scale-75 phone:scale-90 transition-all " scene="https://prod.spline.design/aZZ5kX7gJc2MkRAO/scene.splinecode" />
       </div>
       <TypeAnimation
         sequence={["", 1000, `${t('presentation')}`]}
@@ -49,7 +53,6 @@ export const Presentation = () => {
         />
       </div>
 
-      {/* <SliderComponent /> */}
       <Fade triggerOnce={true} delay={3400} duration={1400}>
         <div className="dropdown">
           <div
