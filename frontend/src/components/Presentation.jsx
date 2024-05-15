@@ -10,7 +10,7 @@ export const Presentation = () => {
   const [key, setKey] = useState(0)
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <>
       <dialog id="languageChanged" className="modal">
         <div className="modal-box bg-primary">
           <p className="py-4 text-black">{t('modalLanguage')}</p>
@@ -25,15 +25,7 @@ export const Presentation = () => {
         <div className="animate__animated animate__backInRight animate__delay-2s animate__slowest absolute hidden tablet:block top-24 right-12">
           <LanguageSelector />
       </div>
-        {/* <div className='absolute laptop:right-[162px] z-0 opacity-80'>
-          <Spline className="scale-75 phone:scale-105 transition-all " scene="https://prod.spline.design/aZZ5kX7gJc2MkRAO/scene.splinecode" />
-      </div> */}
-        {/* <div className='absolute laptop:right-[162px] -z-10 opacity-50 scale-90'>
-          <Spline className="scale-75 phone:scale-105 transition-all " scene="https://prod.spline.design/euvIx-f1hMWRVDaC/scene.splinecode" />
-        </div> */}
-        {/* <div className='absolute desktop:right-[292px] desktop:top-26 z-0'>
-          <Spline className="animate__animated animate__fadeIn animate__delay-2s animate__slowest scale-75 phone:scale-125 transition-all " scene="https://prod.spline.design/LNX4GdVNTKBqdTLu/scene.splinecode" />
-        </div> */}
+       
       <TypeAnimation
         sequence={["", 1200, `${t('presentation')}`]}
         wrapper="span"
@@ -91,6 +83,7 @@ export const Presentation = () => {
        
       </Fade>
     </div>
-    </Suspense>
+     
+    </>
   );
 };

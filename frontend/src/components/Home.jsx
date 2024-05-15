@@ -6,22 +6,12 @@ export const Home = ({ handleClickScroll, setActiveLink }) => {
   return (
     <>
         <div className="relative h-[100vh] justify-center  flex w-screen  items-center  tablet:h-[100vh]">
-        {/* <div className="absolute w-full h-full z-0 animate__animated animate__fadeIn animate__delay-1s animate__slow">
-          <Spline scene="https://prod.spline.design/hFu6uCrd7dRvcgFT/scene.splinecode" />
-
-          </div> */}
-        <Fade className="absolute w-full h-full" triggerOnce={false} delay={500} duration={2000}>
-          <Spline scene="https://prod.spline.design/hvRaWYvtOaPmXySI/scene.splinecode" />
+        <Fade className='absolute w-full h-full z-0'  triggerOnce={true}  duration={2000}>
+          <Spline scene="https://prod.spline.design/1Np5iFnYpUkyE9pK/scene.splinecode" />
         </Fade>
-       
           <div>
             <Presentation />
           </div>
-          {/* <img
-            src="./icons/wolfHero.svg"
-            className=" animate-change-color drop-shadow-[0_35px_35px_white]	 absolute z-[-500] laptop:right-[10rem] w-[44rem] h-auto  "
-            alt="wolficon"
-          /> */}
           <span onClick={() => {
             setActiveLink("about");
             handleClickScroll("about");
