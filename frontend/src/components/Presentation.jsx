@@ -3,8 +3,8 @@ import { TypeAnimation } from "react-type-animation";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
 import "animate.css";
-import { Suspense, useState} from "react";
-import Spline from '@splinetool/react-spline';
+import { useState} from "react";
+// import Spline from '@splinetool/react-spline';
 export const Presentation = () => {
   const { t } = useTranslation();
   const [key, setKey] = useState(0)
@@ -22,12 +22,12 @@ export const Presentation = () => {
         </div>
       </dialog>
     <div key={key} className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
-        <div className="animate__animated animate__backInRight animate__delay-2s animate__slowest absolute hidden tablet:block top-24 right-12">
+        <div className="animate__animated animate__backInRight animate__delay-4s animate__slowest absolute hidden tablet:block top-24 right-12">
           <LanguageSelector />
       </div>
        
       <TypeAnimation
-        sequence={["", 1200, `${t('presentation')}`]}
+        sequence={["", 3200, `${t('presentation')}`]}
         wrapper="span"
         style={{ display: "inline-block" }}
         className="text-center text-[2rem] phone:text-[3rem] tablet:text-[4rem] animate__animated animate__fadeIn animate__slower animate__delay-0s "
@@ -35,7 +35,7 @@ export const Presentation = () => {
       />
       <div>
         <TypeAnimation
-          sequence={["", 2500, `${t('fullstackdeveloper')}`]}
+          sequence={["", 4500, `${t('fullstackdeveloper')}`]}
           wrapper="span"
           speed={60}
           style={{ display: "inline-block" }}
@@ -43,7 +43,7 @@ export const Presentation = () => {
           cursor={false}
         />
         <TypeAnimation
-          sequence={[" ", 150 ,"</>", 2000]}
+          sequence={[" ", 150 ,"</>", 4000]}
           wrapper="span"
           speed={60}
           cursor={false}
@@ -52,7 +52,7 @@ export const Presentation = () => {
         />
       </div>
 
-      <Fade triggerOnce={true} delay={3200} duration={1400}>
+      <Fade triggerOnce={true} delay={5200} duration={1400}>
         <div className="dropdown">
           <div
             tabIndex={0}

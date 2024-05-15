@@ -3,7 +3,7 @@ import * as Yup from "yup";
 import axios from "axios";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
-import { Suspense } from "react";
+// import { Suspense } from "react";
 import Spline from '@splinetool/react-spline';
 export const Contact = () => {
   const { t } = useTranslation();
@@ -47,6 +47,7 @@ export const Contact = () => {
             </div>
           </div>
         </dialog>
+       
         <div className="flex px-6 h-screen items-center flex-col overflow-hidden">
           <div className="flex-col z-20 flex tablet:flex-col space-x-5 phone:space-x-0  items-center justify-center mb-5">
             <div className="relative flex items-center py-5 text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] tablet:pb-4 tablet:mt-[120px] mt-[60px]">
@@ -83,6 +84,9 @@ export const Contact = () => {
               </div>
             </Fade>
           </div>
+        <div className="absolute w-full h-full">
+          <Spline scene="https://prod.spline.design/hFu6uCrd7dRvcgFT/scene.splinecode" />
+        </div>
           <form onSubmit={formik.handleSubmit} className="max-w-[1000px] w-full mt-5">
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.4}>
               <div className="flex flex-col space-y-2 tablet:space-y-0 tablet:space-x-6 mb-2 tablet:flex-row">

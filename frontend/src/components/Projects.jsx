@@ -2,7 +2,7 @@ import Tilt from "react-parallax-tilt";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
 import { Suspense } from "react";
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 
 export const Projects = ({ handleClickScroll }) => {
   const { t } = useTranslation();
