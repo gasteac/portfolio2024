@@ -31,8 +31,11 @@ export const Presentation = () => {
         <div className='absolute laptop:right-[162px] -z-10 opacity-50 scale-90'>
           <Spline className="scale-75 phone:scale-105 transition-all " scene="https://prod.spline.design/euvIx-f1hMWRVDaC/scene.splinecode" />
         </div> */}
+        <div className='absolute desktop:right-[292px] desktop:top-12 z-0'>
+          <Spline className="animate__animated animate__fadeIn animate__delay-2s animate__slowest scale-75 phone:scale-105 transition-all " scene="https://prod.spline.design/LNX4GdVNTKBqdTLu/scene.splinecode" />
+        </div>
       <TypeAnimation
-        sequence={["", 200, `${t('presentation')}`]}
+        sequence={["", 1200, `${t('presentation')}`]}
         wrapper="span"
         style={{ display: "inline-block" }}
         className="text-center text-[2rem] phone:text-[3rem] tablet:text-[4rem] animate__animated animate__fadeIn animate__slower animate__delay-0s "
@@ -40,7 +43,7 @@ export const Presentation = () => {
       />
       <div>
         <TypeAnimation
-          sequence={["", 1500, `${t('fullstackdeveloper')}`]}
+          sequence={["", 2500, `${t('fullstackdeveloper')}`]}
           wrapper="span"
           speed={60}
           style={{ display: "inline-block" }}
@@ -48,7 +51,7 @@ export const Presentation = () => {
           cursor={false}
         />
         <TypeAnimation
-          sequence={[" ", 150 ,"</>", 1000]}
+          sequence={[" ", 150 ,"</>", 2000]}
           wrapper="span"
           speed={60}
           cursor={false}
@@ -57,7 +60,7 @@ export const Presentation = () => {
         />
       </div>
 
-      <Fade triggerOnce={true} delay={2500} duration={1400}>
+      <Fade triggerOnce={true} delay={3200} duration={1400}>
         <div className="dropdown">
           <div
             tabIndex={0}

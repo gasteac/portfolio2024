@@ -35,11 +35,9 @@ export const About = () => {
                             </h1>
 
                         </Fade>
-                        <Fade className="max-w-[700px]" triggerOnce={true} delay={200} duration={3500} fraction={0.2}>
+                        <Fade  triggerOnce={true} delay={200} duration={3500} fraction={0.2}>
                             <h1 className="mt-12 text-center text-emerald-500">{t('currentStack')}</h1>
-                            <div className='absolute desktop:right-[342px]  z-50 opacity-80'>
-                                <Spline className="scale-75 phone:scale-105 transition-all " scene="https://prod.spline.design/LNX4GdVNTKBqdTLu/scene.splinecode" />
-                            </div>
+                         
                             <Tools />
                         </Fade>
                     </div>
