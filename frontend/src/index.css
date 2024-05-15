@@ -18,6 +18,14 @@
 
 }
 
+.contactBackground {
+background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 13%, rgba(1, 186, 159, 0.2777485994397759) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 13%, rgba(1, 186, 159, 0.2777485994397759) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 13%, rgba(1, 186, 159, 0.2777485994397759) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#01ba9f", GradientType=1);
+}
+
 ::-webkit-scrollbar {
   display: none;
 }

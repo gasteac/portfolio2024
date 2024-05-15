@@ -63,7 +63,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
           ></label>
 
           <div
-            className="navGlass:backdrop-blur-[50px] navGlass:shadow-2xl links-container transition-right -right-[100%] flex flex-col items-center space-y-16 navGlass:h-screen tablet:max-w-[100%] min-w-[115px] max-w-[250px] w-[70vw] fixed top-0 z-10 shadow-2xl tablet:space-y-0
+              className="navGlass:backdrop-blur-[50px] navGlass:bg-black navGlass:bg-opacity-95 navGlass:glass navGlass:shadow-2xl links-container transition-right -right-[100%] flex flex-col items-center space-y-16 navGlass:h-screen tablet:max-w-[100%] min-w-[115px] max-w-[250px] w-[70vw] fixed top-0 z-10 shadow-2xl tablet:space-y-0
           tablet:mt-0 tablet:shadow-none tablet:w-[100%] tablet:flex-row tablet:space-x-10 tablet:static"
           >
             <div className="tablet:mr-auto flex items-center justify-center">
