@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Tools = () => {
   return (
-    <div className='flex flex-wrap  flex-col gap-6 m-12 justify-center items-center'>
+    <div className='flex flex-wrap  flex-col gap-6 m-12 justify-center items-center overflow-hidden'>
       {/* TARJETA FRONTEND */}
       <div className="bg-emerald-900 bg-opacity-30 group hover:bg-emerald-900 hover:bg-opacity-70 transition-all px-2 pb-4 min-w-52 h-full rounded-2xl flex flex-col">
         <h1 className='p-3 group-hover:tracking-wider transition-all'>Frontend</h1>

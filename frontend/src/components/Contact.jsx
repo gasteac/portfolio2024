@@ -4,7 +4,7 @@ import axios from "axios";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
 // import { Suspense } from "react";
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 export const Contact = () => {
   const { t } = useTranslation();
   const formik = useFormik({
@@ -84,9 +84,6 @@ export const Contact = () => {
               </div>
             </Fade>
           </div>
-        {/* <div className="absolute w-full h-full">
-          <Spline scene="https://prod.spline.design/hFu6uCrd7dRvcgFT/scene.splinecode" />
-        </div> */}
           <form onSubmit={formik.handleSubmit} className="max-w-[1000px] w-full mt-5">
             <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.4}>
               <div className="flex flex-col space-y-2 tablet:space-y-0 tablet:space-x-6 mb-2 tablet:flex-row">

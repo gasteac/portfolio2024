@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 export const Home = ({ handleClickScroll, setActiveLink }) => {
   return (
     <>
-        <div className="relative h-[100vh] justify-center  flex w-screen  items-center  tablet:h-[100vh]">
+      <div className="relative h-[100vh] justify-center  flex w-screen  items-center  tablet:h-[100vh] overflow-hidden">
         <Fade className='absolute w-full -right-2 h-full z-0'  triggerOnce={true} delay={2000}  duration={2000}>
           <Spline scene="https://prod.spline.design/1Np5iFnYpUkyE9pK/scene.splinecode" />
         </Fade>

@@ -2,7 +2,7 @@ import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
 import { Suspense } from "react";
 import { Tools } from "./Tools";
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 import "animate.css";
 
 export const About = () => {
@@ -10,7 +10,7 @@ export const About = () => {
     return (
         <>
             <Suspense fallback={<div>Loading...</div>}>
-                <div className="flex px-6 h-full items-center flex-col overflow-hidden ">
+                <div className="flex px-6 h-full items-center flex-col overflow-hidden">
                     <div className="flex-col flex tablet:flex-col space-x-5 phone:space-x-0 items-center justify-center mb-5">
                         <div className="relative flex items-center py-5 text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] tablet:pb-4 tablet:mt-[120px] mt-[60px]">
                             <div className="flex-none border-t-4  border-emerald-800 w-screen"></div>

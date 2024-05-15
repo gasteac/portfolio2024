@@ -4,14 +4,15 @@
 **Hello! I hope you're doing well :)**
 
 This project was made with:
- - React + Vite
- - TailwindCSS
- - Node.js + Express.js
- - MongoDB + Mongoose
  - React Type Animation 
+ - Node.js + Express.js
  - React Parallax Tilt
+ - MongoDB + Mongoose
+ - Spline Design
  - Formik + Yup
+ - React + Vite
  - React Scroll
+ - TailwindCSS
  - DaisyUI
  - Axios
 

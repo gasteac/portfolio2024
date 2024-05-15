@@ -21,7 +21,7 @@ export const Presentation = () => {
           </div>
         </div>
       </dialog>
-    <div key={key} className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
+      <div key={key} className="flex overflow-hidden flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
         <div className="animate__animated animate__backInRight animate__delay-4s animate__slowest absolute hidden tablet:block top-24 right-12">
           <LanguageSelector />
       </div>
