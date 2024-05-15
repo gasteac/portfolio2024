@@ -1,6 +1,7 @@
 import { Presentation } from "./Presentation";
 import Spline from '@splinetool/react-spline';
 import "animate.css";
+import { Fade } from "react-awesome-reveal";
 export const Home = ({ handleClickScroll, setActiveLink }) => {
   return (
     <>
@@ -9,10 +10,10 @@ export const Home = ({ handleClickScroll, setActiveLink }) => {
           <Spline scene="https://prod.spline.design/hFu6uCrd7dRvcgFT/scene.splinecode" />
 
           </div> */}
-        <div className="absolute h-screen w-screen overflow-hidden opacity-60">
+        <Fade className="absolute w-full h-full" triggerOnce={false} delay={500} duration={2000}>
           <Spline scene="https://prod.spline.design/hvRaWYvtOaPmXySI/scene.splinecode" />
-          <div className="absolute inset-0 "></div>
-        </div>
+        </Fade>
+       
           <div>
             <Presentation />
           </div>

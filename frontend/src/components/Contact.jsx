@@ -36,7 +36,6 @@ export const Contact = () => {
   });
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
         <dialog id="messageSent" className="modal">
           <div className="modal-box bg-primary">
             <h3 className="font-bold text-lg text-black">{t('messageSent')}</h3>
@@ -48,12 +47,13 @@ export const Contact = () => {
             </div>
           </div>
         </dialog>
-        <div className="absolute h-screen w-screen overflow-hidden opacity-60">
-          <Spline scene="https://prod.spline.design/hvRaWYvtOaPmXySI/scene.splinecode" />
-          <div className="absolute inset-0 "></div>
-        </div>
+        {/* <div className="absolute"> */}
+      <Fade className="absolute w-full h-full" triggerOnce={false} delay={500} duration={2000}>
+        <Spline scene="https://prod.spline.design/hvRaWYvtOaPmXySI/scene.splinecode" />
+      </Fade>
+          {/* <div className="absolute inset-0"></div>
+        </div> */}
         <div className="flex px-6 h-screen items-center flex-col overflow-hidden">
-
           <div className="flex-col z-20 flex tablet:flex-col space-x-5 phone:space-x-0  items-center justify-center mb-5">
             <div className="relative flex items-center py-5 text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] tablet:pb-4 tablet:mt-[120px] mt-[60px]">
               <div className="flex-none border-t-4  border-emerald-800 w-screen"></div>
@@ -197,7 +197,6 @@ export const Contact = () => {
             </Fade>
           </form>
         </div>
-      </Suspense>
     </>
   );
 };
