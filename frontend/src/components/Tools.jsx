@@ -2,9 +2,9 @@ import React from 'react'
 
 export const Tools = () => {
   return (
-    <div className='flex flex-wrap flex-col gap-6 m-12 justify-center items-center'>
+    <div className='flex flex-wrap  flex-col gap-6 m-12 justify-center items-center'>
       {/* TARJETA FRONTEND */}
-      <div className="bg-black bg-opacity-70 group hover:bg-emerald-900 hover:bg-opacity-30 transition-all px-2 pb-4 min-w-52 h-full rounded-2xl flex flex-col">
+      <div className="bg-fuchsia-950 bg-opacity-10 group hover:bg-emerald-900 hover:bg-opacity-30 transition-all px-2 pb-4 min-w-52 h-full rounded-2xl flex flex-col">
         <h1 className='p-3 group-hover:tracking-wider transition-all'>Frontend</h1>
         <div  className='flex items-center align-center justify-evenly flex-wrap gap-2 '>
           {/* React */}
@@ -66,7 +66,7 @@ export const Tools = () => {
         </div>
       </div>
       {/* TARJETA BACKEND */}
-      <div className="bg-black bg-opacity-70 group hover:bg-emerald-900 hover:bg-opacity-30 transition-all px-2 pb-4 min-w-52 h-full rounded-2xl flex flex-col">
+      <div className="bg-fuchsia-950 bg-opacity-10 group hover:bg-emerald-900 hover:bg-opacity-30 transition-all px-2 pb-4 min-w-52 h-full rounded-2xl flex flex-col">
         <h1 className='p-3 group-hover:tracking-wider transition-all'>Backend</h1>
         <div className='flex items-center align-center justify-evenly flex-wrap gap-2 '>
           <a data-tip='Node.js' className='tooltip' href="https://nodejs.org/en" target='_blank'>
@@ -104,7 +104,7 @@ export const Tools = () => {
         </div>
       </div>
       {/* TARJETA Tools */}
-      <div className="bg-black bg-opacity-70 group hover:bg-emerald-900 hover:bg-opacity-30 transition-all px-2 pb-4 min-w-52 h-full rounded-2xl flex flex-col">
+      <div className="bg-fuchsia-950 bg-opacity-10 group hover:bg-emerald-900 hover:bg-opacity-30 transition-all px-2 pb-4 min-w-52 h-full rounded-2xl flex flex-col">
         <h1 className='p-3 group-hover:tracking-wider transition-all'>Tools ands hosts</h1>
         <div  className='flex items-center align-center justify-evenly flex-wrap gap-2'>
           <a data-tip='Git' className='tooltip' href="https://git-scm.com/" target='_blank'>

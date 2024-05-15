@@ -24,8 +24,9 @@ export default {
     themes: [
       {
         gasteacDark: {
-          background:
-            "#0a0a0a url('http://www.transparenttextures.com/patterns/asfalt-light.png')",
+          // background:
+          //   "#0a0a0a url('http://www.transparenttextures.com/patterns/asfalt-light.png')",
+          background: "black",
           color: "#FFFFFFff",
           fontFamily: "Poppins",
           primary: "#34D399",

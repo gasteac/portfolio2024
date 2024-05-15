@@ -2,6 +2,7 @@ import Tilt from "react-parallax-tilt";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
 import { Suspense } from "react";
+import Spline from '@splinetool/react-spline';
 
 export const Projects = ({ handleClickScroll }) => {
   const { t } = useTranslation();
@@ -9,7 +10,11 @@ export const Projects = ({ handleClickScroll }) => {
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>
-        <div className="flex h-auto min-h-screen w-full items-center flex-col overflow-hidden">
+       
+        <div className="flex relative h-auto min-h-screen w-full items-center flex-col overflow-hidden">
+          {/* <div className='absolute top-0  opacity-80 -z-50'>
+            <Spline className="scale-75 phone:scale-105 transition-all " scene="https://prod.spline.design/aZZ5kX7gJc2MkRAO/scene.splinecode" />
+          </div> */}
           <div className="relative flex items-center py-5 text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] tablet:pb-4 tablet:mt-[120px] mt-[60px]">
             <div className="flex-none border-t-4 border-emerald-800 w-screen "></div>
             <span className="flex-none mx-4">
