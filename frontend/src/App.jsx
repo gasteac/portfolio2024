@@ -84,7 +84,7 @@ const App = () => {
 
   return (
     <>
-      <Loader />
+      {/* <Loader /> */}
       {/* le pasas la funcion scroll y active a la nav para que desde ella actives aca la funcion pa moverte */}
       <Navbar
         handleClickScroll={handleClickScroll}

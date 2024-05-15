@@ -2,7 +2,8 @@ import { LanguageSelector } from "./LanguageChanger";
 import { TypeAnimation } from "react-type-animation";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from 'react-i18next';
-import { Suspense, useEffect, useState} from "react";
+import "animate.css";
+import { Suspense, useState} from "react";
 import Spline from '@splinetool/react-spline';
 export const Presentation = () => {
   const { t } = useTranslation();
@@ -21,14 +22,14 @@ export const Presentation = () => {
         </div>
       </dialog>
     <div key={key} className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
-      <div className="absolute hidden tablet:block top-24 right-12">
+        <div className="animate__animated animate__backInRight animate__delay-2s animate__slowest absolute hidden tablet:block top-24 right-12">
           <LanguageSelector />
       </div>
         <div className='absolute laptop:right-[212px] '>
           <Spline className="scale-75 phone:scale-90 transition-all " scene="https://prod.spline.design/aZZ5kX7gJc2MkRAO/scene.splinecode" />
       </div>
       <TypeAnimation
-        sequence={["", 1000, `${t('presentation')}`]}
+        sequence={["", 200, `${t('presentation')}`]}
         wrapper="span"
         style={{ display: "inline-block" }}
         className="text-center text-[2rem] phone:text-[3rem] tablet:text-[4rem] animate__animated animate__fadeIn animate__slower animate__delay-0s "
@@ -36,7 +37,7 @@ export const Presentation = () => {
       />
       <div>
         <TypeAnimation
-          sequence={["", 2500, `${t('fullstackdeveloper')}`]}
+          sequence={["", 1500, `${t('fullstackdeveloper')}`]}
           wrapper="span"
           speed={60}
           style={{ display: "inline-block" }}
@@ -44,7 +45,7 @@ export const Presentation = () => {
           cursor={false}
         />
         <TypeAnimation
-          sequence={[" ", 200 ,"</>", 1000]}
+          sequence={[" ", 150 ,"</>", 1000]}
           wrapper="span"
           speed={60}
           cursor={false}
@@ -53,7 +54,7 @@ export const Presentation = () => {
         />
       </div>
 
-      <Fade triggerOnce={true} delay={3400} duration={1400}>
+      <Fade triggerOnce={true} delay={2500} duration={1400}>
         <div className="dropdown">
           <div
             tabIndex={0}
