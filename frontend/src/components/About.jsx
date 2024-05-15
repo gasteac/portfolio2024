@@ -9,7 +9,7 @@ export const About = () => {
     const { t } = useTranslation();
     return (
         <>
-                      
+
             <Suspense fallback={<div>Loading...</div>}>
                 <div className="flex px-6 h-full items-center flex-col overflow-hidden ">
                     <div className="flex-col flex tablet:flex-col space-x-5 phone:space-x-0 items-center justify-center mb-5">
@@ -24,7 +24,6 @@ export const About = () => {
 
                         </div>
                     </div>
-                    
                     <div className="text-justify text-[1rem] phone:text-[1.4rem] tablet:text-[1.6rem] tablet:max-w-[70%] laptop:max-w-[65%] overflow-hidden">
                         <Fade triggerOnce={true} delay={200} duration={2500} fraction={0.2}>
                             <h1>
@@ -33,16 +32,20 @@ export const About = () => {
                                 <br />
                                 {t('about2')}
                             </h1>
-
                         </Fade>
-                        <Fade  triggerOnce={true} delay={200} duration={3500} fraction={0.2}>
+                        <Fade triggerOnce={true} delay={200} duration={3500} fraction={0.2}>
                             <h1 className="mt-12 text-center text-emerald-500">{t('currentStack')}</h1>
-                         
                             <Tools />
                         </Fade>
                     </div>
+                    <Fade triggerOnce={true} delay={200} duration={2500} fraction={0.2}>
+
+                    <div className="flex">
+                        <Spline className="scale-75 phone:scale-90 tablet:scale-125" scene="https://prod.spline.design/LNX4GdVNTKBqdTLu/scene.splinecode" />
+                    </div>
+                    </Fade>
+
                 </div>
-               
             </Suspense>
         </>
     );

@@ -31,9 +31,9 @@ export const Presentation = () => {
         <div className='absolute laptop:right-[162px] -z-10 opacity-50 scale-90'>
           <Spline className="scale-75 phone:scale-105 transition-all " scene="https://prod.spline.design/euvIx-f1hMWRVDaC/scene.splinecode" />
         </div> */}
-        <div className='absolute desktop:right-[292px] desktop:top-12 z-0'>
-          <Spline className="animate__animated animate__fadeIn animate__delay-2s animate__slowest scale-75 phone:scale-105 transition-all " scene="https://prod.spline.design/LNX4GdVNTKBqdTLu/scene.splinecode" />
-        </div>
+        {/* <div className='absolute desktop:right-[292px] desktop:top-26 z-0'>
+          <Spline className="animate__animated animate__fadeIn animate__delay-2s animate__slowest scale-75 phone:scale-125 transition-all " scene="https://prod.spline.design/LNX4GdVNTKBqdTLu/scene.splinecode" />
+        </div> */}
       <TypeAnimation
         sequence={["", 1200, `${t('presentation')}`]}
         wrapper="span"
