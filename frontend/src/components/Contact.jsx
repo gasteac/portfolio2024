@@ -47,17 +47,19 @@ export const Contact = () => {
           </div>
         </div>
       </dialog>
-      <div className="flex px-6 h-screen items-center flex-col overflow-hidden ">
+      
+      <div className="flex px-6 h-screen items-center flex-col overflow-hidden">
+
         <div className="flex-col  flex tablet:flex-col space-x-5 phone:space-x-0  items-center justify-center mb-5">
-          <div className="relative flex items-center py-5 text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] tablet:pb-4 tablet:mt-[120px] mt-[60px]">
-            <div className="flex-none border-t-4  border-emerald-800 w-screen"></div>
-            <span className="flex-none mx-4">
-              <Fade triggerOnce={true} cascade fraction={0.01} damping={0.1}>
-                {t('contactMe')}
-              </Fade>
-            </span>
-            <div className="flex-none border-t-4 border-emerald-800 w-screen"></div>
-          </div>
+            <div className="relative flex items-center py-5 text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] tablet:pb-4 tablet:mt-[120px] mt-[60px]">
+              <div className="flex-none border-t-4  border-emerald-800 w-screen"></div>
+              <span className="flex-none mx-4">
+                <Fade triggerOnce={true} cascade fraction={0.01} damping={0.1}>
+                  {t('contactMe')}
+                </Fade>
+              </span>
+              <div className="flex-none border-t-4 border-emerald-800 w-screen"></div>
+            </div>
           <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.4}>
             <div className="phone:space-x-2 mt-2 space-y-3 phone:flex phone:flex-row phone:space-y-0 phone:items-center  flex flex-col items-start">
               <a
@@ -83,7 +85,7 @@ export const Contact = () => {
             </div>
           </Fade>
         </div>
-        <form onSubmit={formik.handleSubmit} className="max-w-[1000px] w-full">
+        <form onSubmit={formik.handleSubmit} className="max-w-[1000px] w-full mt-5">
           <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.4}>
             <div className="flex flex-col space-y-2 tablet:space-y-0 tablet:space-x-6 mb-2 tablet:flex-row">
               <div className="flex flex-col w-full group">
