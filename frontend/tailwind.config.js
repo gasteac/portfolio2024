@@ -5,7 +5,6 @@ export default {
   theme: {
     screens: {
       navGlass: { max: "707px" },
-
       phone: "500px",
 
       tablet: "708px",

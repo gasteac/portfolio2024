@@ -22,10 +22,7 @@ export const Presentation = () => {
         </div>
       </dialog>
       <div key={key} className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
-        <div className=" absolute hidden tablet:block top-24 right-12">
-          <LanguageSelector />
-      </div>
-       
+  
       <TypeAnimation
         sequence={["", 3200, `${t('presentation')}`]}
         wrapper="span"
@@ -53,6 +50,34 @@ export const Presentation = () => {
       </div>
 
       <Fade triggerOnce={true} delay={5200} duration={1400}>
+          <div className="navGlass:flex tablet:flex tablet:space-x-4 items-center justify-center space-x-2">
+            <a
+              href="https://github.com/gasteac"
+              target="_blank"
+              className="socials"
+            >
+              <img
+                style={{ clipPath: "circle(47% at 50% 50%)" }}
+                width={"40px"}
+                className="bg-black hover:bg-secondary rounded-[100%] min-w-[30px]"
+                src="/icons/github.svg"
+                alt="github"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/gasteac/"
+              target="_blank"
+              className="socials"
+            >
+              <img
+                style={{ clipPath: "circle(38% at 50% 50%)" }}
+                width={"51px"}
+                src="/icons/linkedin.svg"
+                alt="linkedin"
+                className="bg-black hover:bg-secondary min-w-[40px]"
+              />
+            </a>
+          </div>
         <div className="dropdown">
           <div
             tabIndex={0}

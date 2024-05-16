@@ -9,24 +9,26 @@ export const LanguageSelector = () => {
 
     return (
         <div>
-            <div className="dropdown animate__animated animate__backInRight animate__delay-2s animate__slowest">
+            <div className="dropdown dropdown-end">
                 <div
                     tabIndex={0}
                     role="button"
-                    className="py-1 px-3 text-[1rem] phone:text-[1rem] tablet:text-[1.1rem] cursor-pointer  z-10  border-none text-opacity-100 text-white bg-opacity-70   rounded-xl active:scale-95"
+                    className=" hover:text-emerald-500 cursor-pointer mt-2"
                 >
-                    {t('language')}
+                    <span className="material-symbols-outlined">
+                        translate
+                    </span>
                 </div>
                 <ul
                     tabIndex={0}
-                    className="mt-2 shadow menu dropdown-content w-full z-[1] text-[1rem] phone:text-[1.1rem] tablet:text-[1.1rem] cursor-pointer border-none bg-white bg-opacity-70  text-black text-center transition-all duration-200  rounded-xl active:scale-95 "
+                    className="mt-2 menu dropdown-content z-[1] cursor-pointer"
                 >
-                    <li className='mb-1 hover:text-gray-600' onClick={() => { changeLanguage("en"); document.getElementById('languageChanged').showModal() } }> 
+                    <li className='mb-1  text-white text-lg' onClick={() => { changeLanguage("en"); document.getElementById('languageChanged').showModal() } }> 
 
                         {t('english')}
 
                     </li>
-                    <li className='hover:text-gray-600' onClick={() => { changeLanguage("es"); document.getElementById('languageChanged').showModal() }}>
+                    <li className=' w-full text-white text-lg' onClick={() => { changeLanguage("es"); document.getElementById('languageChanged').showModal() }}>
 
                         {t('spanish')}
 

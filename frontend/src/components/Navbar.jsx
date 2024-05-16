@@ -61,7 +61,6 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
             onClick={() => handleReset()}
             className="tablet:hidden z-10 !h-[100vh] bg-black bg-opacity-70 transition-all"
           ></label>
-
           <div
               className="navGlass:backdrop-blur-[50px] navGlass:bg-black navGlass:bg-opacity-95 navGlass:glass navGlass:shadow-2xl links-container transition-right -right-[100%] flex flex-col items-center space-y-16 navGlass:h-screen tablet:max-w-[100%] min-w-[115px] max-w-[250px] w-[70vw] fixed top-0 z-10 shadow-2xl tablet:space-y-0
           tablet:mt-0 tablet:shadow-none tablet:w-[100%] tablet:flex-row tablet:space-x-10 tablet:static"
@@ -137,37 +136,13 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
             >
               {t('contact')}
             </a>
-            <div className="navGlass:flex tablet:flex tablet:space-x-4 items-center justify-center space-x-2">
-              <a
-                href="https://github.com/gasteac"
-                target="_blank"
-                className="socials"
-              >
-                <img
-                  style={{ clipPath: "circle(47% at 50% 50%)" }}
-                  width={"40px"}
-                  className="bg-black hover:bg-secondary rounded-[100%] min-w-[30px]"
-                  src="/icons/github.svg"
-                  alt="github"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/gasteac/"
-                target="_blank"
-                className="socials"
-              >
-                <img
-                  style={{ clipPath: "circle(38% at 50% 50%)" }}
-                  width={"51px"}
-                  src="/icons/linkedin.svg"
-                  alt="linkedin"
-                  className="bg-black hover:bg-secondary min-w-[40px]"
-                />
-              </a>
-            </div>
-            <div className="tablet:hidden">
-              <LanguageSelector />
-            </div>
+              <div className="hidden tablet:block top-24 right-12">
+                <LanguageSelector />
+              </div>
+           
+              <div className="block tablet:hidden">
+                <LanguageSelector />
+              </div>
           </div>
         </div>
       </nav>
