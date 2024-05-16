@@ -39,5 +39,7 @@
     "project7title": "Crypto Real Price Calculator",
     "project7desc": "You can search for the real-time price of various cryptocurrencies.",
     "required": "Required",
-    "invalidEmail": "Invalid Email"
+    "invalidEmail": "Invalid Email",
+    "showRobot": "Show Robot",
+    "hideRobot": "Hide Robot"
 }

@@ -39,5 +39,7 @@
     "project7title": "Calcular Precio de Criptos",
     "project7desc": "Puedes buscar el precio en tiempo real de varias criptomonedas.",
     "required": "Requerido",
-    "invalidEmail": "Email invalido"
+    "invalidEmail": "Email invalido",
+    "showRobot": "Mostrar Robot",
+    "hideRobot": "Ocultar Robot"
 }

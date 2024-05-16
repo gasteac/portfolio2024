@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import "animate.css";
 import { useState} from "react";
 // import Spline from '@splinetool/react-spline';
-export const Presentation = () => {
+export const Presentation = ({ handleShowRobot, showRobot }) => {
   const { t } = useTranslation();
   const [key, setKey] = useState(0)
 
@@ -78,6 +78,7 @@ export const Presentation = () => {
               />
             </a>
           </div>
+          <button className="z-50" onClick={() => handleShowRobot()}>{t(!showRobot ? 'showRobot' : 'hideRobot')}</button>
         <div className="dropdown">
           <div
             tabIndex={0}
