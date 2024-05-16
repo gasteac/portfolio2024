@@ -50,6 +50,14 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
       </div>
 
       <Fade triggerOnce={true} delay={4200} duration={1400}>
+          <div className="flex gap-4">
+            <a href="Acosta Gaston - Desarrollador Full Stack.pdf" target="_blank" role='button' className="z-50 bg-gray-800 hover:bg-emerald-900 px-2 py-1 rounded-xl">
+              CV - ES
+            </a>
+            <a href="Acosta Gaston - FullStack Developer.pdf" target="_blank" role='button' className="z-50 bg-gray-800 hover:bg-emerald-900 px-2 py-1 rounded-xl">
+              CV - EN
+            </a>
+          </div>
           <div className="navGlass:flex tablet:flex tablet:space-x-4 items-center justify-center space-x-2">
             <a
               href="https://github.com/gasteac"
@@ -78,8 +86,10 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
               />
             </a>
           </div>
-          <button className="z-50" onClick={() => handleShowRobot()}>{t(!showRobot ? 'showRobot' : 'hideRobot')}</button>
-        <div className="dropdown">
+          <button className="z-50 hover:text-emerald-500" onClick={() => handleShowRobot()}>{t(!showRobot ? 'showRobot' : 'hideRobot')}</button>
+         
+        
+        {/* <div className="dropdown">
           <div
             tabIndex={0}
             role="button"
@@ -105,7 +115,7 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
        
       </Fade>
     </div>
