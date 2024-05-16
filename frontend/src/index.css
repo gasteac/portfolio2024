@@ -20,9 +20,9 @@
 
 .contactBackground {
 background: rgb(0, 0, 0);
-  background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 13%, rgba(1, 186, 159, 0.2777485994397759) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 13%, rgba(1, 186, 159, 0.2777485994397759) 100%);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 13%, rgba(1, 186, 159, 0.2777485994397759) 100%);
+  background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 13%, rgba(0, 82, 70, 0.278) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 13%, rgba(0, 72, 61, 0.278) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 13%, rgba(0, 62, 53, 0.278) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#01ba9f", GradientType=1);
 }
 

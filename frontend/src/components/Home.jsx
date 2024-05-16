@@ -6,8 +6,8 @@ export const Home = ({ handleClickScroll, setActiveLink }) => {
   return (
     <>
       <div className="relative h-[100vh] justify-center  flex w-screen  items-center  tablet:h-[100vh] overflow-hidden">
-        <Fade className='absolute w-full -right-2 h-full z-0'  triggerOnce={true} delay={2000}  duration={2000}>
-          <Spline scene="https://prod.spline.design/1Np5iFnYpUkyE9pK/scene.splinecode" />
+        <Fade className='absolute w-full -right-2 h-full z-0 overflow-clip'  triggerOnce={true} delay={2000}  duration={2000}>
+          <Spline className="overflow-clip" scene="https://prod.spline.design/1Np5iFnYpUkyE9pK/scene.splinecode" />
         </Fade>
           <div>
             <Presentation />
