@@ -21,14 +21,13 @@ export const Home = ({ handleClickScroll, setActiveLink }) => {
            <div className='absolute laptop:right-[162px] z-0 opacity-80'>
           <Spline className="scale-75 phone:scale-105 transition-all " scene="https://prod.spline.design/aZZ5kX7gJc2MkRAO/scene.splinecode" />
       </div>}
-       
         <div>
           <Presentation handleShowRobot={handleShowRobot} showRobot={showRobot}/>
         </div>
         <span onClick={() => {
           setActiveLink("about");
           handleClickScroll("about");
-        }} className="cursor-pointer transition-all duration-200 hover:text-emerald-400 material-symbols-outlined absolute text-6xl bottom-14">
+        }} className="cursor-pointer transition-all duration-200 hover:text-emerald-400 material-symbols-outlined absolute text-6xl bottom-28">
           expand_more
         </span>
       </div>

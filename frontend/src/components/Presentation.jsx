@@ -24,7 +24,7 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
       <div key={key} className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
   
       <TypeAnimation
-        sequence={["", 3200, `${t('presentation')}`]}
+        sequence={["", 2200, `${t('presentation')}`]}
         wrapper="span"
         style={{ display: "inline-block" }}
         className="text-center text-[2rem] phone:text-[3rem] tablet:text-[4rem] animate__animated animate__fadeIn animate__slower animate__delay-0s "
@@ -32,7 +32,7 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
       />
       <div>
         <TypeAnimation
-          sequence={["", 4500, `${t('fullstackdeveloper')}`]}
+          sequence={["", 3500, `${t('fullstackdeveloper')}`]}
           wrapper="span"
           speed={60}
           style={{ display: "inline-block" }}
@@ -40,7 +40,7 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
           cursor={false}
         />
         <TypeAnimation
-          sequence={[" ", 150 ,"</>", 4000]}
+          sequence={[" ", 150 ,"</>", 3000]}
           wrapper="span"
           speed={60}
           cursor={false}
@@ -49,7 +49,7 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
         />
       </div>
 
-      <Fade triggerOnce={true} delay={5200} duration={1400}>
+      <Fade triggerOnce={true} delay={4200} duration={1400}>
           <div className="navGlass:flex tablet:flex tablet:space-x-4 items-center justify-center space-x-2">
             <a
               href="https://github.com/gasteac"
