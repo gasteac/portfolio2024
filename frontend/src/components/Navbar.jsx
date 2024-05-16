@@ -41,7 +41,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
           alt="gasteacIcon"
         />
       </a>
-        <nav className="animate__animated animate__fadeInDown animate__delay-4s animate__slowest p-6 w-screen fixed top-0 z-50 tablet:bg-[rgb(20,50,57,0.05)] bg-[linear-gradient(320deg,_#0a0a0a40_0%,_#0f0f0f40_47%,_#1a1a1a40_100%)] tablet:backdrop-blur-[50px]">
+        <nav className="animate__animated animate__fadeInDown animate__delay-3s animate__slowest p-6 w-screen fixed top-0 z-50 tablet:bg-[rgb(20,50,57,0.05)] bg-[linear-gradient(320deg,_#0a0a0a40_0%,_#0f0f0f40_47%,_#1a1a1a40_100%)] tablet:backdrop-blur-[50px]">
         <div className="flex justify-end items-center text-xl h-[3vh]">
           <input
             onChange={handleCheckboxChange}
@@ -59,7 +59,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
           <label
             id="overlay"
             onClick={() => handleReset()}
-            className="tablet:hidden z-10"
+            className="tablet:hidden z-10 !h-[100vh] bg-black bg-opacity-70 transition-all"
           ></label>
 
           <div
