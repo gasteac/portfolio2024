@@ -24,7 +24,7 @@ export const Projects = ({ handleClickScroll }) => {
           <div className="p-14">
             <div className="flex justify-evenly w-full h-full flex-wrap gap-16">
               {/* Portfolio */}
-              <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
+              <Fade triggerOnce={true} delay={100} duration={1500}>
                 <Tilt
                   glareEnable
                   glareBorderRadius={"1rem"}
@@ -96,7 +96,7 @@ export const Projects = ({ handleClickScroll }) => {
                 </Tilt>
               </Fade>
               {/* Facerook */}
-              <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
+              <Fade triggerOnce={true} delay={100} duration={1500}>
                 <Tilt
                   glareEnable
                   glareBorderRadius={"1rem"}
@@ -164,7 +164,7 @@ export const Projects = ({ handleClickScroll }) => {
                 </Tilt>
               </Fade>
               {/* Heroes */}
-              <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
+              <Fade triggerOnce={true} delay={100} duration={1500}>
                 <Tilt
                   glareEnable
                   glareBorderRadius={"1rem"}
@@ -229,7 +229,7 @@ export const Projects = ({ handleClickScroll }) => {
                 </Tilt>
               </Fade>
               {/* Gifts Searcher */}
-              <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
+              <Fade triggerOnce={true} delay={100} duration={1500}>
                 <Tilt
                   glareEnable
                   glareBorderRadius={"1rem"}
@@ -294,7 +294,7 @@ export const Projects = ({ handleClickScroll }) => {
                 </Tilt>
               </Fade>
               {/* Expenses Control */}
-              <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
+              <Fade triggerOnce={true} delay={100} duration={1500}>
                 <Tilt
                   glareEnable
                   glareBorderRadius={"1rem"}
@@ -362,7 +362,7 @@ export const Projects = ({ handleClickScroll }) => {
                 </Tilt>
               </Fade>
               {/* My First Page */}
-              <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
+              <Fade triggerOnce={true} delay={100} duration={1500}>
                 <Tilt
                   glareEnable
                   glareBorderRadius={"1rem"}
@@ -429,7 +429,7 @@ export const Projects = ({ handleClickScroll }) => {
                 </Tilt>
               </Fade>
               {/* Crypto Real Price Calculator */}
-              <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.2}>
+              <Fade triggerOnce={true} delay={100} duration={1500}>
                 <Tilt
                   glareEnable
                   glareBorderRadius={"1rem"}
