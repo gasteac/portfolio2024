@@ -14,9 +14,9 @@ export const Home = ({ handleClickScroll, setActiveLink }) => {
   }
   return (
     <>
-      <div className="relative h-[100vh] justify-center  flex w-screen  items-center  tablet:h-[100vh] overflow-hidden">
-        <Fade className={`absolute w-full -right-2 h-full z-0 overflow-clip ${showRobot ? 'visible' : 'hidden'}`} triggerOnce={true}  duration={2000}>
-          <Spline className="overflow-clip" scene="https://prod.spline.design/1Np5iFnYpUkyE9pK/scene.splinecode" />
+      <div className="relative h-[100vh]  justify-center  flex w-screen  items-center  overflow-hidden ">
+        <Fade className={`absolute h-full w-full z-0 overflow-clip ${showRobot ? 'visible' : 'hidden'}`} triggerOnce={true}  duration={2000}>
+          <Spline className="overflow-clip w-full" scene="https://prod.spline.design/1Np5iFnYpUkyE9pK/scene.splinecode" />
         </Fade>
         <div>
           <Presentation handleShowRobot={handleShowRobot} showRobot={showRobot}/>

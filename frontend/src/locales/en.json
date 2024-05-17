@@ -40,9 +40,9 @@
     "project7desc": "You can search for the real-time price of various cryptocurrencies.",
     "required": "Required",
     "invalidEmail": "Invalid Email",
-    "showRobot": "Show Robot",
-    "hideRobot": "Hide Robot",
-    "badPerformance": "Bad Performance?",
-    "lethimbe": "Let him be!",
-    "robotHidden": "To change this configuration, please reload the page."
+    "showRobot": "Show Robot ",
+    "hideRobot": "Hide Robot ",
+    "badPerformance": "Bad Performance? ",
+    "lethimbe": "Let him be! ",
+    "robotHidden": "To change this configuration, please reload the page. "
 }
