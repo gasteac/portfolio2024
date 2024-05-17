@@ -41,5 +41,8 @@
     "required": "Required",
     "invalidEmail": "Invalid Email",
     "showRobot": "Show Robot",
-    "hideRobot": "Hide Robot"
+    "hideRobot": "Hide Robot",
+    "badPerformance": "Bad Performance?",
+    "lethimbe": "Let him be!",
+    "robotHidden": "To change this configuration, please reload the page."
 }
