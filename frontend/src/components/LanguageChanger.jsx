@@ -23,7 +23,7 @@ export const LanguageSelector = () => {
                     tabIndex={0}
                     className="mt-2 menu dropdown-content z-[1] cursor-pointer bg-gray-600 rounded-lg "
                 >
-                    <li className='mb-1 text-white text-lg hover:text-emerald-500' onClick={() => { changeLanguage("en"); document.getElementById('languageChanged').showModal() } }> 
+                    <li className='mb-1 text-white text-lg hover:text-emerald-500' onClick={() => { changeLanguage("en"); document.getElementById('languageChanged').showModal() }}>
 
                         {t('english')}
 
