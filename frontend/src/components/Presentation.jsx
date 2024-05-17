@@ -8,7 +8,7 @@ import { useState} from "react";
 export const Presentation = ({ handleShowRobot, showRobot }) => {
   const { t } = useTranslation();
   const [key, setKey] = useState(0)
-
+  const [robotSelected, setRobotSelected] = useState(false)
   return (
     <>
       <dialog id="languageChanged" className="modal">
@@ -21,8 +21,26 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
           </div>
         </div>
       </dialog>
+      <dialog id="robotHidden" className="modal">
+        <div className="modal-box bg-gray-400">
+          <p className="py-4 text-black">{t('robotHidden')}</p>
+          <div className="modal-action">
+            <form method="dialog">
+              <button  className="btn">{t('close')}</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
       <div key={key} className="flex  flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
-  
+        {robotSelected ? null : <div role="alert" className="animate__animated  animate__fadeInRight animate__slow animate__delay-3s alert flex-wrap items-center justify-center bg-emerald-900 absolute max-w-[500px] flex-1 flex h-auto top-[10%] right-[2%]">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info shrink-0 w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span>{t('badPerformance')}</span>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <button className="btn btn-sm" onClick={() => { handleShowRobot(); setRobotSelected(true); document.getElementById('robotHidden').showModal() }}>{t('hideRobot')}</button>
+            <button className="btn btn-sm btn-primary" onClick={() => { setRobotSelected(true); document.getElementById('robotHidden').showModal() }}>{t('lethimbe')}</button>
+          </div>
+        </div>}
+       
       <TypeAnimation
         sequence={["", 2200, `${t('presentation')}`]}
         wrapper="span"
@@ -86,7 +104,7 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
               />
             </a>
           </div>
-          <button className="z-50 hover:text-emerald-500" onClick={() => handleShowRobot()}>{t(!showRobot ? 'showRobot' : 'hideRobot')}</button>
+          {/* <button className="z-50 hover:text-emerald-500" onClick={() => handleShowRobot()}>{t(!showRobot ? 'showRobot' : 'hideRobot')}</button> */}
          
         
         {/* <div className="dropdown">
