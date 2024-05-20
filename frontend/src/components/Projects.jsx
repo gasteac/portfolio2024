@@ -292,74 +292,7 @@ export const Projects = ({ handleClickScroll }) => {
                     </div>
                   </div>
                 </Tilt>
-              </Fade>
-              {/* Expenses Control */}
-              <Fade triggerOnce={true} delay={100} duration={1500}>
-                <Tilt
-                  glareEnable
-                  glareBorderRadius={"1rem"}
-                  scale="1.1"
-                  perspective="4000"
-                >
-
-                  <div className="card max-w-[40rem] group max-h-[35rem] w-auto glass m-auto">
-                    <figure>
-                      <img
-                        src="./images/project4.jpg"
-                        alt="Control de gastos"
-                        className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
-                        loading="lazy"
-                      />
-                    </figure>
-                    <div className="card-body gap-4">
-                      <div className="flex flex-col items-start phone:justify-between phone:items-center phone:flex-row gap-2">
-                        <h2 className=" text-[0.8rem] phone:text-[1rem] tablet:text-[1.3rem]">
-                          {t('project5title')}
-                        </h2>
-                        <div className="flex gap-2 group-hover:gap-5 transition-all duration-300 items-center justify-center">
-                          <a
-                            href="https://github.com/gasteac/control-gastos-REACT"
-                            target="_blank"
-                            className="socials"
-                          >
-                            <img
-                              style={{ clipPath: "circle(47% at 50% 50%)" }}
-                              className="bg-black hover:bg-secondary rounded-[100%] w-[25px] tablet:w-[33px] h-auto"
-                              src="/icons/github.svg"
-                              alt="github"
-                            />
-                          </a>
-                          <a
-                            target="_blank"
-                            href="https://gasteaccontrolgastos.vercel.app/"
-                          >
-                            <span className="text-emerald-400 hover:text-emerald-600 text-[0.8rem] phone:text-[1rem] tablet:text-[1.3rem]">
-                              Demo
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                      <h2 className=" text-[0.6rem] phone:text-[1rem] text-gray-300">
-                        {t('project5desc')}
-                      </h2>
-                      <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
-                        <span className="text-emerald-400">+Tools: </span>
-                        PropTypes, LocalStorage, Pure CSS.
-                      </p>
-                      <div className="card-actions justify-evenly mt-5 text-[0.5rem] phone:text-[0.6rem] tablet:text-[0.8rem]">
-                        <span className="bg-[#0c9fcb] p-2 rounded-xl flex-1">
-                          React
-                        </span>
-                        <span className="bg-yellow-300 text-black p-2 rounded-xl flex-1">
-                          Javascript
-                        </span>
-                        <span className="bg-[#1c3db1] p-2 rounded-xl flex-1">
-                          CSS
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </Tilt>
+                
               </Fade>
               {/* My First Page */}
               <Fade triggerOnce={true} delay={100} duration={1500}>
@@ -428,8 +361,77 @@ export const Projects = ({ handleClickScroll }) => {
                   </div>
                 </Tilt>
               </Fade>
+              {/* Expenses Control */}
+              {/* <Fade triggerOnce={true} delay={100} duration={1500}>
+                <Tilt
+                  glareEnable
+                  glareBorderRadius={"1rem"}
+                  scale="1.1"
+                  perspective="4000"
+                >
+
+                  <div className="card max-w-[40rem] group max-h-[35rem] w-auto glass m-auto">
+                    <figure>
+                      <img
+                        src="./images/project4.jpg"
+                        alt="Control de gastos"
+                        className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
+                        loading="lazy"
+                      />
+                    </figure>
+                    <div className="card-body gap-4">
+                      <div className="flex flex-col items-start phone:justify-between phone:items-center phone:flex-row gap-2">
+                        <h2 className=" text-[0.8rem] phone:text-[1rem] tablet:text-[1.3rem]">
+                          {t('project5title')}
+                        </h2>
+                        <div className="flex gap-2 group-hover:gap-5 transition-all duration-300 items-center justify-center">
+                          <a
+                            href="https://github.com/gasteac/control-gastos-REACT"
+                            target="_blank"
+                            className="socials"
+                          >
+                            <img
+                              style={{ clipPath: "circle(47% at 50% 50%)" }}
+                              className="bg-black hover:bg-secondary rounded-[100%] w-[25px] tablet:w-[33px] h-auto"
+                              src="/icons/github.svg"
+                              alt="github"
+                            />
+                          </a>
+                          <a
+                            target="_blank"
+                            href="https://gasteaccontrolgastos.vercel.app/"
+                          >
+                            <span className="text-emerald-400 hover:text-emerald-600 text-[0.8rem] phone:text-[1rem] tablet:text-[1.3rem]">
+                              Demo
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <h2 className=" text-[0.6rem] phone:text-[1rem] text-gray-300">
+                        {t('project5desc')}
+                      </h2>
+                      <p className="text-[0.6rem] phone:text-[0.8rem] tablet:text-[1rem]">
+                        <span className="text-emerald-400">+Tools: </span>
+                        PropTypes, LocalStorage, Pure CSS.
+                      </p>
+                      <div className="card-actions justify-evenly mt-5 text-[0.5rem] phone:text-[0.6rem] tablet:text-[0.8rem]">
+                        <span className="bg-[#0c9fcb] p-2 rounded-xl flex-1">
+                          React
+                        </span>
+                        <span className="bg-yellow-300 text-black p-2 rounded-xl flex-1">
+                          Javascript
+                        </span>
+                        <span className="bg-[#1c3db1] p-2 rounded-xl flex-1">
+                          CSS
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </Tilt>
+              </Fade> */}
+            
               {/* Crypto Real Price Calculator */}
-              <Fade triggerOnce={true} delay={100} duration={1500}>
+              {/* <Fade triggerOnce={true} delay={100} duration={1500}>
                 <Tilt
                   glareEnable
                   glareBorderRadius={"1rem"}
@@ -491,7 +493,7 @@ export const Projects = ({ handleClickScroll }) => {
                     </div>
                   </div>
                 </Tilt>
-              </Fade>
+              </Fade> */}
             </div>
           </div>
         </div>

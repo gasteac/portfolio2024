@@ -27,7 +27,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
 
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+     
       <a
         className="socials fixed z-[60000] tablet:hidden top-[22px] left-3 cursor-pointer"
         onClick={() => {
@@ -41,7 +41,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
           alt="gasteacIcon"
         />
       </a>
-        <nav className="animate__animated animate__fadeInDown animate__delay-3s animate__slowest p-6 w-screen fixed top-0 z-50 tablet:bg-[rgb(20,50,57,0.05)] bg-[linear-gradient(320deg,_#0a0a0a40_0%,_#0f0f0f40_47%,_#1a1a1a40_100%)] tablet:backdrop-blur-[50px]">
+        <nav className="animate__animated animate__fadeInDown animate__delay-2s animate__slowest p-6 w-screen fixed top-0 z-50 tablet:bg-[rgb(20,50,57,0.05)] bg-[linear-gradient(320deg,_#0a0a0a40_0%,_#0f0f0f40_47%,_#1a1a1a40_100%)] tablet:backdrop-blur-[50px]">
         <div className="flex justify-end items-center text-xl h-[3vh]">
           <input
             onChange={handleCheckboxChange}
@@ -62,7 +62,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
             className="tablet:hidden z-10 !h-[100vh] bg-black bg-opacity-70 transition-all"
           ></label>
           <div
-              className="navGlass:backdrop-blur-[50px] navGlass:bg-black navGlass:bg-opacity-95 navGlass:glass navGlass:shadow-2xl links-container transition-right -right-[100%] flex flex-col items-center space-y-16 navGlass:h-screen tablet:max-w-[100%] min-w-[115px] max-w-[250px] w-[70vw] fixed top-0 z-10 shadow-2xl tablet:space-y-0
+              className="navGlass:backdrop-blur-[50px] navGlass:bg-black navGlass:bg-opacity-95 navGlass:glass navGlass:shadow-2xl links-container transition-right -right-[100%] flex flex-col items-center space-y-16 navGlass:h-screen tablet:max-w-[100%] min-w-[115px] max-w-[160px] w-[70vw] fixed top-0 z-10 shadow-2xl tablet:space-y-0
           tablet:mt-0 tablet:shadow-none tablet:w-[100%] tablet:flex-row tablet:space-x-10 tablet:static"
           >
             <div className="tablet:mr-auto flex items-center justify-center">
@@ -83,7 +83,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
             </div>
 
             <a
-              className={`cursor-pointer ${activeLink === "home" ? "text-primary activeLink" : "text-white"
+              className={`cursor-pointer text-lg  ${activeLink === "home" ? "text-primary activeLink" : "text-white"
                 }`}
               // cuando haces clic en un link solo le avisas a app.jsx que ejecute su funcion handleScroll con determinado ref y que actualice el estado del link activo
               onClick={() => {
@@ -96,7 +96,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
 
 
             <a
-              className={`cursor-pointer text-nowrap ${activeLink === "about" ? "text-primary activeLink" : "text-white"
+              className={`cursor-pointer text-lg text-nowrap ${activeLink === "about" ? "text-primary activeLink" : "text-white"
                 }`}
               // cuando haces clic en un link solo le avisas a app.jsx que ejecute su funcion handleScroll con determinado ref y que actualice el estado del link activo
               onClick={() => {
@@ -109,7 +109,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
 
 
             <a
-              className={`cursor-pointer ${activeLink === "projects"
+              className={`cursor-pointer text-lg ${activeLink === "projects"
                   ? "text-primary activeLink"
                   : "text-white"
                 }`}
@@ -123,7 +123,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
               {t('projects')}
             </a>
             <a
-              className={`cursor-pointer ${activeLink === "contact"
+              className={`cursor-pointer text-lg ${activeLink === "contact"
                   ? "text-primary activeLink"
                   : "text-white"
                 }`}
@@ -146,7 +146,7 @@ export const Navbar = ({ handleClickScroll, activeLink, setActiveLink }) => {
           </div>
         </div>
       </nav>
-      </Suspense>
+    
     </>
   );
 };

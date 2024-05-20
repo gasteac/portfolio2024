@@ -38,8 +38,8 @@ export const Contact = () => {
     <>
         <dialog id="messageSent" className="modal">
           <div className="modal-box bg-primary">
-            <h3 className="font-bold text-lg text-black">{t('messageSent')}</h3>
-            <p className="py-4 text-black">{t('iwillgetbacktoyousoon')}</p>
+            <h3 className="font-bold text-lg ">{t('messageSent')}</h3>
+            <p className="py-4 ">{t('iwillgetbacktoyousoon')}</p>
             <div className="modal-action">
               <form method="dialog">
                 <button className="btn ">{t('close')}</button>
@@ -108,7 +108,7 @@ export const Contact = () => {
                     value={formik.values.name}
                     type="text"
                     placeholder="Gaston"
-                    className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl border-none outline-none text-black w-full"
+                  className="text-[0.8rem] placeholder-slate-300 text-white mt-1 bg-opacity-40 bg-emerald-200 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl border-none outline-none  w-full"
                   />
                 </div>
                 <div className="flex flex-col w-full group">
@@ -132,7 +132,7 @@ export const Contact = () => {
                     value={formik.values.email}
                     type="text"
                     placeholder="email@company.com"
-                    className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl border-none outline-none text-black w-full"
+                  className="text-[0.8rem] placeholder-slate-300 text-white mt-1 bg-opacity-40 bg-emerald-200 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl border-none outline-none  w-full"
                   />
                 </div>
                 <div className="flex flex-col w-full group">
@@ -149,7 +149,7 @@ export const Contact = () => {
                     onChange={formik.handleChange}
                     value={formik.values.phone}
                     placeholder="+5493794132130"
-                    className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl border-none outline-none text-black w-full"
+                  className="text-[0.8rem] placeholder-slate-300 text-white mt-1 bg-opacity-40 bg-emerald-200 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl border-none outline-none  w-full"
                   />
                 </div>
               </div>
@@ -176,14 +176,14 @@ export const Contact = () => {
                   onChange={formik.handleChange}
                   value={formik.values.message}
                   placeholder={t('getintouch')}
-                  className="text-[0.8rem] mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl min-h-[4rem] tablet:min-h-[10rem] max-h-[20rem] border-none outline-none text-black w-full"
+                className="text-[0.8rem] placeholder-slate-300 text-white bg-opacity-40 bg-emerald-200 mt-1 phone:text-[1rem] tablet:text-[1.2rem] p-3 rounded-xl min-h-[4rem] tablet:min-h-[10rem] max-h-[20rem] border-none outline-none  w-full"
                 />
               </div>
             </Fade>
             <Fade triggerOnce={true} delay={100} duration={1500} >
               <button
                 type="submit"
-              className="active:scale-95 active:bg-opacity-100 transition-all p-2 bg-primary rounded-lg mt-4 w-full  outline-none border-none text-black text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem] hover:bg-primary hover:bg-opacity-80"
+              className="active:scale-95 active:bg-opacity-100 bg-opacity-50 transition-all p-2 bg-primary rounded-lg mt-4 w-full  outline-none border-none  text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem] hover:bg-primary hover:bg-opacity-80"
               >
                 {t('send')}
               </button>

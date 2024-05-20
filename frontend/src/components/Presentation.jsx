@@ -5,10 +5,11 @@ import { useTranslation } from 'react-i18next';
 import "animate.css";
 import { useState} from "react";
 // import Spline from '@splinetool/react-spline';
-export const Presentation = ({ handleShowRobot, showRobot }) => {
+// export const Presentation = ({ handleShowRobot, showRobot }) => {
+  export const Presentation = () => {
   const { t } = useTranslation();
   const [key, setKey] = useState(0)
-  const [robotSelected, setRobotSelected] = useState(false)
+  // const [robotSelected, setRobotSelected] = useState(false)
   return (
     <>
       <dialog id="languageChanged" className="modal">
@@ -21,7 +22,7 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
           </div>
         </div>
       </dialog>
-      <dialog id="robotHidden" className="modal">
+      {/* <dialog id="robotHidden" className="modal">
         <div className="modal-box bg-gray-400">
           <p className="py-4 text-black">{t('robotHidden')}</p>
           <div className="modal-action">
@@ -30,19 +31,19 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
             </form>
           </div>
         </div>
-      </dialog>
+      </dialog> */}
       <div key={key} className="flex flex-col space-y-4 tablet:space-y-6 p-6 h-[100%] tablet:h-[100%] justify-center items-center ">
-        {robotSelected ? null : <div role="alert" className="bg-emerald-950 bg-opacity-30 border-none animate__animated  animate__fadeInRight animate__slow animate__delay-3s alert flex-wrap items-center justify-center absolute max-w-[500px] flex-1 flex h-auto top-[10%] tablet:right-[2%] ">
+        {/* {robotSelected ? null : <div role="alert" className="bg-emerald-950 bg-opacity-30 border-none animate__animated  animate__fadeInRight animate__slow animate__delay-3s alert flex-wrap items-center justify-center absolute max-w-[500px] flex-1 flex h-auto top-[10%] tablet:right-[2%] ">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info shrink-0 w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           <span>{t('badPerformance')}</span>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button className="btn btn-sm" onClick={() => {  setRobotSelected(true); document.getElementById('robotHidden').showModal() }}>{t('hideRobot')}</button>
             <button className="btn btn-sm btn-primary" onClick={() => { handleShowRobot(); setRobotSelected(true); document.getElementById('robotHidden').showModal() }}>{t('lethimbe')}</button>
           </div>
-        </div>}
+        </div>} */}
        
       <TypeAnimation
-        sequence={["", 2200, `${t('presentation')}`]}
+        sequence={["", 200, `${t('presentation')}`]}
         wrapper="span"
         style={{ display: "inline-block" }}
         className="text-center text-[2rem] phone:text-[3rem] tablet:text-[4rem] animate__animated animate__fadeIn animate__slower animate__delay-0s "
@@ -50,7 +51,7 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
       />
       <div>
         <TypeAnimation
-          sequence={["", 3500, `${t('fullstackdeveloper')}`]}
+          sequence={["", 1500, `${t('fullstackdeveloper')}`]}
           wrapper="span"
           speed={60}
           style={{ display: "inline-block" }}
@@ -58,7 +59,7 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
           cursor={false}
         />
         <TypeAnimation
-          sequence={[" ", 150 ,"</>", 3000]}
+          sequence={[" ", 0 ,"</>", 3000]}
           wrapper="span"
           speed={60}
           cursor={false}
@@ -67,7 +68,7 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
         />
       </div>
 
-      <Fade triggerOnce={true} delay={4200} duration={1400}>
+      <Fade triggerOnce={true} delay={2400} duration={1400}>
           <div className="flex gap-4">
             <a href="Acosta Gaston - Desarrollador Full Stack.pdf" target="_blank" role='button' className=" bg-gray-800 hover:bg-emerald-900 px-2 py-1 rounded-xl">
               CV - ES
