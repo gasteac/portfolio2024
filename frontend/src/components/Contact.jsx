@@ -59,7 +59,7 @@ export const Contact = () => {
               </span>
               <div className="flex-none border-t-4 border-emerald-800 w-screen"></div>
             </div>
-            <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.4}>
+            <Fade triggerOnce={true} delay={100} duration={1500} >
               <div className="phone:space-x-2 mt-2 space-y-3 phone:flex phone:flex-row phone:space-y-0 phone:items-center  flex flex-col items-start">
                 <a
                   href="mailto:gasteac@gmail.com"
@@ -85,7 +85,7 @@ export const Contact = () => {
             </Fade>
           </div>
           <form onSubmit={formik.handleSubmit} className="max-w-[1000px] w-full mt-5">
-            <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.4}>
+            <Fade triggerOnce={true} delay={100} duration={1500} >
               <div className="flex flex-col space-y-2 tablet:space-y-0 tablet:space-x-6 mb-2 tablet:flex-row">
                 <div className="flex flex-col w-full group">
                   <div className="flex items-end">
@@ -154,7 +154,7 @@ export const Contact = () => {
                 </div>
               </div>
             </Fade>
-            <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.4}>
+            <Fade triggerOnce={true} delay={100} duration={1500} >
               <div className="flex flex-col w-full group">
                 <div className="flex items-end">
                   <label
@@ -180,10 +180,10 @@ export const Contact = () => {
                 />
               </div>
             </Fade>
-            <Fade triggerOnce={true} delay={100} duration={1500} fraction={0.4}>
+            <Fade triggerOnce={true} delay={100} duration={1500} >
               <button
                 type="submit"
-                className="active:scale-95 active:bg-opacity-100 transition-all p-2 rounded-lg mt-4 w-full bg-primary outline-none border-none text-black text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem] hover:bg-primary hover:bg-opacity-80"
+              className="active:scale-95 active:bg-opacity-100 transition-all p-2 bg-primary rounded-lg mt-4 w-full  outline-none border-none text-black text-[0.8rem] phone:text-[1rem] tablet:text-[1.2rem] hover:bg-primary hover:bg-opacity-80"
               >
                 {t('send')}
               </button>

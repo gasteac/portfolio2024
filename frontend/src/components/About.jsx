@@ -31,13 +31,13 @@ export const About = () => {
                                 {t('about2')}
                             </h1>
                         </Fade>
-                        <Fade triggerOnce={true} delay={200} duration={3500} fraction={0.2}>
+                        <Fade triggerOnce={true} delay={200} duration={1500}>
                             <h1 className="mt-12 text-center text-emerald-500">{t('currentStack')}</h1>
                             <Tools />
                         </Fade>
                     </div>
-                    <Fade triggerOnce={true} delay={200} duration={2500} fraction={0.2}>
-                    </Fade>
+                    {/* <Fade triggerOnce={true} delay={200} duration={2500} fraction={0.2}>
+                    </Fade> */}
                 </div>
             </Suspense>
         </>

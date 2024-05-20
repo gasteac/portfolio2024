@@ -41,8 +41,8 @@
     "required": "Required",
     "invalidEmail": "Invalid Email",
     "showRobot": "Show Robot ",
-    "hideRobot": "Hide Robot ",
-    "badPerformance": "Bad Performance? ",
-    "lethimbe": "Let him be! ",
+    "hideRobot": "My pc is slow :(",
+    "badPerformance": "Show Robot?",
+    "lethimbe": "Show him!",
     "robotHidden": "To change this configuration, please reload the page. "
 }

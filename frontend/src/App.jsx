@@ -3,7 +3,7 @@ import { Contact, Home, Navbar, Projects } from "./components";
 import Loader from "./components/Loader";
 import "animate.css";
 import { About } from "./components/About";
-
+import { Tranquiluxe } from "uvcanvas"
 const App = () => {
   //con esto volves al inicio cuando recargas la pagina sino se rompe todo
   useEffect(() => {
@@ -85,6 +85,10 @@ const App = () => {
   
   return (
     <>
+      
+      <div className="fixed top-0 h-screen w-screen saturate-[0.1] brightness-[0.3]">
+        <Tranquiluxe />
+      </div>
       {/* <Loader /> */}
       {/* le pasas la funcion scroll y active a la nav para que desde ella actives aca la funcion pa moverte */}
       <Navbar
