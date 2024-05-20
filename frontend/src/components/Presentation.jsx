@@ -69,10 +69,10 @@ export const Presentation = ({ handleShowRobot, showRobot }) => {
 
       <Fade triggerOnce={true} delay={4200} duration={1400}>
           <div className="flex gap-4">
-            <a href="Acosta Gaston - Desarrollador Full Stack.pdf" target="_blank" role='button' className="z-50 bg-gray-800 hover:bg-emerald-900 px-2 py-1 rounded-xl">
+            <a href="Acosta Gaston - Desarrollador Full Stack.pdf" target="_blank" role='button' className=" bg-gray-800 hover:bg-emerald-900 px-2 py-1 rounded-xl">
               CV - ES
             </a>
-            <a href="Acosta Gaston - FullStack Developer.pdf" target="_blank" role='button' className="z-50 bg-gray-800 hover:bg-emerald-900 px-2 py-1 rounded-xl">
+            <a href="Acosta Gaston - FullStack Developer.pdf" target="_blank" role='button' className=" bg-gray-800 hover:bg-emerald-900 px-2 py-1 rounded-xl">
               CV - EN
             </a>
           </div>
