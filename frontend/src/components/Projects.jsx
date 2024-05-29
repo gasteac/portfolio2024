@@ -9,7 +9,7 @@ export const Projects = ({ handleClickScroll }) => {
 
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+ 
        
         <div className="flex relative h-auto min-h-screen w-full items-center flex-col overflow-hidden">
           <div className="relative flex items-center py-5 text-[2rem] phone:text-[3rem] tablet:text-[3.7rem] tablet:pb-4 tablet:mt-[120px] mt-[60px]">
@@ -37,7 +37,7 @@ export const Projects = ({ handleClickScroll }) => {
                         src="./images/project1.jpg"
                         alt="Portafolio personal"
                         className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
-                        loading="lazy"
+                        
                       />
                     </figure>
                     <div className="card-body gap-4">
@@ -110,7 +110,7 @@ export const Projects = ({ handleClickScroll }) => {
                         src="./images/project9.jpg"
                         alt="Red Social {en progreso..}"
                         className="brightness-90 hover:brightness-100 self-start transition-all duration-300"
-                        loading="lazy"
+                        
                       />
                     </figure>
                     <div className="card-body gap-4">
@@ -178,7 +178,7 @@ export const Projects = ({ handleClickScroll }) => {
                         src="./images/project2.jpg"
                         alt="Pagina para buscar heroes"
                         className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
-                        loading="lazy"
+                        
                       />
                     </figure>
                     <div className="card-body gap-4">
@@ -243,7 +243,7 @@ export const Projects = ({ handleClickScroll }) => {
                         src="./images/project3.jpg"
                         alt="Buscador de gifs"
                         className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
-                        loading="lazy"
+                        
                       />
                     </figure>
                     <div className="card-body gap-4">
@@ -308,7 +308,7 @@ export const Projects = ({ handleClickScroll }) => {
                         src="./images/project6.jpg"
                         alt="Mi primera pagina con HTML, CSS y JS"
                         className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
-                        loading="lazy"
+                        
                       />
                     </figure>
                     <div className="card-body gap-4">
@@ -376,7 +376,7 @@ export const Projects = ({ handleClickScroll }) => {
                         src="./images/project4.jpg"
                         alt="Control de gastos"
                         className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
-                        loading="lazy"
+                        
                       />
                     </figure>
                     <div className="card-body gap-4">
@@ -444,7 +444,7 @@ export const Projects = ({ handleClickScroll }) => {
                         src="./images/project7.jpg"
                         alt="Cotizador de crptos"
                         className="brightness-90 self-start hover:brightness-100 transition-all duration-300"
-                        loading="lazy"
+                        
                       />
                     </figure>
                     <div className="card-body gap-4">
@@ -497,7 +497,7 @@ export const Projects = ({ handleClickScroll }) => {
             </div>
           </div>
         </div>
-      </Suspense>
+
     </>
   );
 };
